@@ -19,6 +19,8 @@ B) Etherscan.io https://etherscan.io/ lets you visualize the source code of cont
 */
 contract ex9 is exerciceTemplate {
 
+  event aLazyStudent(address _lazyStudent);
+
 	constructor(address _studentsOrganAddres, address _teachersOrganAddress, address _pointsManagerContractAddress) 
   exerciceTemplate(_studentsOrganAddres, _teachersOrganAddress, _pointsManagerContractAddress) 
   public
@@ -30,6 +32,7 @@ contract ex9 is exerciceTemplate {
   canWorkOnExercice 
   {
     require(_aValueToInput == 982738);
+    emit aLazyStudent(msg.sender);
 
     // Validating exercice WITHOUT crediting points. Be careful, calling this function will NOT credit points to you!
     validateExercice(msg.sender);
