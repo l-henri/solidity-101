@@ -2,6 +2,7 @@
 A practice course on using Solidity Smart contracts.
 
 Contract addresses:
+* Points Manager: 0x8a4159573e8ce2b3b703ee4717ff3c84917bf337
 * "0xdf1cbc8f655c01cf95616188e03ad376c7e632c3",  // (Ex1Contract)
 * "0x6773ad900c18cf33fbd92bce0cf77b0c46da20b6",  // (Ex2Contract)
 * "0x78d97deb5235f317a1db2ee0488bdc21516c2dcd",  // (Ex3Contract)
