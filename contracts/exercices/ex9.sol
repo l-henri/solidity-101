@@ -10,7 +10,7 @@ In this exercice, you need to:
 - Find the last visible version of the contract code
 - Use a function 
 - Your points are credited by the contract
-*/
+*/ 
 
 /*
 What you need to know to complete this exercice

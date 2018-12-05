@@ -8,7 +8,7 @@ In this exercice, you need to:
 - Use this contract's claimPoints() function
 - Your points are credited by the contract
 */
-
+ 
 /*
 What you need to know to complete this exercice
 A) What was included in the previous exercices
