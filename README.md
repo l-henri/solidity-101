@@ -12,6 +12,7 @@ Contract addresses:
 * "0xc0f15b7976cea7d3204bf23385ece62855833c8e",  // (Ex8Contract)
 * "0x7d51c588761445695f3bad8f784bfcf72123371e",  // (Ex9Contract)
 * "0x032d2cfb68e52956c18e2a6a67c09bb580b56eb7",  // (Ex10Contract)
+* Undisclosed // (Ex11Contract)
 
 Each exercices' instructions are included in the source code of the contract, included in the contracts/ folder in this repository.
 
