@@ -12,6 +12,7 @@ In this exercice, you need to:
 /*
 What you need to know to complete this exercice
 A) What was included in the previous exercices
+B) The contract ABI is included in the "build" folder at the root of the repo, in a JSON file
 
 */
 contract ex3 is exerciceTemplate {
