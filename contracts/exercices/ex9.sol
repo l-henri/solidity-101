@@ -7,7 +7,7 @@ import "../exerciceTemplate.sol";
 Exercice 9: Visualizing code through Github history of commits
 In this exercice, you need to:
 - Use Github to explore this contract's code history of revision
-- Find the last visible version of the contract code
+- Find the first visible version of the contract code
 - Use a function 
 - Your points are credited by the contract
 */ 
