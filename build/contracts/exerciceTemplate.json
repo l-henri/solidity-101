@@ -115,7 +115,7 @@
         "id": 2,
         "nodeType": "ImportDirective",
         "scope": 115,
-        "sourceUnit": 1459,
+        "sourceUnit": 1445,
         "src": "258:42:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -126,7 +126,7 @@
         "id": 3,
         "nodeType": "ImportDirective",
         "scope": 115,
-        "sourceUnit": 293,
+        "sourceUnit": 279,
         "src": "301:29:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -540,7 +540,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_pointsManager_$292",
+                        "typeIdentifier": "t_contract$_pointsManager_$278",
                         "typeString": "contract pointsManager"
                       },
                       "typeName": {
@@ -548,10 +548,10 @@
                         "id": 42,
                         "name": "pointsManager",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 292,
+                        "referencedDeclaration": 278,
                         "src": "1137:13:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_pointsManager_$292",
+                          "typeIdentifier": "t_contract$_pointsManager_$278",
                           "typeString": "contract pointsManager"
                         }
                       },
@@ -588,10 +588,10 @@
                       "name": "pointsManager",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 292,
+                      "referencedDeclaration": 278,
                       "src": "1175:13:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_pointsManager_$292_$",
+                        "typeIdentifier": "t_type$_t_contract$_pointsManager_$278_$",
                         "typeString": "type(contract pointsManager)"
                       }
                     },
@@ -605,7 +605,7 @@
                     "nodeType": "FunctionCall",
                     "src": "1175:43:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_pointsManager_$292",
+                      "typeIdentifier": "t_contract$_pointsManager_$278",
                       "typeString": "contract pointsManager"
                     }
                   },
@@ -663,7 +663,7 @@
                         "referencedDeclaration": 43,
                         "src": "1224:21:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_pointsManager_$292",
+                          "typeIdentifier": "t_contract$_pointsManager_$278",
                           "typeString": "contract pointsManager"
                         }
                       },
@@ -674,7 +674,7 @@
                       "lValueRequested": false,
                       "memberName": "grantPoints",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 239,
+                      "referencedDeclaration": 225,
                       "src": "1224:33:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_address_$returns$__$",
@@ -942,7 +942,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Organ_$1458",
+                        "typeIdentifier": "t_contract$_Organ_$1444",
                         "typeString": "contract Organ"
                       },
                       "typeName": {
@@ -950,10 +950,10 @@
                         "id": 70,
                         "name": "Organ",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 1458,
+                        "referencedDeclaration": 1444,
                         "src": "1447:5:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Organ_$1458",
+                          "typeIdentifier": "t_contract$_Organ_$1444",
                           "typeString": "contract Organ"
                         }
                       },
@@ -990,10 +990,10 @@
                       "name": "Organ",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1458,
+                      "referencedDeclaration": 1444,
                       "src": "1469:5:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_Organ_$1458_$",
+                        "typeIdentifier": "t_type$_t_contract$_Organ_$1444_$",
                         "typeString": "type(contract Organ)"
                       }
                     },
@@ -1007,7 +1007,7 @@
                     "nodeType": "FunctionCall",
                     "src": "1469:27:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Organ_$1458",
+                      "typeIdentifier": "t_contract$_Organ_$1444",
                       "typeString": "contract Organ"
                     }
                   },
@@ -1029,7 +1029,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1473,
+                              "referencedDeclaration": 1459,
                               "src": "1531:3:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -1067,7 +1067,7 @@
                             "referencedDeclaration": 71,
                             "src": "1510:13:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_Organ_$1458",
+                              "typeIdentifier": "t_contract$_Organ_$1444",
                               "typeString": "contract Organ"
                             }
                           },
@@ -1078,7 +1078,7 @@
                           "lValueRequested": false,
                           "memberName": "isNorm",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 1337,
+                          "referencedDeclaration": 1323,
                           "src": "1510:20:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_bool_$",
@@ -1111,10 +1111,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1476,
-                        1477
+                        1462,
+                        1463
                       ],
-                      "referencedDeclaration": 1476,
+                      "referencedDeclaration": 1462,
                       "src": "1502:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1178,7 +1178,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1473,
+                              "referencedDeclaration": 1459,
                               "src": "1578:3:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -1248,10 +1248,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1476,
-                        1477
+                        1462,
+                        1463
                       ],
-                      "referencedDeclaration": 1476,
+                      "referencedDeclaration": 1462,
                       "src": "1549:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1317,7 +1317,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Organ_$1458",
+                        "typeIdentifier": "t_contract$_Organ_$1444",
                         "typeString": "contract Organ"
                       },
                       "typeName": {
@@ -1325,10 +1325,10 @@
                         "id": 97,
                         "name": "Organ",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 1458,
+                        "referencedDeclaration": 1444,
                         "src": "1643:5:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Organ_$1458",
+                          "typeIdentifier": "t_contract$_Organ_$1444",
                           "typeString": "contract Organ"
                         }
                       },
@@ -1365,10 +1365,10 @@
                       "name": "Organ",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1458,
+                      "referencedDeclaration": 1444,
                       "src": "1665:5:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_Organ_$1458_$",
+                        "typeIdentifier": "t_type$_t_contract$_Organ_$1444_$",
                         "typeString": "type(contract Organ)"
                       }
                     },
@@ -1382,7 +1382,7 @@
                     "nodeType": "FunctionCall",
                     "src": "1665:27:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Organ_$1458",
+                      "typeIdentifier": "t_contract$_Organ_$1444",
                       "typeString": "contract Organ"
                     }
                   },
@@ -1404,7 +1404,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1473,
+                              "referencedDeclaration": 1459,
                               "src": "1727:3:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -1442,7 +1442,7 @@
                             "referencedDeclaration": 98,
                             "src": "1706:13:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_Organ_$1458",
+                              "typeIdentifier": "t_contract$_Organ_$1444",
                               "typeString": "contract Organ"
                             }
                           },
@@ -1453,7 +1453,7 @@
                           "lValueRequested": false,
                           "memberName": "isNorm",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 1337,
+                          "referencedDeclaration": 1323,
                           "src": "1706:20:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_bool_$",
@@ -1486,10 +1486,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1476,
-                        1477
+                        1462,
+                        1463
                       ],
-                      "referencedDeclaration": 1476,
+                      "referencedDeclaration": 1462,
                       "src": "1698:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1568,7 +1568,7 @@
         "id": 2,
         "nodeType": "ImportDirective",
         "scope": 115,
-        "sourceUnit": 1459,
+        "sourceUnit": 1445,
         "src": "258:42:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1579,7 +1579,7 @@
         "id": 3,
         "nodeType": "ImportDirective",
         "scope": 115,
-        "sourceUnit": 293,
+        "sourceUnit": 279,
         "src": "301:29:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1993,7 +1993,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_pointsManager_$292",
+                        "typeIdentifier": "t_contract$_pointsManager_$278",
                         "typeString": "contract pointsManager"
                       },
                       "typeName": {
@@ -2001,10 +2001,10 @@
                         "id": 42,
                         "name": "pointsManager",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 292,
+                        "referencedDeclaration": 278,
                         "src": "1137:13:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_pointsManager_$292",
+                          "typeIdentifier": "t_contract$_pointsManager_$278",
                           "typeString": "contract pointsManager"
                         }
                       },
@@ -2041,10 +2041,10 @@
                       "name": "pointsManager",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 292,
+                      "referencedDeclaration": 278,
                       "src": "1175:13:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_pointsManager_$292_$",
+                        "typeIdentifier": "t_type$_t_contract$_pointsManager_$278_$",
                         "typeString": "type(contract pointsManager)"
                       }
                     },
@@ -2058,7 +2058,7 @@
                     "nodeType": "FunctionCall",
                     "src": "1175:43:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_pointsManager_$292",
+                      "typeIdentifier": "t_contract$_pointsManager_$278",
                       "typeString": "contract pointsManager"
                     }
                   },
@@ -2116,7 +2116,7 @@
                         "referencedDeclaration": 43,
                         "src": "1224:21:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_pointsManager_$292",
+                          "typeIdentifier": "t_contract$_pointsManager_$278",
                           "typeString": "contract pointsManager"
                         }
                       },
@@ -2127,7 +2127,7 @@
                       "lValueRequested": false,
                       "memberName": "grantPoints",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 239,
+                      "referencedDeclaration": 225,
                       "src": "1224:33:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_address_$returns$__$",
@@ -2395,7 +2395,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Organ_$1458",
+                        "typeIdentifier": "t_contract$_Organ_$1444",
                         "typeString": "contract Organ"
                       },
                       "typeName": {
@@ -2403,10 +2403,10 @@
                         "id": 70,
                         "name": "Organ",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 1458,
+                        "referencedDeclaration": 1444,
                         "src": "1447:5:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Organ_$1458",
+                          "typeIdentifier": "t_contract$_Organ_$1444",
                           "typeString": "contract Organ"
                         }
                       },
@@ -2443,10 +2443,10 @@
                       "name": "Organ",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1458,
+                      "referencedDeclaration": 1444,
                       "src": "1469:5:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_Organ_$1458_$",
+                        "typeIdentifier": "t_type$_t_contract$_Organ_$1444_$",
                         "typeString": "type(contract Organ)"
                       }
                     },
@@ -2460,7 +2460,7 @@
                     "nodeType": "FunctionCall",
                     "src": "1469:27:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Organ_$1458",
+                      "typeIdentifier": "t_contract$_Organ_$1444",
                       "typeString": "contract Organ"
                     }
                   },
@@ -2482,7 +2482,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1473,
+                              "referencedDeclaration": 1459,
                               "src": "1531:3:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -2520,7 +2520,7 @@
                             "referencedDeclaration": 71,
                             "src": "1510:13:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_Organ_$1458",
+                              "typeIdentifier": "t_contract$_Organ_$1444",
                               "typeString": "contract Organ"
                             }
                           },
@@ -2531,7 +2531,7 @@
                           "lValueRequested": false,
                           "memberName": "isNorm",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 1337,
+                          "referencedDeclaration": 1323,
                           "src": "1510:20:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_bool_$",
@@ -2564,10 +2564,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1476,
-                        1477
+                        1462,
+                        1463
                       ],
-                      "referencedDeclaration": 1476,
+                      "referencedDeclaration": 1462,
                       "src": "1502:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -2631,7 +2631,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1473,
+                              "referencedDeclaration": 1459,
                               "src": "1578:3:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -2701,10 +2701,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1476,
-                        1477
+                        1462,
+                        1463
                       ],
-                      "referencedDeclaration": 1476,
+                      "referencedDeclaration": 1462,
                       "src": "1549:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -2770,7 +2770,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Organ_$1458",
+                        "typeIdentifier": "t_contract$_Organ_$1444",
                         "typeString": "contract Organ"
                       },
                       "typeName": {
@@ -2778,10 +2778,10 @@
                         "id": 97,
                         "name": "Organ",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 1458,
+                        "referencedDeclaration": 1444,
                         "src": "1643:5:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Organ_$1458",
+                          "typeIdentifier": "t_contract$_Organ_$1444",
                           "typeString": "contract Organ"
                         }
                       },
@@ -2818,10 +2818,10 @@
                       "name": "Organ",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1458,
+                      "referencedDeclaration": 1444,
                       "src": "1665:5:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_Organ_$1458_$",
+                        "typeIdentifier": "t_type$_t_contract$_Organ_$1444_$",
                         "typeString": "type(contract Organ)"
                       }
                     },
@@ -2835,7 +2835,7 @@
                     "nodeType": "FunctionCall",
                     "src": "1665:27:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Organ_$1458",
+                      "typeIdentifier": "t_contract$_Organ_$1444",
                       "typeString": "contract Organ"
                     }
                   },
@@ -2857,7 +2857,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1473,
+                              "referencedDeclaration": 1459,
                               "src": "1727:3:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -2895,7 +2895,7 @@
                             "referencedDeclaration": 98,
                             "src": "1706:13:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_Organ_$1458",
+                              "typeIdentifier": "t_contract$_Organ_$1444",
                               "typeString": "contract Organ"
                             }
                           },
@@ -2906,7 +2906,7 @@
                           "lValueRequested": false,
                           "memberName": "isNorm",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 1337,
+                          "referencedDeclaration": 1323,
                           "src": "1706:20:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_bool_$",
@@ -2939,10 +2939,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1476,
-                        1477
+                        1462,
+                        1463
                       ],
-                      "referencedDeclaration": 1476,
+                      "referencedDeclaration": 1462,
                       "src": "1698:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -3000,5 +3000,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-12-05T15:24:08.613Z"
+  "updatedAt": "2018-12-12T08:46:10.026Z"
 }
