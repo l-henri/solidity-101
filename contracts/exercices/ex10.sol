@@ -24,7 +24,8 @@ contract ex10 is exerciceTemplate {
   uint[20] private randomValuesStore;
   uint public nextValueStoreRank;
 
-  event showPrivateVariableInEvent(uint myVariable);
+  event showPrivateVariableInEvent(uint i, uint myVariable);
+  event showUserRank(uint i);
 
   constructor(address _studentsOrganAddres, address _teachersOrganAddress, address _pointsManagerContractAddress) 
   exerciceTemplate(_studentsOrganAddres, _teachersOrganAddress, _pointsManagerContractAddress) 
@@ -39,7 +40,7 @@ contract ex10 is exerciceTemplate {
    nextValueStoreRank = 0;
    for (uint i = 0; i < randomValuesStore.length; i++)
    {
-   	emit showPrivateVariableInEvent(randomValuesStore[i]+i);
+   	emit showPrivateVariableInEvent(i, randomValuesStore[i]+i);
    }
   }
 
@@ -48,6 +49,7 @@ contract ex10 is exerciceTemplate {
   canWorkOnExercice 
   {
     privateValues[msg.sender] = randomValuesStore[nextValueStoreRank];
+    emit showUserRank(nextValueStoreRank);
     nextValueStoreRank += 1;
     if (nextValueStoreRank > randomValuesStore.length)
     {

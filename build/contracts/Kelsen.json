@@ -44,24 +44,24 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b5061013c806100206000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680635dbe4d281461005c578063a8bef97a14610087578063e80b30a5146100b6575b600080fd5b34801561006857600080fd5b506100716100e5565b6040518082815260200191505060405180910390f35b34801561009357600080fd5b5061009c6100eb565b604051808215151515815260200191505060405180910390f35b3480156100c257600080fd5b506100cb6100fe565b604051808215151515815260200191505060405180910390f35b60005481565b600160009054906101000a900460ff1681565b6001809054906101000a900460ff16815600a165627a7a723058205b4fedbe2047db68bcf3d7eb2d60b6849f0c1dab703061eaf3fc88414300002e0029",
-  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680635dbe4d281461005c578063a8bef97a14610087578063e80b30a5146100b6575b600080fd5b34801561006857600080fd5b506100716100e5565b6040518082815260200191505060405180910390f35b34801561009357600080fd5b5061009c6100eb565b604051808215151515815260200191505060405180910390f35b3480156100c257600080fd5b506100cb6100fe565b604051808215151515815260200191505060405180910390f35b60005481565b600160009054906101000a900460ff1681565b6001809054906101000a900460ff16815600a165627a7a723058205b4fedbe2047db68bcf3d7eb2d60b6849f0c1dab703061eaf3fc88414300002e0029",
-  "sourceMap": "62:157:4:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;62:157:4;;;;;;;",
-  "deployedSourceMap": "62:157:4:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;129:30;;8:9:-1;5:2;;;30:1;27;20:12;5:2;129:30:4;;;;;;;;;;;;;;;;;;;;;;;165:21;;8:9:-1;5:2;;;30:1;27;20:12;5:2;165:21:4;;;;;;;;;;;;;;;;;;;;;;;;;;;192:24;;8:9:-1;5:2;;;30:1;27;20:12;5:2;192:24:4;;;;;;;;;;;;;;;;;;;;;;;;;;;129:30;;;;:::o;165:21::-;;;;;;;;;;;;;:::o;192:24::-;;;;;;;;;;;;;:::o",
+  "bytecode": "0x608060405234801561001057600080fd5b5061013c806100206000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680635dbe4d281461005c578063a8bef97a14610087578063e80b30a5146100b6575b600080fd5b34801561006857600080fd5b506100716100e5565b6040518082815260200191505060405180910390f35b34801561009357600080fd5b5061009c6100eb565b604051808215151515815260200191505060405180910390f35b3480156100c257600080fd5b506100cb6100fe565b604051808215151515815260200191505060405180910390f35b60005481565b600160009054906101000a900460ff1681565b6001809054906101000a900460ff16815600a165627a7a723058207e64d789c08afbb0d08c1887828bc7e31587fc34b28d7a87c6ef1de149d985080029",
+  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680635dbe4d281461005c578063a8bef97a14610087578063e80b30a5146100b6575b600080fd5b34801561006857600080fd5b506100716100e5565b6040518082815260200191505060405180910390f35b34801561009357600080fd5b5061009c6100eb565b604051808215151515815260200191505060405180910390f35b3480156100c257600080fd5b506100cb6100fe565b604051808215151515815260200191505060405180910390f35b60005481565b600160009054906101000a900460ff1681565b6001809054906101000a900460ff16815600a165627a7a723058207e64d789c08afbb0d08c1887828bc7e31587fc34b28d7a87c6ef1de149d985080029",
+  "sourceMap": "62:157:14:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;62:157:14;;;;;;;",
+  "deployedSourceMap": "62:157:14:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;129:30;;8:9:-1;5:2;;;30:1;27;20:12;5:2;129:30:14;;;;;;;;;;;;;;;;;;;;;;;165:21;;8:9:-1;5:2;;;30:1;27;20:12;5:2;165:21:14;;;;;;;;;;;;;;;;;;;;;;;;;;;192:24;;8:9:-1;5:2;;;30:1;27;20:12;5:2;192:24:14;;;;;;;;;;;;;;;;;;;;;;;;;;;129:30;;;;:::o;165:21::-;;;;;;;;;;;;;:::o;192:24::-;;;;;;;;;;;;;:::o",
   "source": "pragma solidity ^0.4.11;\n\n/// @title Standard organ contract\n\ncontract Kelsen {\n        // Identifiers for Dapp using Kelsen\n    int public kelsenVersionNumber;\n    bool public isAnOrgan;\n    bool public isAProcedure;\n}",
-  "sourcePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/Blockchain Programmation/solidity-101/contracts/utils/Kelsen/Kelsen.sol",
+  "sourcePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/03 Blockchain Programmation/solidity-101/contracts/utils/Kelsen/Kelsen.sol",
   "ast": {
-    "absolutePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/Blockchain Programmation/solidity-101/contracts/utils/Kelsen/Kelsen.sol",
+    "absolutePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/03 Blockchain Programmation/solidity-101/contracts/utils/Kelsen/Kelsen.sol",
     "exportedSymbols": {
       "Kelsen": [
-        287
+        1296
       ]
     },
-    "id": 288,
+    "id": 1297,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 280,
+        "id": 1289,
         "literals": [
           "solidity",
           "^",
@@ -69,7 +69,7 @@
           ".11"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:4"
+        "src": "0:24:14"
       },
       {
         "baseContracts": [],
@@ -77,20 +77,20 @@
         "contractKind": "contract",
         "documentation": "@title Standard organ contract",
         "fullyImplemented": true,
-        "id": 287,
+        "id": 1296,
         "linearizedBaseContracts": [
-          287
+          1296
         ],
         "name": "Kelsen",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 282,
+            "id": 1291,
             "name": "kelsenVersionNumber",
             "nodeType": "VariableDeclaration",
-            "scope": 287,
-            "src": "129:30:4",
+            "scope": 1296,
+            "src": "129:30:14",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -98,10 +98,10 @@
               "typeString": "int256"
             },
             "typeName": {
-              "id": 281,
+              "id": 1290,
               "name": "int",
               "nodeType": "ElementaryTypeName",
-              "src": "129:3:4",
+              "src": "129:3:14",
               "typeDescriptions": {
                 "typeIdentifier": "t_int256",
                 "typeString": "int256"
@@ -112,11 +112,11 @@
           },
           {
             "constant": false,
-            "id": 284,
+            "id": 1293,
             "name": "isAnOrgan",
             "nodeType": "VariableDeclaration",
-            "scope": 287,
-            "src": "165:21:4",
+            "scope": 1296,
+            "src": "165:21:14",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -124,10 +124,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 283,
+              "id": 1292,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "165:4:4",
+              "src": "165:4:14",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -138,11 +138,11 @@
           },
           {
             "constant": false,
-            "id": 286,
+            "id": 1295,
             "name": "isAProcedure",
             "nodeType": "VariableDeclaration",
-            "scope": 287,
-            "src": "192:24:4",
+            "scope": 1296,
+            "src": "192:24:14",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -150,10 +150,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 285,
+              "id": 1294,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "192:4:4",
+              "src": "192:4:14",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -163,24 +163,24 @@
             "visibility": "public"
           }
         ],
-        "scope": 288,
-        "src": "62:157:4"
+        "scope": 1297,
+        "src": "62:157:14"
       }
     ],
-    "src": "0:219:4"
+    "src": "0:219:14"
   },
   "legacyAST": {
-    "absolutePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/Blockchain Programmation/solidity-101/contracts/utils/Kelsen/Kelsen.sol",
+    "absolutePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/03 Blockchain Programmation/solidity-101/contracts/utils/Kelsen/Kelsen.sol",
     "exportedSymbols": {
       "Kelsen": [
-        287
+        1296
       ]
     },
-    "id": 288,
+    "id": 1297,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 280,
+        "id": 1289,
         "literals": [
           "solidity",
           "^",
@@ -188,7 +188,7 @@
           ".11"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:4"
+        "src": "0:24:14"
       },
       {
         "baseContracts": [],
@@ -196,20 +196,20 @@
         "contractKind": "contract",
         "documentation": "@title Standard organ contract",
         "fullyImplemented": true,
-        "id": 287,
+        "id": 1296,
         "linearizedBaseContracts": [
-          287
+          1296
         ],
         "name": "Kelsen",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 282,
+            "id": 1291,
             "name": "kelsenVersionNumber",
             "nodeType": "VariableDeclaration",
-            "scope": 287,
-            "src": "129:30:4",
+            "scope": 1296,
+            "src": "129:30:14",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -217,10 +217,10 @@
               "typeString": "int256"
             },
             "typeName": {
-              "id": 281,
+              "id": 1290,
               "name": "int",
               "nodeType": "ElementaryTypeName",
-              "src": "129:3:4",
+              "src": "129:3:14",
               "typeDescriptions": {
                 "typeIdentifier": "t_int256",
                 "typeString": "int256"
@@ -231,11 +231,11 @@
           },
           {
             "constant": false,
-            "id": 284,
+            "id": 1293,
             "name": "isAnOrgan",
             "nodeType": "VariableDeclaration",
-            "scope": 287,
-            "src": "165:21:4",
+            "scope": 1296,
+            "src": "165:21:14",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -243,10 +243,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 283,
+              "id": 1292,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "165:4:4",
+              "src": "165:4:14",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -257,11 +257,11 @@
           },
           {
             "constant": false,
-            "id": 286,
+            "id": 1295,
             "name": "isAProcedure",
             "nodeType": "VariableDeclaration",
-            "scope": 287,
-            "src": "192:24:4",
+            "scope": 1296,
+            "src": "192:24:14",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -269,10 +269,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 285,
+              "id": 1294,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "192:4:4",
+              "src": "192:4:14",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -282,11 +282,11 @@
             "visibility": "public"
           }
         ],
-        "scope": 288,
-        "src": "62:157:4"
+        "scope": 1297,
+        "src": "62:157:14"
       }
     ],
-    "src": "0:219:4"
+    "src": "0:219:14"
   },
   "compiler": {
     "name": "solc",
@@ -294,5 +294,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-12-12T08:46:10.029Z"
+  "updatedAt": "2019-01-27T09:12:55.934Z"
 }
