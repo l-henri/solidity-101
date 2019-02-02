@@ -1,26 +1,54 @@
+
 pragma solidity ^0.4.24;
 
 
 import "../exerciceTemplate.sol";
 
 /*
-Exercice 9: Visualizing code through Github history of commits
+Exercice 9: Visualizing code online
 In this exercice, you need to:
-- Use Github to explore this contract's code history of revision
-- Find the first visible version of the contract code
+- Use Etherscan to visualize this contract's code
 - Use a function 
 - Your points are credited by the contract
-*/ 
+*/
 
 /*
 What you need to know to complete this exercice
 A) What was included in the previous exercices
-B) The history of contract modification is visible on https://github.com/l-henri/solidity-101
-C) Only using the ABI of this contract puts you at risk of not getting the points you deserve
+B) Etherscan.io https://etherscan.io/ lets you visualize the source code of contracts whose creator disclosed it. 
 
 */
-contract ex9_instructions is exerciceTemplate {
+contract ex9 is exerciceTemplate {
 
-// Find the code somewhere else
+  event aLazyStudent(address _lazyStudent);
 
+	constructor(address _studentsOrganAddres, address _teachersOrganAddress, address _pointsManagerContractAddress) 
+  exerciceTemplate(_studentsOrganAddres, _teachersOrganAddress, _pointsManagerContractAddress) 
+  public
+  {}
+
+
+  function collectYourPoints(uint _aValueToInput) 
+  public 
+  canWorkOnExercice 
+  {
+    require(_aValueToInput == 982738);
+    emit aLazyStudent(msg.sender);
+
+    // Validating exercice WITHOUT crediting points. Be careful, calling this function will NOT credit points to you!
+    validateExercice(msg.sender);
+
+  }
+
+  function collectYourPointsAgain(uint _aValueToInput) 
+  public 
+  canWorkOnExercice 
+  {
+    require(_aValueToInput == 982738);
+
+    // Validating exercice, getting points
+    validateExercice(msg.sender);
+    creditStudent(200, msg.sender);
+
+  }
 }
