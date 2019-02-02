@@ -38,6 +38,7 @@ contract ex5 is exerciceTemplate {
   public 
   canWorkOnExercice 
   {
+    require(_helperAddress != msg.sender);
     Organ studentsOrgan = Organ(studentsOrganAddress);
     require(studentsOrgan.isNorm(_helperAddress));
   	helpersRegister[msg.sender] = _helperAddress;
