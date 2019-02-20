@@ -1,4 +1,5 @@
-pragma solidity ^0.4.11;
+pragma solidity >=0.4.22 <0.6.0;
+
 
 /// @title Standard organ contract
 
@@ -84,6 +85,26 @@ contract Organ is Kelsen{
     // Keeping track of active norms
     uint256 public activeNormNumber;
 
+
+    constructor(string _name) public {
+
+        // Initializing with deployer as master
+        masters[msg.sender].canAdd = true;
+        masters[msg.sender].canDelete = true;
+        masters[msg.sender].name = 'Original Master';
+        masterList.push(msg.sender);
+        organName = _name;
+        // Initializing with deployer as admin
+        // admins[msg.sender].canAdd = true;
+        // admins[msg.sender].canDelete = true;
+        // admins[msg.sender].name = 'Original Master';
+        // adminList.push(msg.sender);
+        // Initializing first norms to avoid errors when deleting norms
+        Norm memory initNorm;
+        norms.push(initNorm);
+        kelsenVersionNumber = 1;
+
+    }
     // ################# Organ managing functions
 
     function setName(string _name) public {
@@ -103,7 +124,6 @@ contract Organ is Kelsen{
         require(admins[msg.sender].canSpend);
         _to.transfer(_value);
         emit spendMoney(msg.sender, _to, _value);
-
     }
 
     // ################# Master managing functions

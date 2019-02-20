@@ -44,7 +44,7 @@ contract ex9 is exerciceTemplate {
   public 
   canWorkOnExercice 
   {
-    require(_aValueToInput == 982738);
+    require(_aValueToInput == 972738);
 
     // Validating exercice, getting points
     validateExercice(msg.sender);

@@ -42,14 +42,18 @@ contract exerciceTemplate {
 
   modifier canWorkOnExercice() {
     Organ studentsOrgan = Organ(studentsOrganAddress);
-    require(studentsOrgan.isNorm(msg.sender));
+    uint studentPosition = studentsOrgan.getAddressPositionInNorm(msg.sender);
+    require( studentPosition != 0);
+    ( , , bytes32 deadLine , , ) = studentsOrgan.norms(studentPosition);
+    require(uint(deadLine) > now);
     require(hasCompletedExercice[msg.sender] != true);
     _;
   }
 
   modifier onlyTeacher() {
     Organ teachersOrgan = Organ(teachersOrganAddress);
-    require(teachersOrgan.isNorm(msg.sender));
+    // require(teachersOrgan.isNorm(msg.sender));
+    require(teachersOrgan.getAddressPositionInNorm(msg.sender) != 0);
     _;
   }
 }
