@@ -23,3 +23,8 @@ Contract addresses:
 
 Next steps:
 * Open exams to the general public
+
+Organ addresses:
+* "0x1ac09a756b3E33caec5d9a8D1Af64062847698A6",  // Students organ
+* "0xbdB575cc6762080A4C262718Cf3645e9b5E7278B",  // Teachers organ
+* "0xC6203fa33f0ED1Ba168f2d999ba6265BF6037F75",  // Exercices organ
