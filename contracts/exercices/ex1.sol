@@ -28,7 +28,7 @@ contract Ex1 is exerciceTemplate {
   onlyTeacher 
   {
     Organ studentsOrgan = Organ(studentsOrganAddress);
-    studentsOrgan.addNorm(_studentAddress, '', bytes32(now + 6 hours), 0, 0);
+    studentsOrgan.addNorm(_studentAddress, '', bytes32(now + 4 hours), 0, 0);
     studentsOrgan.payout(_studentAddress, 100000000000000000);
     // Validating exercice
     validateExercice(_studentAddress);

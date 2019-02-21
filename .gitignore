@@ -1,3 +1,4 @@
 #test/01_exercicesTesting.js
 truffle*
 node_modules
+package-*

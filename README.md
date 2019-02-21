@@ -8,7 +8,7 @@ Points are managed through the [pointManager](contracts/pointsManager.sol) contr
 You can use [MyCrypto](https://mycrypto.com/contracts/interact) to interact with the contracts. Contracts ABIs are stored in [build/contracts](build/contracts). The demos are hosted on Rinkeby - be sure to use the correct network in MyCrypto when you are trying to read from the pointsManager contract ;-)
 
 Contract addresses:
-* Points Manager: 0x8a4159573e8ce2b3b703ee4717ff3c84917bf337
+* "0xdb3d883d2addbbcd9631548e9ee93d7bb8e1b77f",  // [Points manager](contracts/pointsManager.sol)
 * "0xdf1cbc8f655c01cf95616188e03ad376c7e632c3",  // [Ex1Contract](contracts/exercices/ex1.sol)
 * "0x6773ad900c18cf33fbd92bce0cf77b0c46da20b6",  // [Ex2Contract](contracts/exercices/ex2.sol)
 * "0x78d97deb5235f317a1db2ee0488bdc21516c2dcd",  // [Ex3Contract](contracts/exercices/ex3.sol)
@@ -22,6 +22,4 @@ Contract addresses:
 * Undisclosed // [Ex11Contract](contracts/exercices/ex11.sol)
 
 Next steps:
-* Re deploy exercice 5 with a newer version
-* Add a new variable in exercice 10 to facilitate tracking one's private value
 * Open exams to the general public
