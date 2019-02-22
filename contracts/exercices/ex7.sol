@@ -47,7 +47,7 @@ contract ex7 is exerciceTemplate {
   {
     privateValues[msg.sender] = randomValuesStore[nextValueStoreRank];
     nextValueStoreRank += 1;
-    if (nextValueStoreRank > randomValuesStore.length)
+    if (nextValueStoreRank >= randomValuesStore.length)
     {
      nextValueStoreRank = 0; 
     }

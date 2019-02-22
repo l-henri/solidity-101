@@ -51,7 +51,7 @@ contract ex10 is exerciceTemplate {
     privateValues[msg.sender] = randomValuesStore[nextValueStoreRank];
     emit showUserRank(nextValueStoreRank);
     nextValueStoreRank += 1;
-    if (nextValueStoreRank > randomValuesStore.length)
+    if (nextValueStoreRank >= randomValuesStore.length)
     {
      nextValueStoreRank = 0; 
     }

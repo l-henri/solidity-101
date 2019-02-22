@@ -23,6 +23,7 @@ Contract addresses:
 
 Next steps:
 * Open exams to the general public
+* Grant point to students that help other students in ex5
 
 Organ addresses:
 * "0x1ac09a756b3E33caec5d9a8D1Af64062847698A6",  // Students organ
