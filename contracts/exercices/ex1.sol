@@ -16,7 +16,7 @@ What you need to know to complete this exercice
 A) Create a wallet using Metamask (http://metamask.io)
 
 */
-contract Ex1 is exerciceTemplate {
+contract ex1 is exerciceTemplate {
 
   constructor(address _studentsOrganAddres, address _teachersOrganAddress, address _pointsManagerContractAddress) 
   exerciceTemplate(_studentsOrganAddres, _teachersOrganAddress, _pointsManagerContractAddress) 

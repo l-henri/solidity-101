@@ -21,6 +21,7 @@ contract ex10 is exerciceTemplate {
 
 
 	mapping(address => uint) private privateValues;
+  mapping(address => bool) public exerciceWasStarted;
   uint[20] private randomValuesStore;
   uint public nextValueStoreRank;
 
@@ -55,6 +56,7 @@ contract ex10 is exerciceTemplate {
     {
      nextValueStoreRank = 0; 
     }
+    exerciceWasStarted[msg.sender] = true;
   }
 
   function showYouKnowPrivateValue(uint _privateValue) 
@@ -62,7 +64,8 @@ contract ex10 is exerciceTemplate {
   canWorkOnExercice 
   {
     require(privateValues[msg.sender] == _privateValue);
-
+    require(exerciceWasStarted[msg.sender] == true);
+    
     // Validating exercice
     validateExercice(msg.sender);
     creditStudent(200, msg.sender);

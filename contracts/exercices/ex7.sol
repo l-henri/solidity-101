@@ -23,6 +23,7 @@ C) Etherscan.io https://etherscan.io/ lets you visualize events that were fired 
 contract ex7 is exerciceTemplate {
 
 	mapping(address => uint) private privateValues;
+  mapping(address => bool) public exerciceWasStarted;
   uint[20] private randomValuesStore;
   uint public nextValueStoreRank;
 
@@ -51,6 +52,7 @@ contract ex7 is exerciceTemplate {
     {
      nextValueStoreRank = 0; 
     }
+    exerciceWasStarted[msg.sender] = true;
   }
   
   function fireEvent() 
@@ -65,7 +67,8 @@ contract ex7 is exerciceTemplate {
   canWorkOnExercice 
   {
     require(privateValues[msg.sender] == _privateValue);
-
+    require(exerciceWasStarted[msg.sender] == true);
+    
     // Validating exercice
     validateExercice(msg.sender);
     creditStudent(200, msg.sender);

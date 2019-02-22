@@ -24,6 +24,8 @@ contract ex6 is exerciceTemplate {
 
 	mapping(address => uint) private privateValues;
   mapping(address => uint) public publicValues;
+  mapping(address => bool) public exerciceWasStarted;
+
   uint[20] private randomValuesStore;
   uint public nextValueStoreRank;
 
@@ -50,6 +52,7 @@ contract ex6 is exerciceTemplate {
     {
      nextValueStoreRank = 0; 
     }
+    exerciceWasStarted[msg.sender] = true;
   }
   
   function duplicatePrivateValueInPublic() 
@@ -64,7 +67,8 @@ contract ex6 is exerciceTemplate {
   canWorkOnExercice 
   {
     require(privateValues[msg.sender] == _privateValue);
-
+    require(exerciceWasStarted[msg.sender] == true);
+    
     // Validating exercice
     validateExercice(msg.sender);
     creditStudent(200, msg.sender);
