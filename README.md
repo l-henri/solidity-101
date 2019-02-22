@@ -9,16 +9,16 @@ You can use [MyCrypto](https://mycrypto.com/contracts/interact) to interact with
 
 Contract addresses:
 * "0xdb3d883d2addbbcd9631548e9ee93d7bb8e1b77f",  // [Points manager](contracts/pointsManager.sol)
-* "0xdf1cbc8f655c01cf95616188e03ad376c7e632c3",  // [Ex1Contract](contracts/exercices/ex1.sol)
-* "0x6773ad900c18cf33fbd92bce0cf77b0c46da20b6",  // [Ex2Contract](contracts/exercices/ex2.sol)
-* "0x78d97deb5235f317a1db2ee0488bdc21516c2dcd",  // [Ex3Contract](contracts/exercices/ex3.sol)
-* "0x94126c9f3775fc88b947cb1026048165f1e7f769",  // [Ex4Contract](contracts/exercices/ex4.sol)
-* "0x0d7387845d2dbff7dd2837a79ccf6f91793d65a1",  // [Ex5Contract](contracts/exercices/ex5.sol)
-* "0x789dc197f408e67b6edbfaa05611f4a6c6f1d765",  // [Ex6Contract](contracts/exercices/ex6.sol)
-* "0xc235d69d096534a9fa2c4e8088d2df6f7a0df8bb",  // [Ex7Contract](contracts/exercices/ex7.sol)
-* "0xc0f15b7976cea7d3204bf23385ece62855833c8e",  // [Ex8Contract](contracts/exercices/ex8.sol)
-* "0x7d51c588761445695f3bad8f784bfcf72123371e",  // [Ex9Contract](contracts/exercices/ex9.sol)
-* "0x032d2cfb68e52956c18e2a6a67c09bb580b56eb7",  // [Ex10Contract](contracts/exercices/ex10.sol)
+* "0x0928de0ad7ab871b7e1f390fd7d9eac26c37d752",  // [Ex1Contract](contracts/exercices/ex1.sol)
+* "0x94165b15ab7df0618e58ea3bd872f7216e51cd06",  // [Ex2Contract](contracts/exercices/ex2.sol)
+* "0x0e5b5bbb37f301ae54b66142d72c344843167b28",  // [Ex3Contract](contracts/exercices/ex3.sol)
+* "0xc399ca4aa7e1d8c2b979ffaee610f9729b60889b",  // [Ex4Contract](contracts/exercices/ex4.sol)
+* "0x14c8cad8ac280a332802080c423d5cd25fc6a8e1",  // [Ex5Contract](contracts/exercices/ex5.sol)
+* "0x64400ba340c6f17219cbf5fc0f9d5920cf78fb7b",  // [Ex6Contract](contracts/exercices/ex6.sol)
+* "0xe8d37087750f0880f8112647dbe3fa201cd649f7",  // [Ex7Contract](contracts/exercices/ex7.sol)
+* "0x663995cad64413f19dbf9c2d6329d21e82bab551",  // [Ex8Contract](contracts/exercices/ex8.sol)
+* "0x4e317932530c26fed7227b616afe37f47d02e721",  // [Ex9Contract](contracts/exercices/ex9.sol)
+* "0x29777af07fad208b9dfa117eef117d79dba9219c",  // [Ex10Contract](contracts/exercices/ex10.sol)
 * Undisclosed // [Ex11Contract](contracts/exercices/ex11.sol)
 
 Next steps:
