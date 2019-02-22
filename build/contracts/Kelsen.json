@@ -46,22 +46,22 @@
   ],
   "bytecode": "0x608060405234801561001057600080fd5b5061013c806100206000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680635dbe4d281461005c578063a8bef97a14610087578063e80b30a5146100b6575b600080fd5b34801561006857600080fd5b506100716100e5565b6040518082815260200191505060405180910390f35b34801561009357600080fd5b5061009c6100eb565b604051808215151515815260200191505060405180910390f35b3480156100c257600080fd5b506100cb6100fe565b604051808215151515815260200191505060405180910390f35b60005481565b600160009054906101000a900460ff1681565b6001809054906101000a900460ff16815600a165627a7a723058205c23c6411ec613347a2c88d97d2b0b47e67e2d615f51b9206e8ff65ae132fb4f0029",
   "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680635dbe4d281461005c578063a8bef97a14610087578063e80b30a5146100b6575b600080fd5b34801561006857600080fd5b506100716100e5565b6040518082815260200191505060405180910390f35b34801561009357600080fd5b5061009c6100eb565b604051808215151515815260200191505060405180910390f35b3480156100c257600080fd5b506100cb6100fe565b604051808215151515815260200191505060405180910390f35b60005481565b600160009054906101000a900460ff1681565b6001809054906101000a900460ff16815600a165627a7a723058205c23c6411ec613347a2c88d97d2b0b47e67e2d615f51b9206e8ff65ae132fb4f0029",
-  "sourceMap": "62:157:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;62:157:3;;;;;;;",
-  "deployedSourceMap": "62:157:3:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;129:30;;8:9:-1;5:2;;;30:1;27;20:12;5:2;129:30:3;;;;;;;;;;;;;;;;;;;;;;;165:21;;8:9:-1;5:2;;;30:1;27;20:12;5:2;165:21:3;;;;;;;;;;;;;;;;;;;;;;;;;;;192:24;;8:9:-1;5:2;;;30:1;27;20:12;5:2;192:24:3;;;;;;;;;;;;;;;;;;;;;;;;;;;129:30;;;;:::o;165:21::-;;;;;;;;;;;;;:::o;192:24::-;;;;;;;;;;;;;:::o",
+  "sourceMap": "62:157:5:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;62:157:5;;;;;;;",
+  "deployedSourceMap": "62:157:5:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;129:30;;8:9:-1;5:2;;;30:1;27;20:12;5:2;129:30:5;;;;;;;;;;;;;;;;;;;;;;;165:21;;8:9:-1;5:2;;;30:1;27;20:12;5:2;165:21:5;;;;;;;;;;;;;;;;;;;;;;;;;;;192:24;;8:9:-1;5:2;;;30:1;27;20:12;5:2;192:24:5;;;;;;;;;;;;;;;;;;;;;;;;;;;129:30;;;;:::o;165:21::-;;;;;;;;;;;;;:::o;192:24::-;;;;;;;;;;;;;:::o",
   "source": "pragma solidity ^0.4.11;\n\n/// @title Standard organ contract\n\ncontract Kelsen {\n        // Identifiers for Dapp using Kelsen\n    int public kelsenVersionNumber;\n    bool public isAnOrgan;\n    bool public isAProcedure;\n}",
   "sourcePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/03 Blockchain Programmation/solidity-101/contracts/utils/Kelsen/Kelsen.sol",
   "ast": {
     "absolutePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/03 Blockchain Programmation/solidity-101/contracts/utils/Kelsen/Kelsen.sol",
     "exportedSymbols": {
       "Kelsen": [
-        315
+        523
       ]
     },
-    "id": 316,
+    "id": 524,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 308,
+        "id": 516,
         "literals": [
           "solidity",
           "^",
@@ -69,7 +69,7 @@
           ".11"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:3"
+        "src": "0:24:5"
       },
       {
         "baseContracts": [],
@@ -77,20 +77,20 @@
         "contractKind": "contract",
         "documentation": "@title Standard organ contract",
         "fullyImplemented": true,
-        "id": 315,
+        "id": 523,
         "linearizedBaseContracts": [
-          315
+          523
         ],
         "name": "Kelsen",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 310,
+            "id": 518,
             "name": "kelsenVersionNumber",
             "nodeType": "VariableDeclaration",
-            "scope": 315,
-            "src": "129:30:3",
+            "scope": 523,
+            "src": "129:30:5",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -98,10 +98,10 @@
               "typeString": "int256"
             },
             "typeName": {
-              "id": 309,
+              "id": 517,
               "name": "int",
               "nodeType": "ElementaryTypeName",
-              "src": "129:3:3",
+              "src": "129:3:5",
               "typeDescriptions": {
                 "typeIdentifier": "t_int256",
                 "typeString": "int256"
@@ -112,11 +112,11 @@
           },
           {
             "constant": false,
-            "id": 312,
+            "id": 520,
             "name": "isAnOrgan",
             "nodeType": "VariableDeclaration",
-            "scope": 315,
-            "src": "165:21:3",
+            "scope": 523,
+            "src": "165:21:5",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -124,10 +124,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 311,
+              "id": 519,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "165:4:3",
+              "src": "165:4:5",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -138,11 +138,11 @@
           },
           {
             "constant": false,
-            "id": 314,
+            "id": 522,
             "name": "isAProcedure",
             "nodeType": "VariableDeclaration",
-            "scope": 315,
-            "src": "192:24:3",
+            "scope": 523,
+            "src": "192:24:5",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -150,10 +150,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 313,
+              "id": 521,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "192:4:3",
+              "src": "192:4:5",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -163,24 +163,24 @@
             "visibility": "public"
           }
         ],
-        "scope": 316,
-        "src": "62:157:3"
+        "scope": 524,
+        "src": "62:157:5"
       }
     ],
-    "src": "0:219:3"
+    "src": "0:219:5"
   },
   "legacyAST": {
     "absolutePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/03 Blockchain Programmation/solidity-101/contracts/utils/Kelsen/Kelsen.sol",
     "exportedSymbols": {
       "Kelsen": [
-        315
+        523
       ]
     },
-    "id": 316,
+    "id": 524,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 308,
+        "id": 516,
         "literals": [
           "solidity",
           "^",
@@ -188,7 +188,7 @@
           ".11"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:3"
+        "src": "0:24:5"
       },
       {
         "baseContracts": [],
@@ -196,20 +196,20 @@
         "contractKind": "contract",
         "documentation": "@title Standard organ contract",
         "fullyImplemented": true,
-        "id": 315,
+        "id": 523,
         "linearizedBaseContracts": [
-          315
+          523
         ],
         "name": "Kelsen",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 310,
+            "id": 518,
             "name": "kelsenVersionNumber",
             "nodeType": "VariableDeclaration",
-            "scope": 315,
-            "src": "129:30:3",
+            "scope": 523,
+            "src": "129:30:5",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -217,10 +217,10 @@
               "typeString": "int256"
             },
             "typeName": {
-              "id": 309,
+              "id": 517,
               "name": "int",
               "nodeType": "ElementaryTypeName",
-              "src": "129:3:3",
+              "src": "129:3:5",
               "typeDescriptions": {
                 "typeIdentifier": "t_int256",
                 "typeString": "int256"
@@ -231,11 +231,11 @@
           },
           {
             "constant": false,
-            "id": 312,
+            "id": 520,
             "name": "isAnOrgan",
             "nodeType": "VariableDeclaration",
-            "scope": 315,
-            "src": "165:21:3",
+            "scope": 523,
+            "src": "165:21:5",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -243,10 +243,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 311,
+              "id": 519,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "165:4:3",
+              "src": "165:4:5",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -257,11 +257,11 @@
           },
           {
             "constant": false,
-            "id": 314,
+            "id": 522,
             "name": "isAProcedure",
             "nodeType": "VariableDeclaration",
-            "scope": 315,
-            "src": "192:24:3",
+            "scope": 523,
+            "src": "192:24:5",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -269,10 +269,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 313,
+              "id": 521,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "192:4:3",
+              "src": "192:4:5",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -282,11 +282,11 @@
             "visibility": "public"
           }
         ],
-        "scope": 316,
-        "src": "62:157:3"
+        "scope": 524,
+        "src": "62:157:5"
       }
     ],
-    "src": "0:219:3"
+    "src": "0:219:5"
   },
   "compiler": {
     "name": "solc",
@@ -294,5 +294,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.2",
-  "updatedAt": "2019-02-21T15:41:11.702Z"
+  "updatedAt": "2019-02-22T10:07:31.682Z"
 }

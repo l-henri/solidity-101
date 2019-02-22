@@ -15,10 +15,10 @@ Contract addresses:
 * "0xc399ca4aa7e1d8c2b979ffaee610f9729b60889b",  // [Ex4Contract](contracts/exercices/ex4.sol)
 * "0x14c8cad8ac280a332802080c423d5cd25fc6a8e1",  // [Ex5Contract](contracts/exercices/ex5.sol)
 * "0x64400ba340c6f17219cbf5fc0f9d5920cf78fb7b",  // [Ex6Contract](contracts/exercices/ex6.sol)
-* "0xe8d37087750f0880f8112647dbe3fa201cd649f7",  // [Ex7Contract](contracts/exercices/ex7.sol)
+* "0x846b2e37e94b153576a1be1a6d28052cca147e45",  // [Ex7Contract](contracts/exercices/ex7.sol)
 * "0x663995cad64413f19dbf9c2d6329d21e82bab551",  // [Ex8Contract](contracts/exercices/ex8.sol)
 * "0x4e317932530c26fed7227b616afe37f47d02e721",  // [Ex9Contract](contracts/exercices/ex9.sol)
-* "0x29777af07fad208b9dfa117eef117d79dba9219c",  // [Ex10Contract](contracts/exercices/ex10.sol)
+* "0xd8a110c059c21856b78b27900cdb7dd542f016b3",  // [Ex10Contract](contracts/exercices/ex10.sol)
 * Undisclosed // [Ex11Contract](contracts/exercices/ex11.sol)
 
 Next steps:
