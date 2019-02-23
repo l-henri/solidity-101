@@ -47,6 +47,7 @@ async function declareNewExercices(deployer, network, accounts) {
 	console.log("Deploying Points manager")
 	console.log("Deploying Exercices")
 
+	Ex6Contract = await Ex6.new(studentsOrgan.address, teachersOrgan.address, pointsManagerContract.address)
 	Ex7Contract = await Ex7.new(studentsOrgan.address, teachersOrgan.address, pointsManagerContract.address)
 	Ex10Contract = await Ex10.new(studentsOrgan.address, teachersOrgan.address, pointsManagerContract.address)
 }
@@ -55,8 +56,10 @@ async function addNewNorm(deployer, network, accounts) {
 	// Adding norms
 	console.log("Adding norms")
 
+	await exercicesOrgan.addNorm(Ex6Contract.address, "Ex6", 0, 0, 0)
 	await exercicesOrgan.addNorm(Ex7Contract.address, "Ex7", 0, 0, 0)
 	await exercicesOrgan.addNorm(Ex10Contract.address, "Ex10", 0, 0, 0)
+
 }
 
 async function setRandomValueStores(deployer, network, accounts) {
@@ -65,22 +68,26 @@ async function setRandomValueStores(deployer, network, accounts) {
 	// Ex1Contract.newStudentInClass("0xeab83a73c1fd855beaf1d0b7a798e31526c291da", {from: accounts[0]});
 	// test = await studentsOrgan.norms(await studentsOrgan.getAddressPositionInNorm('0xeab83a73c1fd855beaf1d0b7a798e31526c291da'))
 	// console.log(test)
+	randomValueStore1 = []
 	randomValueStore2 = []
 	randomValueStore3 = []
 	for (i = 0; i < 20; i++)
 		{
+		randomValueStore1.push(Math.floor(Math.random()*10000))
 		randomValueStore2.push(Math.floor(Math.random()*10000))
 		randomValueStore3.push(Math.floor(Math.random()*10000))
 		}
+	await Ex6Contract.setRandomValueStore(randomValueStore1)
 	await Ex7Contract.setRandomValueStore(randomValueStore2)
 	await Ex10Contract.setRandomValueStore(randomValueStore3)
 }
 
 async function deployRecap(deployer, network, accounts) {
 	console.log("Set up is finished and random value stores have been declared:")
+	console.log(randomValueStore1)
 	console.log(randomValueStore2)
 	console.log(randomValueStore3)
-
+	console.log("    \""+Ex6Contract.address+"\",  // (Ex6Contract)")
 	console.log("    \""+Ex7Contract.address+"\",  // (Ex7Contract)")
 	console.log("    \""+Ex10Contract.address+"\",  // (Ex10Contract)")
 }
