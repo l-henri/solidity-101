@@ -1,0 +1,225 @@
+{
+  "contractName": "ex9_instructions",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "pointsManagerContractAddress",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "teachersOrganAddress",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "hasCompletedExercice",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "studentsOrganAddress",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.4.24;\r\n\r\n\r\nimport \"../exerciceTemplate.sol\";\r\n\r\n/*\r\nExercice 9: Visualizing code through Github history of commits\r\nIn this exercice, you need to:\r\n- Use Github to explore this contract's code history of revision\r\n- Find the last visible version of the contract code\r\n- Use a function \r\n- Your points are credited by the contract\r\n*/ \r\n\r\n/*\r\nWhat you need to know to complete this exercice\r\nA) What was included in the previous exercices\r\nB) The history of contract modification is visible on https://github.com/l-henri/solidity-101\r\nC) Only using the ABI of this contract puts you at risk of not getting the points you deserve\r\n\r\n*/\r\ncontract ex9_instructions is exerciceTemplate {\r\n\r\n// Find the code somewhere else\r\n\r\n}",
+  "sourcePath": "C:\\Users\\LIEUTAUDHenri\\Documents\\Perso\\ESILV\\solidity-101\\contracts\\exercices\\ex9.sol",
+  "ast": {
+    "absolutePath": "/C/Users/LIEUTAUDHenri/Documents/Perso/ESILV/solidity-101/contracts/exercices/ex9.sol",
+    "exportedSymbols": {
+      "ex9_instructions": [
+        1284
+      ]
+    },
+    "id": 1285,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1280,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:12"
+      },
+      {
+        "absolutePath": "/C/Users/LIEUTAUDHenri/Documents/Perso/ESILV/solidity-101/contracts/exerciceTemplate.sol",
+        "file": "../exerciceTemplate.sol",
+        "id": 1281,
+        "nodeType": "ImportDirective",
+        "scope": 1285,
+        "sourceUnit": 195,
+        "src": "30:33:12",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1282,
+              "name": "exerciceTemplate",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 194,
+              "src": "683:16:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_exerciceTemplate_$194",
+                "typeString": "contract exerciceTemplate"
+              }
+            },
+            "id": 1283,
+            "nodeType": "InheritanceSpecifier",
+            "src": "683:16:12"
+          }
+        ],
+        "contractDependencies": [
+          194
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 1284,
+        "linearizedBaseContracts": [
+          1284,
+          194
+        ],
+        "name": "ex9_instructions",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 1285,
+        "src": "654:87:12"
+      }
+    ],
+    "src": "0:741:12"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/LIEUTAUDHenri/Documents/Perso/ESILV/solidity-101/contracts/exercices/ex9.sol",
+    "exportedSymbols": {
+      "ex9_instructions": [
+        1284
+      ]
+    },
+    "id": 1285,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1280,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:12"
+      },
+      {
+        "absolutePath": "/C/Users/LIEUTAUDHenri/Documents/Perso/ESILV/solidity-101/contracts/exerciceTemplate.sol",
+        "file": "../exerciceTemplate.sol",
+        "id": 1281,
+        "nodeType": "ImportDirective",
+        "scope": 1285,
+        "sourceUnit": 195,
+        "src": "30:33:12",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1282,
+              "name": "exerciceTemplate",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 194,
+              "src": "683:16:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_exerciceTemplate_$194",
+                "typeString": "contract exerciceTemplate"
+              }
+            },
+            "id": 1283,
+            "nodeType": "InheritanceSpecifier",
+            "src": "683:16:12"
+          }
+        ],
+        "contractDependencies": [
+          194
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 1284,
+        "linearizedBaseContracts": [
+          1284,
+          194
+        ],
+        "name": "ex9_instructions",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 1285,
+        "src": "654:87:12"
+      }
+    ],
+    "src": "0:741:12"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2019-03-06T09:01:58.585Z"
+}

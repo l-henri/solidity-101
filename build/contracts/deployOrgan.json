@@ -1002,20 +1002,20 @@
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "pragma solidity ^0.4.11;\n\n/// @title Standard organ contract\n\n\nimport \"../standardOrgan.sol\";\n\ncontract deployOrgan is Organ {\n\n    function deployOrgan (string _name) public {\n\n        // Initializing with deployer as master\n        masters[msg.sender].canAdd = true;\n        masters[msg.sender].canDelete = true;\n        masters[msg.sender].name = 'Original Master';\n        masterList.push(msg.sender);\n        organName = _name;\n        // Initializing with deployer as admin\n        // admins[msg.sender].canAdd = true;\n        // admins[msg.sender].canDelete = true;\n        // admins[msg.sender].name = 'Original Master';\n        // adminList.push(msg.sender);\n        // Initializing first norms to avoid errors when deleting norms\n        Norm memory initNorm;\n        norms.push(initNorm);\n        kelsenVersionNumber = 1;\n\n    }\n}",
-  "sourcePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/03 Blockchain Programmation/solidity-101/contracts/utils/Kelsen/deploy/deployOrgan.sol",
+  "source": "pragma solidity ^0.4.11;\r\n\r\n/// @title Standard organ contract\r\n\r\n\r\nimport \"../standardOrgan.sol\";\r\n\r\ncontract deployOrgan is Organ {\r\n\r\n    function deployOrgan (string _name) public {\r\n\r\n        // Initializing with deployer as master\r\n        masters[msg.sender].canAdd = true;\r\n        masters[msg.sender].canDelete = true;\r\n        masters[msg.sender].name = 'Original Master';\r\n        masterList.push(msg.sender);\r\n        organName = _name;\r\n        // Initializing with deployer as admin\r\n        // admins[msg.sender].canAdd = true;\r\n        // admins[msg.sender].canDelete = true;\r\n        // admins[msg.sender].name = 'Original Master';\r\n        // adminList.push(msg.sender);\r\n        // Initializing first norms to avoid errors when deleting norms\r\n        Norm memory initNorm;\r\n        norms.push(initNorm);\r\n        kelsenVersionNumber = 1;\r\n\r\n    }\r\n}",
+  "sourcePath": "C:\\Users\\LIEUTAUDHenri\\Documents\\Perso\\ESILV\\solidity-101\\contracts\\utils\\Kelsen\\deploy\\deployOrgan.sol",
   "ast": {
-    "absolutePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/03 Blockchain Programmation/solidity-101/contracts/utils/Kelsen/deploy/deployOrgan.sol",
+    "absolutePath": "/C/Users/LIEUTAUDHenri/Documents/Perso/ESILV/solidity-101/contracts/utils/Kelsen/deploy/deployOrgan.sol",
     "exportedSymbols": {
       "deployOrgan": [
-        1465
+        1457
       ]
     },
-    "id": 1466,
+    "id": 1458,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1407,
+        "id": 1399,
         "literals": [
           "solidity",
           "^",
@@ -1026,13 +1026,13 @@
         "src": "0:24:15"
       },
       {
-        "absolutePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/03 Blockchain Programmation/solidity-101/contracts/utils/Kelsen/standardOrgan.sol",
+        "absolutePath": "/C/Users/LIEUTAUDHenri/Documents/Perso/ESILV/solidity-101/contracts/utils/Kelsen/standardOrgan.sol",
         "file": "../standardOrgan.sol",
-        "id": 1408,
+        "id": 1400,
         "nodeType": "ImportDirective",
-        "scope": 1466,
-        "sourceUnit": 2677,
-        "src": "63:30:15",
+        "scope": 1458,
+        "sourceUnit": 2669,
+        "src": "68:30:15",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -1042,43 +1042,153 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1409,
+              "id": 1401,
               "name": "Organ",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2676,
-              "src": "119:5:15",
+              "referencedDeclaration": 2668,
+              "src": "126:5:15",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Organ_$2676",
+                "typeIdentifier": "t_contract$_Organ_$2668",
                 "typeString": "contract Organ"
               }
             },
-            "id": 1410,
+            "id": 1402,
             "nodeType": "InheritanceSpecifier",
-            "src": "119:5:15"
+            "src": "126:5:15"
           }
         ],
         "contractDependencies": [
-          1405,
-          2676
+          1397,
+          2668
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 1465,
+        "id": 1457,
         "linearizedBaseContracts": [
-          1465,
-          2676,
-          1405
+          1457,
+          2668,
+          1397
         ],
         "name": "deployOrgan",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 1463,
+              "id": 1455,
               "nodeType": "Block",
-              "src": "175:664:15",
+              "src": "184:682:15",
               "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 1413,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 1407,
+                          "name": "masters",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1598,
+                          "src": "246:7:15",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Master_$1482_storage_$",
+                            "typeString": "mapping(address => struct Organ.Master storage ref)"
+                          }
+                        },
+                        "id": 1410,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 1408,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 2811,
+                            "src": "254:3:15",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 1409,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "254:10:15",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "246:19:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Master_$1482_storage",
+                          "typeString": "struct Organ.Master storage ref"
+                        }
+                      },
+                      "id": 1411,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "canAdd",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 1477,
+                      "src": "246:26:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 1412,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "275:4:15",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "246:33:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 1414,
+                  "nodeType": "ExpressionStatement",
+                  "src": "246:33:15"
+                },
                 {
                   "expression": {
                     "argumentTypes": null,
@@ -1097,10 +1207,10 @@
                           "name": "masters",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1606,
-                          "src": "234:7:15",
+                          "referencedDeclaration": 1598,
+                          "src": "290:7:15",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Master_$1490_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Master_$1482_storage_$",
                             "typeString": "mapping(address => struct Organ.Master storage ref)"
                           }
                         },
@@ -1113,8 +1223,8 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2819,
-                            "src": "242:3:15",
+                            "referencedDeclaration": 2811,
+                            "src": "298:3:15",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
@@ -1128,7 +1238,7 @@
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "242:10:15",
+                          "src": "298:10:15",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -1139,9 +1249,9 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "234:19:15",
+                        "src": "290:19:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Master_$1490_storage",
+                          "typeIdentifier": "t_struct$_Master_$1482_storage",
                           "typeString": "struct Organ.Master storage ref"
                         }
                       },
@@ -1150,10 +1260,10 @@
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
-                      "memberName": "canAdd",
+                      "memberName": "canDelete",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1485,
-                      "src": "234:26:15",
+                      "referencedDeclaration": 1479,
+                      "src": "290:29:15",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -1171,7 +1281,7 @@
                       "kind": "bool",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "263:4:15",
+                      "src": "322:4:15",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -1179,7 +1289,7 @@
                       },
                       "value": "true"
                     },
-                    "src": "234:33:15",
+                    "src": "290:36:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1187,7 +1297,7 @@
                   },
                   "id": 1422,
                   "nodeType": "ExpressionStatement",
-                  "src": "234:33:15"
+                  "src": "290:36:15"
                 },
                 {
                   "expression": {
@@ -1207,10 +1317,10 @@
                           "name": "masters",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1606,
-                          "src": "277:7:15",
+                          "referencedDeclaration": 1598,
+                          "src": "337:7:15",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Master_$1490_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Master_$1482_storage_$",
                             "typeString": "mapping(address => struct Organ.Master storage ref)"
                           }
                         },
@@ -1223,8 +1333,8 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2819,
-                            "src": "285:3:15",
+                            "referencedDeclaration": 2811,
+                            "src": "345:3:15",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
@@ -1238,7 +1348,7 @@
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "285:10:15",
+                          "src": "345:10:15",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -1249,9 +1359,9 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "277:19:15",
+                        "src": "337:19:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Master_$1490_storage",
+                          "typeIdentifier": "t_struct$_Master_$1482_storage",
                           "typeString": "struct Organ.Master storage ref"
                         }
                       },
@@ -1260,120 +1370,10 @@
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
-                      "memberName": "canDelete",
-                      "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1487,
-                      "src": "277:29:15",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_bool",
-                        "typeString": "bool"
-                      }
-                    },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "hexValue": "74727565",
-                      "id": 1428,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": true,
-                      "kind": "bool",
-                      "lValueRequested": false,
-                      "nodeType": "Literal",
-                      "src": "309:4:15",
-                      "subdenomination": null,
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_bool",
-                        "typeString": "bool"
-                      },
-                      "value": "true"
-                    },
-                    "src": "277:36:15",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bool",
-                      "typeString": "bool"
-                    }
-                  },
-                  "id": 1430,
-                  "nodeType": "ExpressionStatement",
-                  "src": "277:36:15"
-                },
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 1437,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "expression": {
-                        "argumentTypes": null,
-                        "baseExpression": {
-                          "argumentTypes": null,
-                          "id": 1431,
-                          "name": "masters",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 1606,
-                          "src": "323:7:15",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Master_$1490_storage_$",
-                            "typeString": "mapping(address => struct Organ.Master storage ref)"
-                          }
-                        },
-                        "id": 1434,
-                        "indexExpression": {
-                          "argumentTypes": null,
-                          "expression": {
-                            "argumentTypes": null,
-                            "id": 1432,
-                            "name": "msg",
-                            "nodeType": "Identifier",
-                            "overloadedDeclarations": [],
-                            "referencedDeclaration": 2819,
-                            "src": "331:3:15",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_magic_message",
-                              "typeString": "msg"
-                            }
-                          },
-                          "id": 1433,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "memberName": "sender",
-                          "nodeType": "MemberAccess",
-                          "referencedDeclaration": null,
-                          "src": "331:10:15",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_address",
-                            "typeString": "address"
-                          }
-                        },
-                        "isConstant": false,
-                        "isLValue": true,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "nodeType": "IndexAccess",
-                        "src": "323:19:15",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Master_$1490_storage",
-                          "typeString": "struct Organ.Master storage ref"
-                        }
-                      },
-                      "id": 1435,
-                      "isConstant": false,
-                      "isLValue": true,
-                      "isPure": false,
-                      "lValueRequested": true,
                       "memberName": "name",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1483,
-                      "src": "323:24:15",
+                      "referencedDeclaration": 1475,
+                      "src": "337:24:15",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
                         "typeString": "string storage ref"
@@ -1384,14 +1384,14 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "4f726967696e616c204d6173746572",
-                      "id": 1436,
+                      "id": 1428,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "string",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "350:17:15",
+                      "src": "364:17:15",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_stringliteral_e29290cf3b802b49b2a13af93df8c47cc8f07f96cb0eba693f12fa32922e83e6",
@@ -1399,15 +1399,15 @@
                       },
                       "value": "Original Master"
                     },
-                    "src": "323:44:15",
+                    "src": "337:44:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage",
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 1438,
+                  "id": 1430,
                   "nodeType": "ExpressionStatement",
-                  "src": "323:44:15"
+                  "src": "337:44:15"
                 },
                 {
                   "expression": {
@@ -1417,18 +1417,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 1442,
+                          "id": 1434,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2819,
-                          "src": "393:3:15",
+                          "referencedDeclaration": 2811,
+                          "src": "408:3:15",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 1443,
+                        "id": 1435,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1436,7 +1436,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "393:10:15",
+                        "src": "408:10:15",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -1452,18 +1452,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 1439,
+                        "id": 1431,
                         "name": "masterList",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1621,
-                        "src": "377:10:15",
+                        "referencedDeclaration": 1613,
+                        "src": "392:10:15",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_address_$dyn_storage",
                           "typeString": "address[] storage ref"
                         }
                       },
-                      "id": 1441,
+                      "id": 1433,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1471,13 +1471,13 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "377:15:15",
+                      "src": "392:15:15",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_address_$returns$_t_uint256_$",
                         "typeString": "function (address) returns (uint256)"
                       }
                     },
-                    "id": 1444,
+                    "id": 1436,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1485,32 +1485,32 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "377:27:15",
+                    "src": "392:27:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 1445,
+                  "id": 1437,
                   "nodeType": "ExpressionStatement",
-                  "src": "377:27:15"
+                  "src": "392:27:15"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1448,
+                    "id": 1440,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 1446,
+                      "id": 1438,
                       "name": "organName",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1481,
-                      "src": "414:9:15",
+                      "referencedDeclaration": 1473,
+                      "src": "430:9:15",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
                         "typeString": "string storage ref"
@@ -1520,52 +1520,52 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 1447,
+                      "id": 1439,
                       "name": "_name",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1412,
-                      "src": "426:5:15",
+                      "referencedDeclaration": 1404,
+                      "src": "442:5:15",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
                         "typeString": "string memory"
                       }
                     },
-                    "src": "414:17:15",
+                    "src": "430:17:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage",
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 1449,
+                  "id": 1441,
                   "nodeType": "ExpressionStatement",
-                  "src": "414:17:15"
+                  "src": "430:17:15"
                 },
                 {
                   "assignments": [],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 1451,
+                      "id": 1443,
                       "name": "initNorm",
                       "nodeType": "VariableDeclaration",
-                      "scope": 1464,
-                      "src": "748:20:15",
+                      "scope": 1456,
+                      "src": "771:20:15",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Norm_$1514_memory_ptr",
+                        "typeIdentifier": "t_struct$_Norm_$1506_memory_ptr",
                         "typeString": "struct Organ.Norm"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 1450,
+                        "id": 1442,
                         "name": "Norm",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 1514,
-                        "src": "748:4:15",
+                        "referencedDeclaration": 1506,
+                        "src": "771:4:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Norm_$1514_storage_ptr",
+                          "typeIdentifier": "t_struct$_Norm_$1506_storage_ptr",
                           "typeString": "struct Organ.Norm"
                         }
                       },
@@ -1573,10 +1573,10 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 1452,
+                  "id": 1444,
                   "initialValue": null,
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "748:20:15"
+                  "src": "771:20:15"
                 },
                 {
                   "expression": {
@@ -1584,14 +1584,14 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1456,
+                        "id": 1448,
                         "name": "initNorm",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1451,
-                        "src": "789:8:15",
+                        "referencedDeclaration": 1443,
+                        "src": "813:8:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Norm_$1514_memory_ptr",
+                          "typeIdentifier": "t_struct$_Norm_$1506_memory_ptr",
                           "typeString": "struct Organ.Norm memory"
                         }
                       }
@@ -1599,24 +1599,24 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_Norm_$1514_memory_ptr",
+                          "typeIdentifier": "t_struct$_Norm_$1506_memory_ptr",
                           "typeString": "struct Organ.Norm memory"
                         }
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 1453,
+                        "id": 1445,
                         "name": "norms",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1627,
-                        "src": "778:5:15",
+                        "referencedDeclaration": 1619,
+                        "src": "802:5:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_Norm_$1514_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_Norm_$1506_storage_$dyn_storage",
                           "typeString": "struct Organ.Norm storage ref[] storage ref"
                         }
                       },
-                      "id": 1455,
+                      "id": 1447,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1624,13 +1624,13 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "778:10:15",
+                      "src": "802:10:15",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Norm_$1514_storage_$returns$_t_uint256_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Norm_$1506_storage_$returns$_t_uint256_$",
                         "typeString": "function (struct Organ.Norm storage ref) returns (uint256)"
                       }
                     },
-                    "id": 1457,
+                    "id": 1449,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1638,32 +1638,32 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "778:20:15",
+                    "src": "802:20:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 1458,
+                  "id": 1450,
                   "nodeType": "ExpressionStatement",
-                  "src": "778:20:15"
+                  "src": "802:20:15"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1461,
+                    "id": 1453,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 1459,
+                      "id": 1451,
                       "name": "kelsenVersionNumber",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1479,
-                      "src": "808:19:15",
+                      "referencedDeclaration": 1471,
+                      "src": "833:19:15",
                       "typeDescriptions": {
                         "typeIdentifier": "t_int256",
                         "typeString": "int256"
@@ -1674,14 +1674,14 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "31",
-                      "id": 1460,
+                      "id": 1452,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "830:1:15",
+                      "src": "855:1:15",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_1_by_1",
@@ -1689,20 +1689,20 @@
                       },
                       "value": "1"
                     },
-                    "src": "808:23:15",
+                    "src": "833:23:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
                     }
                   },
-                  "id": 1462,
+                  "id": 1454,
                   "nodeType": "ExpressionStatement",
-                  "src": "808:23:15"
+                  "src": "833:23:15"
                 }
               ]
             },
             "documentation": null,
-            "id": 1464,
+            "id": 1456,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -1710,16 +1710,16 @@
             "name": "deployOrgan",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1413,
+              "id": 1405,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1412,
+                  "id": 1404,
                   "name": "_name",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1464,
-                  "src": "154:12:15",
+                  "scope": 1456,
+                  "src": "163:12:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1727,10 +1727,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 1411,
+                    "id": 1403,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "154:6:15",
+                    "src": "163:6:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -1740,40 +1740,40 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "153:14:15"
+              "src": "162:14:15"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1414,
+              "id": 1406,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "175:0:15"
+              "src": "184:0:15"
             },
-            "scope": 1465,
-            "src": "132:707:15",
+            "scope": 1457,
+            "src": "141:725:15",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1466,
-        "src": "95:746:15"
+        "scope": 1458,
+        "src": "102:767:15"
       }
     ],
-    "src": "0:841:15"
+    "src": "0:869:15"
   },
   "legacyAST": {
-    "absolutePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/03 Blockchain Programmation/solidity-101/contracts/utils/Kelsen/deploy/deployOrgan.sol",
+    "absolutePath": "/C/Users/LIEUTAUDHenri/Documents/Perso/ESILV/solidity-101/contracts/utils/Kelsen/deploy/deployOrgan.sol",
     "exportedSymbols": {
       "deployOrgan": [
-        1465
+        1457
       ]
     },
-    "id": 1466,
+    "id": 1458,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1407,
+        "id": 1399,
         "literals": [
           "solidity",
           "^",
@@ -1784,13 +1784,13 @@
         "src": "0:24:15"
       },
       {
-        "absolutePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/03 Blockchain Programmation/solidity-101/contracts/utils/Kelsen/standardOrgan.sol",
+        "absolutePath": "/C/Users/LIEUTAUDHenri/Documents/Perso/ESILV/solidity-101/contracts/utils/Kelsen/standardOrgan.sol",
         "file": "../standardOrgan.sol",
-        "id": 1408,
+        "id": 1400,
         "nodeType": "ImportDirective",
-        "scope": 1466,
-        "sourceUnit": 2677,
-        "src": "63:30:15",
+        "scope": 1458,
+        "sourceUnit": 2669,
+        "src": "68:30:15",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -1800,43 +1800,153 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1409,
+              "id": 1401,
               "name": "Organ",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2676,
-              "src": "119:5:15",
+              "referencedDeclaration": 2668,
+              "src": "126:5:15",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Organ_$2676",
+                "typeIdentifier": "t_contract$_Organ_$2668",
                 "typeString": "contract Organ"
               }
             },
-            "id": 1410,
+            "id": 1402,
             "nodeType": "InheritanceSpecifier",
-            "src": "119:5:15"
+            "src": "126:5:15"
           }
         ],
         "contractDependencies": [
-          1405,
-          2676
+          1397,
+          2668
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 1465,
+        "id": 1457,
         "linearizedBaseContracts": [
-          1465,
-          2676,
-          1405
+          1457,
+          2668,
+          1397
         ],
         "name": "deployOrgan",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 1463,
+              "id": 1455,
               "nodeType": "Block",
-              "src": "175:664:15",
+              "src": "184:682:15",
               "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 1413,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 1407,
+                          "name": "masters",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1598,
+                          "src": "246:7:15",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Master_$1482_storage_$",
+                            "typeString": "mapping(address => struct Organ.Master storage ref)"
+                          }
+                        },
+                        "id": 1410,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 1408,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 2811,
+                            "src": "254:3:15",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 1409,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "254:10:15",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "246:19:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Master_$1482_storage",
+                          "typeString": "struct Organ.Master storage ref"
+                        }
+                      },
+                      "id": 1411,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "canAdd",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 1477,
+                      "src": "246:26:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 1412,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "275:4:15",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "246:33:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 1414,
+                  "nodeType": "ExpressionStatement",
+                  "src": "246:33:15"
+                },
                 {
                   "expression": {
                     "argumentTypes": null,
@@ -1855,10 +1965,10 @@
                           "name": "masters",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1606,
-                          "src": "234:7:15",
+                          "referencedDeclaration": 1598,
+                          "src": "290:7:15",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Master_$1490_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Master_$1482_storage_$",
                             "typeString": "mapping(address => struct Organ.Master storage ref)"
                           }
                         },
@@ -1871,8 +1981,8 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2819,
-                            "src": "242:3:15",
+                            "referencedDeclaration": 2811,
+                            "src": "298:3:15",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
@@ -1886,7 +1996,7 @@
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "242:10:15",
+                          "src": "298:10:15",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -1897,9 +2007,9 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "234:19:15",
+                        "src": "290:19:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Master_$1490_storage",
+                          "typeIdentifier": "t_struct$_Master_$1482_storage",
                           "typeString": "struct Organ.Master storage ref"
                         }
                       },
@@ -1908,10 +2018,10 @@
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
-                      "memberName": "canAdd",
+                      "memberName": "canDelete",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1485,
-                      "src": "234:26:15",
+                      "referencedDeclaration": 1479,
+                      "src": "290:29:15",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -1929,7 +2039,7 @@
                       "kind": "bool",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "263:4:15",
+                      "src": "322:4:15",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -1937,7 +2047,7 @@
                       },
                       "value": "true"
                     },
-                    "src": "234:33:15",
+                    "src": "290:36:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1945,7 +2055,7 @@
                   },
                   "id": 1422,
                   "nodeType": "ExpressionStatement",
-                  "src": "234:33:15"
+                  "src": "290:36:15"
                 },
                 {
                   "expression": {
@@ -1965,10 +2075,10 @@
                           "name": "masters",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1606,
-                          "src": "277:7:15",
+                          "referencedDeclaration": 1598,
+                          "src": "337:7:15",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Master_$1490_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Master_$1482_storage_$",
                             "typeString": "mapping(address => struct Organ.Master storage ref)"
                           }
                         },
@@ -1981,8 +2091,8 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2819,
-                            "src": "285:3:15",
+                            "referencedDeclaration": 2811,
+                            "src": "345:3:15",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
@@ -1996,7 +2106,7 @@
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "285:10:15",
+                          "src": "345:10:15",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -2007,9 +2117,9 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "277:19:15",
+                        "src": "337:19:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Master_$1490_storage",
+                          "typeIdentifier": "t_struct$_Master_$1482_storage",
                           "typeString": "struct Organ.Master storage ref"
                         }
                       },
@@ -2018,120 +2128,10 @@
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
-                      "memberName": "canDelete",
-                      "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1487,
-                      "src": "277:29:15",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_bool",
-                        "typeString": "bool"
-                      }
-                    },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "hexValue": "74727565",
-                      "id": 1428,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": true,
-                      "kind": "bool",
-                      "lValueRequested": false,
-                      "nodeType": "Literal",
-                      "src": "309:4:15",
-                      "subdenomination": null,
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_bool",
-                        "typeString": "bool"
-                      },
-                      "value": "true"
-                    },
-                    "src": "277:36:15",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bool",
-                      "typeString": "bool"
-                    }
-                  },
-                  "id": 1430,
-                  "nodeType": "ExpressionStatement",
-                  "src": "277:36:15"
-                },
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 1437,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "expression": {
-                        "argumentTypes": null,
-                        "baseExpression": {
-                          "argumentTypes": null,
-                          "id": 1431,
-                          "name": "masters",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 1606,
-                          "src": "323:7:15",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Master_$1490_storage_$",
-                            "typeString": "mapping(address => struct Organ.Master storage ref)"
-                          }
-                        },
-                        "id": 1434,
-                        "indexExpression": {
-                          "argumentTypes": null,
-                          "expression": {
-                            "argumentTypes": null,
-                            "id": 1432,
-                            "name": "msg",
-                            "nodeType": "Identifier",
-                            "overloadedDeclarations": [],
-                            "referencedDeclaration": 2819,
-                            "src": "331:3:15",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_magic_message",
-                              "typeString": "msg"
-                            }
-                          },
-                          "id": 1433,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "memberName": "sender",
-                          "nodeType": "MemberAccess",
-                          "referencedDeclaration": null,
-                          "src": "331:10:15",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_address",
-                            "typeString": "address"
-                          }
-                        },
-                        "isConstant": false,
-                        "isLValue": true,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "nodeType": "IndexAccess",
-                        "src": "323:19:15",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Master_$1490_storage",
-                          "typeString": "struct Organ.Master storage ref"
-                        }
-                      },
-                      "id": 1435,
-                      "isConstant": false,
-                      "isLValue": true,
-                      "isPure": false,
-                      "lValueRequested": true,
                       "memberName": "name",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1483,
-                      "src": "323:24:15",
+                      "referencedDeclaration": 1475,
+                      "src": "337:24:15",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
                         "typeString": "string storage ref"
@@ -2142,14 +2142,14 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "4f726967696e616c204d6173746572",
-                      "id": 1436,
+                      "id": 1428,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "string",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "350:17:15",
+                      "src": "364:17:15",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_stringliteral_e29290cf3b802b49b2a13af93df8c47cc8f07f96cb0eba693f12fa32922e83e6",
@@ -2157,15 +2157,15 @@
                       },
                       "value": "Original Master"
                     },
-                    "src": "323:44:15",
+                    "src": "337:44:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage",
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 1438,
+                  "id": 1430,
                   "nodeType": "ExpressionStatement",
-                  "src": "323:44:15"
+                  "src": "337:44:15"
                 },
                 {
                   "expression": {
@@ -2175,18 +2175,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 1442,
+                          "id": 1434,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2819,
-                          "src": "393:3:15",
+                          "referencedDeclaration": 2811,
+                          "src": "408:3:15",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 1443,
+                        "id": 1435,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2194,7 +2194,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "393:10:15",
+                        "src": "408:10:15",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -2210,18 +2210,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 1439,
+                        "id": 1431,
                         "name": "masterList",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1621,
-                        "src": "377:10:15",
+                        "referencedDeclaration": 1613,
+                        "src": "392:10:15",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_address_$dyn_storage",
                           "typeString": "address[] storage ref"
                         }
                       },
-                      "id": 1441,
+                      "id": 1433,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2229,13 +2229,13 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "377:15:15",
+                      "src": "392:15:15",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_address_$returns$_t_uint256_$",
                         "typeString": "function (address) returns (uint256)"
                       }
                     },
-                    "id": 1444,
+                    "id": 1436,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2243,32 +2243,32 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "377:27:15",
+                    "src": "392:27:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 1445,
+                  "id": 1437,
                   "nodeType": "ExpressionStatement",
-                  "src": "377:27:15"
+                  "src": "392:27:15"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1448,
+                    "id": 1440,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 1446,
+                      "id": 1438,
                       "name": "organName",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1481,
-                      "src": "414:9:15",
+                      "referencedDeclaration": 1473,
+                      "src": "430:9:15",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
                         "typeString": "string storage ref"
@@ -2278,52 +2278,52 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 1447,
+                      "id": 1439,
                       "name": "_name",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1412,
-                      "src": "426:5:15",
+                      "referencedDeclaration": 1404,
+                      "src": "442:5:15",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
                         "typeString": "string memory"
                       }
                     },
-                    "src": "414:17:15",
+                    "src": "430:17:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage",
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 1449,
+                  "id": 1441,
                   "nodeType": "ExpressionStatement",
-                  "src": "414:17:15"
+                  "src": "430:17:15"
                 },
                 {
                   "assignments": [],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 1451,
+                      "id": 1443,
                       "name": "initNorm",
                       "nodeType": "VariableDeclaration",
-                      "scope": 1464,
-                      "src": "748:20:15",
+                      "scope": 1456,
+                      "src": "771:20:15",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Norm_$1514_memory_ptr",
+                        "typeIdentifier": "t_struct$_Norm_$1506_memory_ptr",
                         "typeString": "struct Organ.Norm"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 1450,
+                        "id": 1442,
                         "name": "Norm",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 1514,
-                        "src": "748:4:15",
+                        "referencedDeclaration": 1506,
+                        "src": "771:4:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Norm_$1514_storage_ptr",
+                          "typeIdentifier": "t_struct$_Norm_$1506_storage_ptr",
                           "typeString": "struct Organ.Norm"
                         }
                       },
@@ -2331,10 +2331,10 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 1452,
+                  "id": 1444,
                   "initialValue": null,
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "748:20:15"
+                  "src": "771:20:15"
                 },
                 {
                   "expression": {
@@ -2342,14 +2342,14 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1456,
+                        "id": 1448,
                         "name": "initNorm",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1451,
-                        "src": "789:8:15",
+                        "referencedDeclaration": 1443,
+                        "src": "813:8:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Norm_$1514_memory_ptr",
+                          "typeIdentifier": "t_struct$_Norm_$1506_memory_ptr",
                           "typeString": "struct Organ.Norm memory"
                         }
                       }
@@ -2357,24 +2357,24 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_Norm_$1514_memory_ptr",
+                          "typeIdentifier": "t_struct$_Norm_$1506_memory_ptr",
                           "typeString": "struct Organ.Norm memory"
                         }
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 1453,
+                        "id": 1445,
                         "name": "norms",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1627,
-                        "src": "778:5:15",
+                        "referencedDeclaration": 1619,
+                        "src": "802:5:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_Norm_$1514_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_Norm_$1506_storage_$dyn_storage",
                           "typeString": "struct Organ.Norm storage ref[] storage ref"
                         }
                       },
-                      "id": 1455,
+                      "id": 1447,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2382,13 +2382,13 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "778:10:15",
+                      "src": "802:10:15",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Norm_$1514_storage_$returns$_t_uint256_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Norm_$1506_storage_$returns$_t_uint256_$",
                         "typeString": "function (struct Organ.Norm storage ref) returns (uint256)"
                       }
                     },
-                    "id": 1457,
+                    "id": 1449,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2396,32 +2396,32 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "778:20:15",
+                    "src": "802:20:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 1458,
+                  "id": 1450,
                   "nodeType": "ExpressionStatement",
-                  "src": "778:20:15"
+                  "src": "802:20:15"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1461,
+                    "id": 1453,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 1459,
+                      "id": 1451,
                       "name": "kelsenVersionNumber",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1479,
-                      "src": "808:19:15",
+                      "referencedDeclaration": 1471,
+                      "src": "833:19:15",
                       "typeDescriptions": {
                         "typeIdentifier": "t_int256",
                         "typeString": "int256"
@@ -2432,14 +2432,14 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "31",
-                      "id": 1460,
+                      "id": 1452,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "830:1:15",
+                      "src": "855:1:15",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_1_by_1",
@@ -2447,20 +2447,20 @@
                       },
                       "value": "1"
                     },
-                    "src": "808:23:15",
+                    "src": "833:23:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
                     }
                   },
-                  "id": 1462,
+                  "id": 1454,
                   "nodeType": "ExpressionStatement",
-                  "src": "808:23:15"
+                  "src": "833:23:15"
                 }
               ]
             },
             "documentation": null,
-            "id": 1464,
+            "id": 1456,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -2468,16 +2468,16 @@
             "name": "deployOrgan",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1413,
+              "id": 1405,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1412,
+                  "id": 1404,
                   "name": "_name",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1464,
-                  "src": "154:12:15",
+                  "scope": 1456,
+                  "src": "163:12:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2485,10 +2485,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 1411,
+                    "id": 1403,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "154:6:15",
+                    "src": "163:6:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -2498,33 +2498,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "153:14:15"
+              "src": "162:14:15"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1414,
+              "id": 1406,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "175:0:15"
+              "src": "184:0:15"
             },
-            "scope": 1465,
-            "src": "132:707:15",
+            "scope": 1457,
+            "src": "141:725:15",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1466,
-        "src": "95:746:15"
+        "scope": 1458,
+        "src": "102:767:15"
       }
     ],
-    "src": "0:841:15"
+    "src": "0:869:15"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.4.25+commit.59dbf8f1.Emscripten.clang"
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "2.0.2",
-  "updatedAt": "2019-02-23T11:03:09.134Z"
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2019-03-06T09:06:22.920Z"
 }

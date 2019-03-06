@@ -63,10 +63,10 @@ async function pointsManagerAndExercices(deployer, network, accounts) {
 async function addingAdminsAndNorms(deployer, network, accounts) {
 	console.log("Adding admins and norms")	
 	await studentsOrgan.addAdmin(Ex1Contract.address, true, true, true, true, "acc0");	
-	await studentsOrgan.addAdmin("0xa1c70389cb93a02d9a6609b4a9a1e80b85b61ffd", true, true, true, true, "acc0", {from: accounts[0]});
-	await teachersOrgan.addAdmin("0xa1c70389cb93a02d9a6609b4a9a1e80b85b61ffd", true, true, true, true, "acc0");
-	await teachersOrgan.addNorm("0xa1c70389cb93a02d9a6609b4a9a1e80b85b61ffd", "Henri", 0, 0, 0);
-	await exercicesOrgan.addAdmin("0xa1c70389cb93a02d9a6609b4a9a1e80b85b61ffd", true, true, true, true, "acc0");
+	await studentsOrgan.addAdmin(accounts[0], true, true, true, true, "acc0", {from: accounts[0]});
+	await teachersOrgan.addAdmin(accounts[0], true, true, true, true, "acc0");
+	await teachersOrgan.addNorm(accounts[0], "Henri", 0, 0, 0);
+	await exercicesOrgan.addAdmin(accounts[0], true, true, true, true, "acc0");
 		
 	// Adding norms
 	console.log("Adding norms")
