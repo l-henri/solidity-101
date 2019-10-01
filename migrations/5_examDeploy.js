@@ -14,7 +14,8 @@ var Ex8 = artifacts.require('exercices/ex8.sol')
 var Ex9 = artifacts.require('exercices/ex9.sol')
 var Ex10 = artifacts.require('exercices/ex10.sol')
 var Ex11 = artifacts.require('exercices/ex11.sol')
-
+var Ex11b = artifacts.require('exercices/ex11b.sol')
+var Ex12 = artifacts.require('exercices/ex12.sol')
 
 module.exports = (deployer, network, accounts) => {
     deployer.then(async () => {
@@ -62,6 +63,8 @@ async function pointsManagerAndExercices(deployer, network, accounts) {
 	Ex9Contract = await Ex9.new(studentsOrgan.address, teachersOrgan.address, pointsManagerContract.address)
 	Ex10Contract = await Ex10.new(studentsOrgan.address, teachersOrgan.address, pointsManagerContract.address)
 	Ex11Contract = await Ex11.new(studentsOrgan.address, teachersOrgan.address, pointsManagerContract.address)
+	Ex11bContract = await Ex11b.new(studentsOrgan.address, teachersOrgan.address, pointsManagerContract.address)
+	Ex12Contract = await Ex12.new(studentsOrgan.address, teachersOrgan.address, pointsManagerContract.address)
 }
 
 async function addingAdminsAndNorms(deployer, network, accounts) {
@@ -85,6 +88,10 @@ async function addingAdminsAndNorms(deployer, network, accounts) {
 	await exercicesOrgan.addNorm(Ex9Contract.address, web3.utils.fromAscii('0'), 0, 0)
 	await exercicesOrgan.addNorm(Ex10Contract.address, web3.utils.fromAscii('0'), 0, 0)
 	await exercicesOrgan.addNorm(Ex11Contract.address, web3.utils.fromAscii('0'), 0, 0)
+	await exercicesOrgan.addNorm(Ex11bContract.address, web3.utils.fromAscii('0'), 0, 0)
+	await exercicesOrgan.addNorm(Ex12Contract.address, web3.utils.fromAscii('0'), 0, 0)
+
+
 }
 
 async function setRandomValueStores(deployer, network, accounts) {
@@ -105,6 +112,9 @@ async function setRandomValueStores(deployer, network, accounts) {
 	await Ex6Contract.setRandomValueStore(randomValueStore1)
 	await Ex7Contract.setRandomValueStore(randomValueStore2)
 	await Ex10Contract.setRandomValueStore(randomValueStore3)
+	await Ex11Contract.setex11bAddress(Ex11bContract.address)
+	randomSecretEx11 = Math.floor(Math.random()*10000)
+	await Ex11bContract.setSecretValue(randomSecretEx11)
 }
 
 async function deployRecap(deployer, network, accounts) {
@@ -112,6 +122,7 @@ async function deployRecap(deployer, network, accounts) {
 	console.log(randomValueStore1)
 	console.log(randomValueStore2)
 	console.log(randomValueStore3)
+	console.log(randomSecretEx11)
 
 	console.log("    \""+Ex1Contract.address+"\",  // (Ex1Contract)")
 	console.log("    \""+Ex2Contract.address+"\",  // (Ex2Contract)")
@@ -123,6 +134,7 @@ async function deployRecap(deployer, network, accounts) {
 	console.log("    \""+Ex8Contract.address+"\",  // (Ex8Contract)")
 	console.log("    \""+Ex9Contract.address+"\",  // (Ex9Contract)")
 	console.log("    \""+Ex10Contract.address+"\",  // (Ex10Contract)")
+	console.log("    \""+Ex11Contract.address+"\",  // (Ex10Contract)")
 }
 
 

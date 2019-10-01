@@ -2,7 +2,7 @@ pragma solidity >=0.4.21 <0.6.0;
 
 
 import "../exerciceTemplate.sol";
-import "./ex11b.sol";
+
 /*
 Exercice 11: Finding a hidden exercice
 In this exercice, you need to:
@@ -19,39 +19,23 @@ A) What was included in the previous exercices
 B) Documentation of the Kelsen framework on https://github.com/97network/Kelsen/blob/master/docs/01_standardOrgan.md
 
 */
-contract ex11 is exerciceTemplate {
+contract ex11b is exerciceTemplate {
 
-  address public ex11bAddress;
+  uint public secretValue;
+
   constructor(address payable _studentsOrganAddres, address payable _teachersOrganAddress, address payable _pointsManagerContractAddress) 
   exerciceTemplate(_studentsOrganAddres, _teachersOrganAddress, _pointsManagerContractAddress) 
   public
   {}
 
-  function setex11bAddress(address _ex11bAddress) 
-  public 
+  function setSecretValue(uint _newSecretValue)
+  public
   onlyTeacher
   {
-   ex11bAddress = _ex11bAddress;
+  	secretValue = _newSecretValue;
   }
 
-  function askForPoints(uint _aValueToInput) 
-  public 
-  canWorkOnExercice 
-  {
-    // Instanciating the external contract
-    ex11b ex11bInstance = ex11b(ex11bAddress);
 
-    // Retrieving value from external contract
-    uint retrievedSecretValue = ex11bInstance.secretValue();
-
-    // Checking that our input value is the one stored in contract ex11b
-    require(_aValueToInput == retrievedSecretValue);
-
-    // Validating exercice
-    validateExercice(msg.sender);
-    creditStudent(200, msg.sender);
-
-  }
 
 
 }
