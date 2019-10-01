@@ -27600,9 +27600,244 @@
     "name": "solc",
     "version": "0.5.4+commit.9549d8ff.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {
+        "0x133895c1c832b44ee3aab9909d2fd715c60ace0f02485202e5abe1d7fb1634f7": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_newName",
+              "type": "bytes32"
+            }
+          ],
+          "name": "changeOrganName",
+          "type": "event",
+          "signature": "0x133895c1c832b44ee3aab9909d2fd715c60ace0f02485202e5abe1d7fb1634f7"
+        },
+        "0x69ef4b1cb1e3f170e636a678eb5bdcc1a5220158859f5a6218483d81ed19c6ba": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "spendMoney",
+          "type": "event",
+          "signature": "0x69ef4b1cb1e3f170e636a678eb5bdcc1a5220158859f5a6218483d81ed19c6ba"
+        },
+        "0xe8e8caa49c00808ca0e50595f43e7fc4e3a4286edfd5ad4de7ab640742e1fb22": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "receiveMoney",
+          "type": "event",
+          "signature": "0xe8e8caa49c00808ca0e50595f43e7fc4e3a4286edfd5ad4de7ab640742e1fb22"
+        },
+        "0xc6bf01a203024da6c2267ec8f9524f39ae64470f6ceec9cb9b05e3bc78ce898d": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_newMaster",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_canAdd",
+              "type": "bool"
+            },
+            {
+              "indexed": false,
+              "name": "_canDelete",
+              "type": "bool"
+            }
+          ],
+          "name": "addMasterEvent",
+          "type": "event",
+          "signature": "0xc6bf01a203024da6c2267ec8f9524f39ae64470f6ceec9cb9b05e3bc78ce898d"
+        },
+        "0x31cf2b8264326b61eebefe150df927acfc3396b2c609d77aa05ef4bc570ac23c": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_masterToRemove",
+              "type": "address"
+            }
+          ],
+          "name": "remMasterEvent",
+          "type": "event",
+          "signature": "0x31cf2b8264326b61eebefe150df927acfc3396b2c609d77aa05ef4bc570ac23c"
+        },
+        "0x26272d25bc1196c872b2db8c23f99b1b000a717184976793acfe5e0ad4e33dc0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_newAdmin",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_canAdd",
+              "type": "bool"
+            },
+            {
+              "indexed": false,
+              "name": "_canDelete",
+              "type": "bool"
+            },
+            {
+              "indexed": false,
+              "name": "_canDeposit",
+              "type": "bool"
+            },
+            {
+              "indexed": false,
+              "name": "_canSpend",
+              "type": "bool"
+            }
+          ],
+          "name": "addAdminEvent",
+          "type": "event",
+          "signature": "0x26272d25bc1196c872b2db8c23f99b1b000a717184976793acfe5e0ad4e33dc0"
+        },
+        "0xd67845a459bcfe6c29d4fdbe8f965d4a62ae50e68971c894edfd625d9f8bfebe": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_adminToRemove",
+              "type": "address"
+            }
+          ],
+          "name": "remAdminEvent",
+          "type": "event",
+          "signature": "0xd67845a459bcfe6c29d4fdbe8f965d4a62ae50e68971c894edfd625d9f8bfebe"
+        },
+        "0xd0c4b59ed6fb4a093e4bfcba88175d0d6443b50bf9717b95f697eca388314b36": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_normAddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_ipfsHash",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "_hash_function",
+              "type": "uint8"
+            },
+            {
+              "indexed": false,
+              "name": "_size",
+              "type": "uint8"
+            }
+          ],
+          "name": "addNormEvent",
+          "type": "event",
+          "signature": "0xd0c4b59ed6fb4a093e4bfcba88175d0d6443b50bf9717b95f697eca388314b36"
+        },
+        "0x64568118a19ad215abe2d686897fccabd012923c71c2685472af34b4e0676e3a": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_normAddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_ipfsHash",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "_hash_function",
+              "type": "uint8"
+            },
+            {
+              "indexed": false,
+              "name": "_size",
+              "type": "uint8"
+            }
+          ],
+          "name": "remNormEvent",
+          "type": "event",
+          "signature": "0x64568118a19ad215abe2d686897fccabd012923c71c2685472af34b4e0676e3a"
+        }
+      },
+      "links": {},
+      "address": "0x1fcc966cADB8DA3358CD082CFdD58F2E735517e8",
+      "transactionHash": "0xc2258df102ee8e3e8a1c67af21bed52761a3eb85323af3113a3b9a5289e5b2d5"
+    }
+  },
   "schemaVersion": "3.0.10",
-  "updatedAt": "2019-10-01T09:07:07.375Z",
+  "updatedAt": "2019-10-01T09:15:40.084Z",
   "devdoc": {
     "methods": {}
   },

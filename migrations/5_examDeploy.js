@@ -1,5 +1,5 @@
-var deployOrgan = artifacts.require("utils/Kelsen/deploy/deployOrgan")
-var Organ = artifacts.require("utils/Kelsen/Organ")
+var organLibrary = artifacts.require("utils/Kelsen/solidity/contracts/libraries/organLibrary")
+var Organ = artifacts.require("utils/Kelsen/solidity/contracts/Organ")
 var Migrations = artifacts.require("Migrations.sol");
 var PointsManager = artifacts.require("pointsManager.sol");
 
@@ -35,11 +35,15 @@ module.exports = (deployer, network, accounts) => {
 };
 
 async function organDeploy(deployer, network, accounts) {
+	    console.log("Deploying libraries")
+    await deployer.deploy(organLibrary);
+    await deployer.link(organLibrary, [Organ]);
 	await deployer.deploy(Migrations);
 	console.log("Deploying organs")
-	studentsOrgan = await Organ.new("studentsOrgan", {from: accounts[0]});
-	teachersOrgan = await Organ.new("teachersOrgan", {from: accounts[0]});
-	exercicesOrgan = await Organ.new("exercicesOrgan", {from: accounts[0]});
+
+	studentsOrgan = await Organ.new(web3.utils.fromAscii("studentsOrgan"), {from: accounts[0]});
+	teachersOrgan = await Organ.new(web3.utils.fromAscii("teachersOrgan"), {from: accounts[0]});
+	exercicesOrgan = await Organ.new(web3.utils.fromAscii("exercicesOrgan"), {from: accounts[0]});
 
 }
 
@@ -62,25 +66,25 @@ async function pointsManagerAndExercices(deployer, network, accounts) {
 
 async function addingAdminsAndNorms(deployer, network, accounts) {
 	console.log("Adding admins and norms")	
-	await studentsOrgan.addAdmin(Ex1Contract.address, true, true, true, true, "acc0");	
-	await studentsOrgan.addAdmin(accounts[0], true, true, true, true, "acc0", {from: accounts[0]});
-	await teachersOrgan.addAdmin(accounts[0], true, true, true, true, "acc0");
-	await teachersOrgan.addNorm(accounts[0], "Henri", 0, 0, 0);
-	await exercicesOrgan.addAdmin(accounts[0], true, true, true, true, "acc0");
+	await studentsOrgan.addAdmin(Ex1Contract.address, true, true, true, true);	
+	await studentsOrgan.addAdmin(accounts[0], true, true, true, true, {from: accounts[0]});
+	await teachersOrgan.addAdmin(accounts[0], true, true, true, true);
+	await teachersOrgan.addNorm(accounts[0], web3.utils.fromAscii('0'), 0, 0);
+	await exercicesOrgan.addAdmin(accounts[0], true, true, true, true);
 		
 	// Adding norms
 	console.log("Adding norms")
-	await exercicesOrgan.addNorm(Ex1Contract.address, "Ex1", 0, 0, 0)
-	await exercicesOrgan.addNorm(Ex2Contract.address, "Ex2", 0, 0, 0)
-	await exercicesOrgan.addNorm(Ex3Contract.address, "Ex3", 0, 0, 0)
-	await exercicesOrgan.addNorm(Ex4Contract.address, "Ex4", 0, 0, 0)
-	await exercicesOrgan.addNorm(Ex5Contract.address, "Ex5", 0, 0, 0)
-	await exercicesOrgan.addNorm(Ex6Contract.address, "Ex6", 0, 0, 0)
-	await exercicesOrgan.addNorm(Ex7Contract.address, "Ex7", 0, 0, 0)
-	await exercicesOrgan.addNorm(Ex8Contract.address, "Ex8", 0, 0, 0)
-	await exercicesOrgan.addNorm(Ex9Contract.address, "Ex9", 0, 0, 0)
-	await exercicesOrgan.addNorm(Ex10Contract.address, "Ex10", 0, 0, 0)
-	await exercicesOrgan.addNorm(Ex11Contract.address, "Ex11", 0, 0, 0)
+	await exercicesOrgan.addNorm(Ex1Contract.address, web3.utils.fromAscii('0'), 0, 0)
+	await exercicesOrgan.addNorm(Ex2Contract.address, web3.utils.fromAscii('0'), 0, 0)
+	await exercicesOrgan.addNorm(Ex3Contract.address, web3.utils.fromAscii('0'), 0, 0)
+	await exercicesOrgan.addNorm(Ex4Contract.address, web3.utils.fromAscii('0'), 0, 0)
+	await exercicesOrgan.addNorm(Ex5Contract.address, web3.utils.fromAscii('0'), 0, 0)
+	await exercicesOrgan.addNorm(Ex6Contract.address, web3.utils.fromAscii('0'), 0, 0)
+	await exercicesOrgan.addNorm(Ex7Contract.address, web3.utils.fromAscii('0'), 0, 0)
+	await exercicesOrgan.addNorm(Ex8Contract.address, web3.utils.fromAscii('0'), 0, 0)
+	await exercicesOrgan.addNorm(Ex9Contract.address, web3.utils.fromAscii('0'), 0, 0)
+	await exercicesOrgan.addNorm(Ex10Contract.address, web3.utils.fromAscii('0'), 0, 0)
+	await exercicesOrgan.addNorm(Ex11Contract.address, web3.utils.fromAscii('0'), 0, 0)
 }
 
 async function setRandomValueStores(deployer, network, accounts) {
