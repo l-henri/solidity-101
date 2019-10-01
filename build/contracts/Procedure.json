@@ -1,0 +1,607 @@
+{
+  "contractName": "Procedure",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "kelsenVersionNumber",
+      "outputs": [
+        {
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "procedureInfo",
+      "outputs": [
+        {
+          "name": "procedureTypeNumber",
+          "type": "uint256"
+        },
+        {
+          "name": "procedureName",
+          "type": "bytes32"
+        },
+        {
+          "name": "linkedOrgans",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isAnOrgan",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isAProcedure",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.4+commit.9549d8ff\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"kelsenVersionNumber\",\"outputs\":[{\"name\":\"\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"procedureInfo\",\"outputs\":[{\"name\":\"procedureTypeNumber\",\"type\":\"uint256\"},{\"name\":\"procedureName\",\"type\":\"bytes32\"},{\"name\":\"linkedOrgans\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"isAnOrgan\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"isAProcedure\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/hlieutaud/Documents/Workshop/Solidity/solidity-101/contracts/utils/Kelsen/solidity/contracts/standardProcedure.sol\":\"Procedure\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/hlieutaud/Documents/Workshop/Solidity/solidity-101/contracts/utils/Kelsen/solidity/contracts/Kelsen.sol\":{\"keccak256\":\"0x314aaf6911a13b93dc0984240493e5544955690194a8eb21b467ffb1f896bda9\",\"urls\":[\"bzzr://7a10498fe2e1ad63f3108d83d6e10d3ce47ff0eefcb09ad4e824c9074b012ff8\"]},\"/C/Users/hlieutaud/Documents/Workshop/Solidity/solidity-101/contracts/utils/Kelsen/solidity/contracts/Organ.sol\":{\"keccak256\":\"0x13b070680525164716d73e24659f0ffd613566a9d084bf4b7c1bfcd8b2838648\",\"urls\":[\"bzzr://d9ca72803ef4b5e8e008c72971f11b212a5da0e6ba9c0f4cc834d35213bf20bb\"]},\"/C/Users/hlieutaud/Documents/Workshop/Solidity/solidity-101/contracts/utils/Kelsen/solidity/contracts/libraries/organLibrary.sol\":{\"keccak256\":\"0x285c637b569382e5a1c6bc2dbf6875b7cb98a40b976e3c3da4b163ecb2d81f82\",\"urls\":[\"bzzr://c9c98eddfe5f052338b3e7610b1f5f9f64f37086988d0727d081d07a5d35ce88\"]},\"/C/Users/hlieutaud/Documents/Workshop/Solidity/solidity-101/contracts/utils/Kelsen/solidity/contracts/libraries/procedureLibrary.sol\":{\"keccak256\":\"0xf795216cedff7d2ade2e2ebc3a3f60f8d814efdf8976a4eac3e13e28aca1dcaf\",\"urls\":[\"bzzr://77f15d0d2dfc2b905656d857dee8da8a5a21de3f5e6ff21d317ad66317d55f56\"]},\"/C/Users/hlieutaud/Documents/Workshop/Solidity/solidity-101/contracts/utils/Kelsen/solidity/contracts/standardProcedure.sol\":{\"keccak256\":\"0x05c9042a58a5a503dcc114448df3d86025aa85417238f74d77cdddab9445699f\",\"urls\":[\"bzzr://58505feabeaaac7a11f526acd7f8eb68ab973afb9e0512f23728fb30cbdea00b\"]}},\"version\":1}",
+  "bytecode": "0x608060405260026000556000600560006101000a81548160ff0219169083151502179055506001600560016101000a81548160ff02191690831515021790555034801561004b57600080fd5b5061016c8061005b6000396000f3fe608060405234801561001057600080fd5b5060043610610069576000357c0100000000000000000000000000000000000000000000000000000000900480635dbe4d281461006e5780639397942e1461008c578063a8bef97a146100b8578063e80b30a5146100da575b600080fd5b6100766100fc565b6040518082815260200191505060405180910390f35b610094610102565b60405180848152602001838152602001828152602001935050505060405180910390f35b6100c061011a565b604051808215151515815260200191505060405180910390f35b6100e261012d565b604051808215151515815260200191505060405180910390f35b60005481565b60028060000154908060010154908060020154905083565b600560009054906101000a900460ff1681565b600560019054906101000a900460ff168156fea165627a7a72305820bd074353446c02006e68bfb3c829fefd32180f42ee0310b89591b32e5d9d22640029",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b5060043610610069576000357c0100000000000000000000000000000000000000000000000000000000900480635dbe4d281461006e5780639397942e1461008c578063a8bef97a146100b8578063e80b30a5146100da575b600080fd5b6100766100fc565b6040518082815260200191505060405180910390f35b610094610102565b60405180848152602001838152602001828152602001935050505060405180910390f35b6100c061011a565b604051808215151515815260200191505060405180910390f35b6100e261012d565b604051808215151515815260200191505060405180910390f35b60005481565b60028060000154908060010154908060020154905083565b600560009054906101000a900460ff1681565b600560019054906101000a900460ff168156fea165627a7a72305820bd074353446c02006e68bfb3c829fefd32180f42ee0310b89591b32e5d9d22640029",
+  "sourceMap": "148:323:30:-;;;180:1:14;147:34;;424:5:30;400:29;;;;;;;;;;;;;;;;;;;;463:4;436:31;;;;;;;;;;;;;;;;;;;;148:323;8:9:-1;5:2;;;30:1;27;20:12;5:2;148:323:30;;;;;;;",
+  "deployedSourceMap": "148:323:30:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;148:323:30;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;147:34:14;;;:::i;:::-;;;;;;;;;;;;;;;;;;;186:51:30;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;400:29;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;436:31;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;147:34:14;;;;:::o;186:51:30:-;;;;;;;;;;;;;;;;;;;:::o;400:29::-;;;;;;;;;;;;;:::o;436:31::-;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity >=0.4.22 <0.6.0;\r\n\r\n\r\n/// @title Standard organ contract\r\n\r\nimport \"./Kelsen.sol\";\r\nimport \"./libraries/procedureLibrary.sol\";\r\n\r\n\r\ncontract Procedure is Kelsen {\r\n\r\n    procedureLibrary.ProcedureData public procedureInfo;\r\n    using procedureLibrary for address;\r\n    using procedureLibrary for procedureLibrary.ProcedureData;\r\n\r\n    // Identifiers to adapt procedure interface\r\n    bool public isAnOrgan = false;\r\n    bool public isAProcedure = true;\r\n}\r\n",
+  "sourcePath": "C:\\Users\\hlieutaud\\Documents\\Workshop\\Solidity\\solidity-101\\contracts\\utils\\Kelsen\\solidity\\contracts\\standardProcedure.sol",
+  "ast": {
+    "absolutePath": "/C/Users/hlieutaud/Documents/Workshop/Solidity/solidity-101/contracts/utils/Kelsen/solidity/contracts/standardProcedure.sol",
+    "exportedSymbols": {
+      "Procedure": [
+        9308
+      ]
+    },
+    "id": 9309,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 9289,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:30"
+      },
+      {
+        "absolutePath": "/C/Users/hlieutaud/Documents/Workshop/Solidity/solidity-101/contracts/utils/Kelsen/solidity/contracts/Kelsen.sol",
+        "file": "./Kelsen.sol",
+        "id": 9290,
+        "nodeType": "ImportDirective",
+        "scope": 9309,
+        "sourceUnit": 1474,
+        "src": "76:22:30",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/hlieutaud/Documents/Workshop/Solidity/solidity-101/contracts/utils/Kelsen/solidity/contracts/libraries/procedureLibrary.sol",
+        "file": "./libraries/procedureLibrary.sol",
+        "id": 9291,
+        "nodeType": "ImportDirective",
+        "scope": 9309,
+        "sourceUnit": 4591,
+        "src": "100:42:30",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 9292,
+              "name": "Kelsen",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1473,
+              "src": "170:6:30",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Kelsen_$1473",
+                "typeString": "contract Kelsen"
+              }
+            },
+            "id": 9293,
+            "nodeType": "InheritanceSpecifier",
+            "src": "170:6:30"
+          }
+        ],
+        "contractDependencies": [
+          1473
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 9308,
+        "linearizedBaseContracts": [
+          9308,
+          1473
+        ],
+        "name": "Procedure",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 9295,
+            "name": "procedureInfo",
+            "nodeType": "VariableDeclaration",
+            "scope": 9308,
+            "src": "186:51:30",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_ProcedureData_$4406_storage",
+              "typeString": "struct procedureLibrary.ProcedureData"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 9294,
+              "name": "procedureLibrary.ProcedureData",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4406,
+              "src": "186:30:30",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_ProcedureData_$4406_storage_ptr",
+                "typeString": "struct procedureLibrary.ProcedureData"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "id": 9298,
+            "libraryName": {
+              "contractScope": null,
+              "id": 9296,
+              "name": "procedureLibrary",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4590,
+              "src": "250:16:30",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_procedureLibrary_$4590",
+                "typeString": "library procedureLibrary"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "244:35:30",
+            "typeName": {
+              "id": 9297,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "271:7:30",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            }
+          },
+          {
+            "id": 9301,
+            "libraryName": {
+              "contractScope": null,
+              "id": 9299,
+              "name": "procedureLibrary",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4590,
+              "src": "291:16:30",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_procedureLibrary_$4590",
+                "typeString": "library procedureLibrary"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "285:58:30",
+            "typeName": {
+              "contractScope": null,
+              "id": 9300,
+              "name": "procedureLibrary.ProcedureData",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4406,
+              "src": "312:30:30",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_ProcedureData_$4406_storage_ptr",
+                "typeString": "struct procedureLibrary.ProcedureData"
+              }
+            }
+          },
+          {
+            "constant": false,
+            "id": 9304,
+            "name": "isAnOrgan",
+            "nodeType": "VariableDeclaration",
+            "scope": 9308,
+            "src": "400:29:30",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 9302,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "400:4:30",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "66616c7365",
+              "id": 9303,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "bool",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "424:5:30",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              },
+              "value": "false"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 9307,
+            "name": "isAProcedure",
+            "nodeType": "VariableDeclaration",
+            "scope": 9308,
+            "src": "436:31:30",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 9305,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "436:4:30",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "74727565",
+              "id": 9306,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "bool",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "463:4:30",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              },
+              "value": "true"
+            },
+            "visibility": "public"
+          }
+        ],
+        "scope": 9309,
+        "src": "148:323:30"
+      }
+    ],
+    "src": "0:473:30"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/hlieutaud/Documents/Workshop/Solidity/solidity-101/contracts/utils/Kelsen/solidity/contracts/standardProcedure.sol",
+    "exportedSymbols": {
+      "Procedure": [
+        9308
+      ]
+    },
+    "id": 9309,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 9289,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:30"
+      },
+      {
+        "absolutePath": "/C/Users/hlieutaud/Documents/Workshop/Solidity/solidity-101/contracts/utils/Kelsen/solidity/contracts/Kelsen.sol",
+        "file": "./Kelsen.sol",
+        "id": 9290,
+        "nodeType": "ImportDirective",
+        "scope": 9309,
+        "sourceUnit": 1474,
+        "src": "76:22:30",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/hlieutaud/Documents/Workshop/Solidity/solidity-101/contracts/utils/Kelsen/solidity/contracts/libraries/procedureLibrary.sol",
+        "file": "./libraries/procedureLibrary.sol",
+        "id": 9291,
+        "nodeType": "ImportDirective",
+        "scope": 9309,
+        "sourceUnit": 4591,
+        "src": "100:42:30",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 9292,
+              "name": "Kelsen",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1473,
+              "src": "170:6:30",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Kelsen_$1473",
+                "typeString": "contract Kelsen"
+              }
+            },
+            "id": 9293,
+            "nodeType": "InheritanceSpecifier",
+            "src": "170:6:30"
+          }
+        ],
+        "contractDependencies": [
+          1473
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 9308,
+        "linearizedBaseContracts": [
+          9308,
+          1473
+        ],
+        "name": "Procedure",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 9295,
+            "name": "procedureInfo",
+            "nodeType": "VariableDeclaration",
+            "scope": 9308,
+            "src": "186:51:30",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_ProcedureData_$4406_storage",
+              "typeString": "struct procedureLibrary.ProcedureData"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 9294,
+              "name": "procedureLibrary.ProcedureData",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4406,
+              "src": "186:30:30",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_ProcedureData_$4406_storage_ptr",
+                "typeString": "struct procedureLibrary.ProcedureData"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "id": 9298,
+            "libraryName": {
+              "contractScope": null,
+              "id": 9296,
+              "name": "procedureLibrary",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4590,
+              "src": "250:16:30",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_procedureLibrary_$4590",
+                "typeString": "library procedureLibrary"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "244:35:30",
+            "typeName": {
+              "id": 9297,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "271:7:30",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            }
+          },
+          {
+            "id": 9301,
+            "libraryName": {
+              "contractScope": null,
+              "id": 9299,
+              "name": "procedureLibrary",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4590,
+              "src": "291:16:30",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_procedureLibrary_$4590",
+                "typeString": "library procedureLibrary"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "285:58:30",
+            "typeName": {
+              "contractScope": null,
+              "id": 9300,
+              "name": "procedureLibrary.ProcedureData",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4406,
+              "src": "312:30:30",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_ProcedureData_$4406_storage_ptr",
+                "typeString": "struct procedureLibrary.ProcedureData"
+              }
+            }
+          },
+          {
+            "constant": false,
+            "id": 9304,
+            "name": "isAnOrgan",
+            "nodeType": "VariableDeclaration",
+            "scope": 9308,
+            "src": "400:29:30",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 9302,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "400:4:30",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "66616c7365",
+              "id": 9303,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "bool",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "424:5:30",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              },
+              "value": "false"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 9307,
+            "name": "isAProcedure",
+            "nodeType": "VariableDeclaration",
+            "scope": 9308,
+            "src": "436:31:30",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 9305,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "436:4:30",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "74727565",
+              "id": 9306,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "bool",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "463:4:30",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              },
+              "value": "true"
+            },
+            "visibility": "public"
+          }
+        ],
+        "scope": 9309,
+        "src": "148:323:30"
+      }
+    ],
+    "src": "0:473:30"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.4+commit.9549d8ff.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.10",
+  "updatedAt": "2019-10-01T09:07:07.433Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

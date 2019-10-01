@@ -1,4 +1,4 @@
-pragma solidity ^0.4.24;
+pragma solidity >=0.4.21 <0.6.0;
 
 
 import "../exerciceTemplate.sol";
@@ -28,12 +28,12 @@ contract ex10 is exerciceTemplate {
   event showPrivateVariableInEvent(uint i, uint myVariable);
   event showUserRank(uint i);
 
-  constructor(address _studentsOrganAddres, address _teachersOrganAddress, address _pointsManagerContractAddress) 
+  constructor(address payable _studentsOrganAddres, address payable _teachersOrganAddress, address payable _pointsManagerContractAddress) 
   exerciceTemplate(_studentsOrganAddres, _teachersOrganAddress, _pointsManagerContractAddress) 
   public
   {}
   
-  function setRandomValueStore(uint[20] _randomValuesStore) 
+  function setRandomValueStore(uint[20] memory _randomValuesStore) 
   public 
   onlyTeacher
   {

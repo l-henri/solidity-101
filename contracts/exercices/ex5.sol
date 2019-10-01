@@ -1,11 +1,10 @@
-pragma solidity ^0.4.24;
+pragma solidity >=0.4.21 <0.6.0;
 
 // Using Kelsen framework for authentification of stakeholders.
 // More info on https://github.com/97network/Kelsen
 // What you need to know for this session: https://github.com/97network/Kelsen/blob/master/docs/01_standardOrgan.md
 // This tool is NOT necessary to understand to complete this exercice
 
-import "../utils/Kelsen/standardOrgan.sol";
 import "../exerciceTemplate.sol";
 
 /*
@@ -29,7 +28,7 @@ contract ex5 is exerciceTemplate {
 
 	mapping(address => address) public helpersRegister;
 
-  constructor(address _studentsOrganAddres, address _teachersOrganAddress, address _pointsManagerContractAddress) 
+  constructor(address payable _studentsOrganAddres, address payable _teachersOrganAddress, address payable _pointsManagerContractAddress) 
   exerciceTemplate(_studentsOrganAddres, _teachersOrganAddress, _pointsManagerContractAddress) 
   public
   {}
@@ -40,7 +39,7 @@ contract ex5 is exerciceTemplate {
   {
     require(_helperAddress != msg.sender);
     Organ studentsOrgan = Organ(studentsOrganAddress);
-    require(studentsOrgan.isNorm(_helperAddress));
+    require(studentsOrgan.getAddressPositionInNorm(msg.sender) != 0);
   	helpersRegister[msg.sender] = _helperAddress;
   }
   

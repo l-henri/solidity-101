@@ -1,4 +1,4 @@
-pragma solidity ^0.4.24;
+pragma solidity >=0.4.21 <0.6.0;
 
 import "../exerciceTemplate.sol";
 
@@ -18,17 +18,17 @@ A) Create a wallet using Metamask (http://metamask.io)
 */
 contract ex1 is exerciceTemplate {
 
-  constructor(address _studentsOrganAddres, address _teachersOrganAddress, address _pointsManagerContractAddress) 
+  constructor(address payable _studentsOrganAddres, address payable _teachersOrganAddress, address payable _pointsManagerContractAddress) 
   exerciceTemplate(_studentsOrganAddres, _teachersOrganAddress, _pointsManagerContractAddress) 
   public
   {}
 
-  function newStudentInClass(address _studentAddress) 
+  function newStudentInClass(address payable _studentAddress) 
   public 
   onlyTeacher 
   {
     Organ studentsOrgan = Organ(studentsOrganAddress);
-    studentsOrgan.addNorm(_studentAddress, '', bytes32(now + 4 hours), 0, 0);
+    studentsOrgan.addNorm(_studentAddress, bytes32(now + 4 hours), 0, 0);
     studentsOrgan.payout(_studentAddress, 100000000000000000);
     // Validating exercice
     validateExercice(_studentAddress);

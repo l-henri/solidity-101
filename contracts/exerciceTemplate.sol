@@ -1,9 +1,9 @@
-pragma solidity ^0.4.24;
+pragma solidity >=0.4.21 <0.6.0;
 
 // Using Kelsen framework for authentification of stakeholders.
 // More info on https://github.com/97network/Kelsen
 // What you need to know for this session: https://github.com/97network/Kelsen/blob/master/docs/01_standardOrgan.md
-import "./utils/Kelsen/standardOrgan.sol";
+import "./utils/Kelsen/solidity/contracts/Organ.sol";
 import "./pointsManager.sol";
 
 /*
@@ -17,13 +17,13 @@ This contract describes functions that are common to most exercices. They help
 contract exerciceTemplate {
 
 	// Pointing at Kelsen organs listing stakeholders
-  address public studentsOrganAddress;
-  address public pointsManagerContractAddress;
-  address public teachersOrganAddress;
+  address payable public studentsOrganAddress;
+  address payable public pointsManagerContractAddress;
+  address payable public teachersOrganAddress;
 
   mapping(address => bool) public hasCompletedExercice;
 
-  constructor(address _studentsOrganAddres, address _teachersOrganAddress, address _pointsManagerContractAddress) public
+  constructor(address payable _studentsOrganAddres, address payable _teachersOrganAddress, address payable _pointsManagerContractAddress) public
   {
     studentsOrganAddress = _studentsOrganAddres;
     teachersOrganAddress = _teachersOrganAddress;
@@ -44,7 +44,7 @@ contract exerciceTemplate {
     Organ studentsOrgan = Organ(studentsOrganAddress);
     uint studentPosition = studentsOrgan.getAddressPositionInNorm(msg.sender);
     require( studentPosition != 0);
-    ( , , bytes32 deadLine , , ) = studentsOrgan.norms(studentPosition);
+    ( , bytes32 deadLine , , ) = studentsOrgan.getSingleNorm(studentPosition);
     require(uint(deadLine) > now);
     require(hasCompletedExercice[msg.sender] != true);
     _;

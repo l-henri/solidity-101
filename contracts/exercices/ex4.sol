@@ -1,4 +1,4 @@
-pragma solidity ^0.4.24;
+pragma solidity >=0.4.21 <0.6.0;
 
 import "../exerciceTemplate.sol";
 
@@ -23,7 +23,7 @@ contract ex4 is exerciceTemplate {
 	mapping(address => uint) public studentsCounter;
 	mapping(address => bool) public exerciceWasStarted;
 
-  constructor(address _studentsOrganAddres, address _teachersOrganAddress, address _pointsManagerContractAddress) 
+  constructor(address payable _studentsOrganAddres, address payable _teachersOrganAddress, address payable _pointsManagerContractAddress) 
   exerciceTemplate(_studentsOrganAddres, _teachersOrganAddress, _pointsManagerContractAddress) 
   public
   {}

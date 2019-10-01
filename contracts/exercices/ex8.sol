@@ -1,4 +1,4 @@
-pragma solidity ^0.4.24;
+pragma solidity >=0.4.21 <0.6.0;
 
 
 import "../exerciceTemplate.sol";
@@ -32,12 +32,12 @@ contract ex8 is exerciceTemplate {
   
   event createdAnObject(uint objectNumber);
 
-  constructor(address _studentsOrganAddres, address _teachersOrganAddress, address _pointsManagerContractAddress) 
+  constructor(address payable _studentsOrganAddres, address payable _teachersOrganAddress, address payable _pointsManagerContractAddress) 
   exerciceTemplate(_studentsOrganAddres, _teachersOrganAddress, _pointsManagerContractAddress) 
   public
   {}
 
-  function createObject(string _name) 
+  function createObject(string memory _name) 
   public 
   canWorkOnExercice 
   {
@@ -55,7 +55,7 @@ contract ex8 is exerciceTemplate {
 
   }
   
-  function changeObjectName(uint _objectNumber, string _name) 
+  function changeObjectName(uint _objectNumber, string memory _name) 
   public 
   canWorkOnExercice 
   {
@@ -80,7 +80,7 @@ contract ex8 is exerciceTemplate {
     require(studentObjects[_objectNumber].hasBeenModified == true);
 
     Organ teachersOrganInstance = Organ(teachersOrganAddress);
-    require(teachersOrganInstance.isNorm(studentObjects[_objectNumber].owner));
+    require(teachersOrganInstance.getAddressPositionInNorm(studentObjects[_objectNumber].owner) != 0);
 
     // Validating exercice
     validateExercice(msg.sender);
