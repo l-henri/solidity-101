@@ -44,15 +44,15 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.4+commit.9549d8ff\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"kelsenVersionNumber\",\"outputs\":[{\"name\":\"\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"isAnOrgan\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"isAProcedure\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{},\"title\":\"Standard organ contract\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/hlieutaud/Documents/Workshop/Solidity/solidity-101/contracts/utils/Kelsen/solidity/contracts/Kelsen.sol\":\"Kelsen\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/hlieutaud/Documents/Workshop/Solidity/solidity-101/contracts/utils/Kelsen/solidity/contracts/Kelsen.sol\":{\"keccak256\":\"0x314aaf6911a13b93dc0984240493e5544955690194a8eb21b467ffb1f896bda9\",\"urls\":[\"bzzr://7a10498fe2e1ad63f3108d83d6e10d3ce47ff0eefcb09ad4e824c9074b012ff8\"]}},\"version\":1}",
-  "bytecode": "0x6080604052600260005534801561001557600080fd5b50610111806100256000396000f3fe6080604052348015600f57600080fd5b50600436106059576000357c0100000000000000000000000000000000000000000000000000000000900480635dbe4d2814605e578063a8bef97a14607a578063e80b30a514609a575b600080fd5b606460ba565b6040518082815260200191505060405180910390f35b608060c0565b604051808215151515815260200191505060405180910390f35b60a060d3565b604051808215151515815260200191505060405180910390f35b60005481565b600160009054906101000a900460ff1681565b6001809054906101000a900460ff168156fea165627a7a72305820bf61c74c7adf1591056cff53252f5c8c28727ffc5a17b60c563a2c3de09d29730029",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b50600436106059576000357c0100000000000000000000000000000000000000000000000000000000900480635dbe4d2814605e578063a8bef97a14607a578063e80b30a514609a575b600080fd5b606460ba565b6040518082815260200191505060405180910390f35b608060c0565b604051808215151515815260200191505060405180910390f35b60a060d3565b604051808215151515815260200191505060405180910390f35b60005481565b600160009054906101000a900460ff1681565b6001809054906101000a900460ff168156fea165627a7a72305820bf61c74c7adf1591056cff53252f5c8c28727ffc5a17b60c563a2c3de09d29730029",
-  "sourceMap": "78:166:16:-;;;180:1;147:34;;78:166;8:9:-1;5:2;;;30:1;27;20:12;5:2;78:166:16;;;;;;;",
-  "deployedSourceMap": "78:166:16:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;78:166:16;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;147:34;;;:::i;:::-;;;;;;;;;;;;;;;;;;;188:21;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;216:24;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;147:34;;;;:::o;188:21::-;;;;;;;;;;;;;:::o;216:24::-;;;;;;;;;;;;;:::o",
-  "source": "pragma solidity >=0.4.22 <0.6.0;\r\n\r\n\r\n\r\n/// @title Standard organ contract\r\n\r\ncontract Kelsen {\r\n        // Identifiers for Dapp using Kelsen\r\n    int public kelsenVersionNumber = 2;\r\n    bool public isAnOrgan;\r\n    bool public isAProcedure;\r\n}\r\n",
-  "sourcePath": "C:\\Users\\hlieutaud\\Documents\\Workshop\\Solidity\\solidity-101\\contracts\\utils\\Kelsen\\solidity\\contracts\\Kelsen.sol",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.0+commit.1d4f565a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"kelsenVersionNumber\",\"outputs\":[{\"name\":\"\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"isAnOrgan\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"isAProcedure\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{},\"title\":\"Standard organ contract\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/henrilieutaud/Documents/Mes documents/ESILV/03 Blockchain Programmation/solidity-101/contracts/utils/Kelsen/solidity/contracts/Kelsen.sol\":\"Kelsen\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/henrilieutaud/Documents/Mes documents/ESILV/03 Blockchain Programmation/solidity-101/contracts/utils/Kelsen/solidity/contracts/Kelsen.sol\":{\"keccak256\":\"0x909bb00a97a0263d7900d758e3c43fdb9c1e9be0b445e7e6bbd09c3703321476\",\"urls\":[\"bzzr://54db0969ddd5acb6d9a1caa442d18da0fbf76168fe227dba2ec34e1dc147672e\"]}},\"version\":1}",
+  "bytecode": "0x6080604052600260005534801561001557600080fd5b5061013c806100256000396000f3fe608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680635dbe4d281461005c578063a8bef97a14610087578063e80b30a5146100b6575b600080fd5b34801561006857600080fd5b506100716100e5565b6040518082815260200191505060405180910390f35b34801561009357600080fd5b5061009c6100eb565b604051808215151515815260200191505060405180910390f35b3480156100c257600080fd5b506100cb6100fe565b604051808215151515815260200191505060405180910390f35b60005481565b600160009054906101000a900460ff1681565b6001809054906101000a900460ff168156fea165627a7a7230582049e32ce952c2c38e29f5a44620279a29d0ce47fba7581068725000dfa8f1f6360029",
+  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680635dbe4d281461005c578063a8bef97a14610087578063e80b30a5146100b6575b600080fd5b34801561006857600080fd5b506100716100e5565b6040518082815260200191505060405180910390f35b34801561009357600080fd5b5061009c6100eb565b604051808215151515815260200191505060405180910390f35b3480156100c257600080fd5b506100cb6100fe565b604051808215151515815260200191505060405180910390f35b60005481565b600160009054906101000a900460ff1681565b6001809054906101000a900460ff168156fea165627a7a7230582049e32ce952c2c38e29f5a44620279a29d0ce47fba7581068725000dfa8f1f6360029",
+  "sourceMap": "72:161:16:-;;;172:1;139:34;;72:161;8:9:-1;5:2;;;30:1;27;20:12;5:2;72:161:16;;;;;;;",
+  "deployedSourceMap": "72:161:16:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;139:34;;8:9:-1;5:2;;;30:1;27;20:12;5:2;139:34:16;;;;;;;;;;;;;;;;;;;;;;;179:21;;8:9:-1;5:2;;;30:1;27;20:12;5:2;179:21:16;;;;;;;;;;;;;;;;;;;;;;;;;;;206:24;;8:9:-1;5:2;;;30:1;27;20:12;5:2;206:24:16;;;;;;;;;;;;;;;;;;;;;;;;;;;139:34;;;;:::o;179:21::-;;;;;;;;;;;;;:::o;206:24::-;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity >=0.4.22 <0.6.0;\n\n\n\n/// @title Standard organ contract\n\ncontract Kelsen {\n        // Identifiers for Dapp using Kelsen\n    int public kelsenVersionNumber = 2;\n    bool public isAnOrgan;\n    bool public isAProcedure;\n}\n",
+  "sourcePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/03 Blockchain Programmation/solidity-101/contracts/utils/Kelsen/solidity/contracts/Kelsen.sol",
   "ast": {
-    "absolutePath": "/C/Users/hlieutaud/Documents/Workshop/Solidity/solidity-101/contracts/utils/Kelsen/solidity/contracts/Kelsen.sol",
+    "absolutePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/03 Blockchain Programmation/solidity-101/contracts/utils/Kelsen/solidity/contracts/Kelsen.sol",
     "exportedSymbols": {
       "Kelsen": [
         1581
@@ -94,7 +94,7 @@
             "name": "kelsenVersionNumber",
             "nodeType": "VariableDeclaration",
             "scope": 1581,
-            "src": "147:34:16",
+            "src": "139:34:16",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -105,7 +105,7 @@
               "id": 1574,
               "name": "int",
               "nodeType": "ElementaryTypeName",
-              "src": "147:3:16",
+              "src": "139:3:16",
               "typeDescriptions": {
                 "typeIdentifier": "t_int256",
                 "typeString": "int256"
@@ -121,7 +121,7 @@
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "180:1:16",
+              "src": "172:1:16",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_2_by_1",
@@ -137,7 +137,7 @@
             "name": "isAnOrgan",
             "nodeType": "VariableDeclaration",
             "scope": 1581,
-            "src": "188:21:16",
+            "src": "179:21:16",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -148,7 +148,7 @@
               "id": 1577,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "188:4:16",
+              "src": "179:4:16",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -163,7 +163,7 @@
             "name": "isAProcedure",
             "nodeType": "VariableDeclaration",
             "scope": 1581,
-            "src": "216:24:16",
+            "src": "206:24:16",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -174,7 +174,7 @@
               "id": 1579,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "216:4:16",
+              "src": "206:4:16",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -185,13 +185,13 @@
           }
         ],
         "scope": 1582,
-        "src": "78:166:16"
+        "src": "72:161:16"
       }
     ],
-    "src": "0:246:16"
+    "src": "0:234:16"
   },
   "legacyAST": {
-    "absolutePath": "/C/Users/hlieutaud/Documents/Workshop/Solidity/solidity-101/contracts/utils/Kelsen/solidity/contracts/Kelsen.sol",
+    "absolutePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/03 Blockchain Programmation/solidity-101/contracts/utils/Kelsen/solidity/contracts/Kelsen.sol",
     "exportedSymbols": {
       "Kelsen": [
         1581
@@ -233,7 +233,7 @@
             "name": "kelsenVersionNumber",
             "nodeType": "VariableDeclaration",
             "scope": 1581,
-            "src": "147:34:16",
+            "src": "139:34:16",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -244,7 +244,7 @@
               "id": 1574,
               "name": "int",
               "nodeType": "ElementaryTypeName",
-              "src": "147:3:16",
+              "src": "139:3:16",
               "typeDescriptions": {
                 "typeIdentifier": "t_int256",
                 "typeString": "int256"
@@ -260,7 +260,7 @@
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "180:1:16",
+              "src": "172:1:16",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_2_by_1",
@@ -276,7 +276,7 @@
             "name": "isAnOrgan",
             "nodeType": "VariableDeclaration",
             "scope": 1581,
-            "src": "188:21:16",
+            "src": "179:21:16",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -287,7 +287,7 @@
               "id": 1577,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "188:4:16",
+              "src": "179:4:16",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -302,7 +302,7 @@
             "name": "isAProcedure",
             "nodeType": "VariableDeclaration",
             "scope": 1581,
-            "src": "216:24:16",
+            "src": "206:24:16",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -313,7 +313,7 @@
               "id": 1579,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "216:4:16",
+              "src": "206:4:16",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -324,18 +324,18 @@
           }
         ],
         "scope": 1582,
-        "src": "78:166:16"
+        "src": "72:161:16"
       }
     ],
-    "src": "0:246:16"
+    "src": "0:234:16"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.4+commit.9549d8ff.Emscripten.clang"
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.0.10",
-  "updatedAt": "2019-10-01T09:42:26.064Z",
+  "schemaVersion": "3.0.6",
+  "updatedAt": "2019-10-03T20:18:25.157Z",
   "devdoc": {
     "methods": {},
     "title": "Standard organ contract"

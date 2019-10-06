@@ -9,17 +9,18 @@ You can use [MyCrypto](https://mycrypto.com/contracts/interact) to interact with
 
 Contract addresses:
 * "0xdb3d883d2addbbcd9631548e9ee93d7bb8e1b77f",  // [Points manager](contracts/pointsManager.sol)
-* "0x0928de0ad7ab871b7e1f390fd7d9eac26c37d752",  // [Ex1Contract](contracts/exercices/ex1.sol)
-* "0x94165b15ab7df0618e58ea3bd872f7216e51cd06",  // [Ex2Contract](contracts/exercices/ex2.sol)
-* "0x0e5b5bbb37f301ae54b66142d72c344843167b28",  // [Ex3Contract](contracts/exercices/ex3.sol)
-* "0xc399ca4aa7e1d8c2b979ffaee610f9729b60889b",  // [Ex4Contract](contracts/exercices/ex4.sol)
-* "0x14c8cad8ac280a332802080c423d5cd25fc6a8e1",  // [Ex5Contract](contracts/exercices/ex5.sol)
-* "0x98a857e7c664d6bb4a5b4698785e9fefbe4bd0f4",  // [Ex6Contract](contracts/exercices/ex6.sol)
-* "0x4ae27d23a91a8d8b4b93e815f3935bb1dedd8e55",  // [Ex7Contract](contracts/exercices/ex7.sol)
-* "0x663995cad64413f19dbf9c2d6329d21e82bab551",  // [Ex8Contract](contracts/exercices/ex8.sol)
-* "0x4e317932530c26fed7227b616afe37f47d02e721",  // [Ex9Contract](contracts/exercices/ex9.sol)
-* "0x28ac40b270d465fe02fea115aaa12d5db8227ebe",  // [Ex10Contract](contracts/exercices/ex10.sol)
-* Undisclosed // [Ex11Contract](contracts/exercices/ex11.sol)
+* "0x14155A45e003BfD39577174274f9E71Eaff08B21",  // [Ex1Contract](contracts/exercices/ex1.sol)
+* "0xD192C9824262CEe0d5Bc619fdeF8b0cfdce69472",  // [Ex2Contract](contracts/exercices/ex2.sol)
+* "0xa66fde07BbfFC63Fe5f9535a74343A5764300976",  // [Ex3Contract](contracts/exercices/ex3.sol)
+* "0x38Fce77e0fe496ea8e37c5109D5C07D7469cb73a",  // [Ex4Contract](contracts/exercices/ex4.sol)
+* "0x9d4dBc35C10aba2DD00eC95389BA7c2919cf85f8",  // [Ex5Contract](contracts/exercices/ex5.sol)
+* "0x1122682Aa2667f38cD49b2e7fe6219512B0dA2f4",  // [Ex6Contract](contracts/exercices/ex6.sol)
+* "0x007Ad9cD1b7bCA8a13B174A082a3696Dd001917D",  // [Ex7Contract](contracts/exercices/ex7.sol)
+* "0x625E831410f1bDFA513FE91bc2B33841f36Df69a",  // [Ex8Contract](contracts/exercices/ex8.sol)
+* "0x21440258C6e12125E6AB7eD426aAF8ED3BC88732",  // [Ex9Contract](contracts/exercices/ex9.sol)
+* "0xdA35106fbD0f6BbAe69524d556962a14C66E1aa5",  // [Ex10Contract](contracts/exercices/ex10.sol)
+* "0x0F405422cD94F0f175B5EF9E716440dF0249A68e",  // [Ex11Contract](contracts/exercices/ex11.sol)
+* Undisclosed // [Ex12Contract](contracts/exercices/ex12.sol)
 
 Next steps:
 * Open exams to the general public
@@ -27,6 +28,6 @@ Next steps:
 * Correct bug in exercices 6, 7 and 10
 
 Organ addresses:
-* "0x1ac09a756b3E33caec5d9a8D1Af64062847698A6",  // Students organ
-* "0xbdB575cc6762080A4C262718Cf3645e9b5E7278B",  // Teachers organ
-* "0xC6203fa33f0ED1Ba168f2d999ba6265BF6037F75",  // Exercices organ
+* "0xdeb56d39c56879a03fb64f5b53a86f72b99ef8d4",  // Students organ
+* "0x53bbf3A68bbd1e57c3eA8185e4e8C4895f9686a0",  // Teachers organ
+* "0xf690815f0A9Da3E75A1f9F54318dC57b816bc612",  // Exercices organ
