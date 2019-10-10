@@ -4,19 +4,19 @@ pragma solidity >=0.4.21 <0.6.0;
 import "../exerciceTemplate.sol";
 import "./ex11b.sol";
 /*
-Exercice 11: Finding a hidden exercice
+Exercice 11: Understanding how contracts communicate with each other.
+This contract (11) reads a value from another contract (11b).
 In this exercice, you need to:
-- Read the documentation of another contract to understand its structure
-- Extract contract ABI
-- Use the ABI to extract the contract content and find the missing contract
-- Call the contract function
-- Your points are credited by the contract
+- Find out the address of contract 11b
+- Understand which function of contract 11b contract 11 calls
+- Use contract 11b to find out what is the value required
+- Call contract 11 with the correct value, which will call contract 11b to check you have the correct value, and deliver your points.
 */
 
 /*
 What you need to know to complete this exercice
 A) What was included in the previous exercices
-B) Documentation of the Kelsen framework on https://github.com/97network/Kelsen/blob/master/docs/01_standardOrgan.md
+B) https://medium.com/@blockchain101/calling-the-function-of-another-contract-in-solidity-f9edfa921f4c#targetText=When%20we%20write%20Smart%20Contracts,treating%20deployed%20contracts%20like%20libraries.
 
 */
 contract ex11 is exerciceTemplate {
