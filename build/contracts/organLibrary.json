@@ -27618,8 +27618,7 @@
             }
           ],
           "name": "changeOrganName",
-          "type": "event",
-          "signature": "0x133895c1c832b44ee3aab9909d2fd715c60ace0f02485202e5abe1d7fb1634f7"
+          "type": "event"
         },
         "0x69ef4b1cb1e3f170e636a678eb5bdcc1a5220158859f5a6218483d81ed19c6ba": {
           "anonymous": false,
@@ -27641,8 +27640,7 @@
             }
           ],
           "name": "spendMoney",
-          "type": "event",
-          "signature": "0x69ef4b1cb1e3f170e636a678eb5bdcc1a5220158859f5a6218483d81ed19c6ba"
+          "type": "event"
         },
         "0xe8e8caa49c00808ca0e50595f43e7fc4e3a4286edfd5ad4de7ab640742e1fb22": {
           "anonymous": false,
@@ -27659,8 +27657,7 @@
             }
           ],
           "name": "receiveMoney",
-          "type": "event",
-          "signature": "0xe8e8caa49c00808ca0e50595f43e7fc4e3a4286edfd5ad4de7ab640742e1fb22"
+          "type": "event"
         },
         "0xc6bf01a203024da6c2267ec8f9524f39ae64470f6ceec9cb9b05e3bc78ce898d": {
           "anonymous": false,
@@ -27687,8 +27684,7 @@
             }
           ],
           "name": "addMasterEvent",
-          "type": "event",
-          "signature": "0xc6bf01a203024da6c2267ec8f9524f39ae64470f6ceec9cb9b05e3bc78ce898d"
+          "type": "event"
         },
         "0x31cf2b8264326b61eebefe150df927acfc3396b2c609d77aa05ef4bc570ac23c": {
           "anonymous": false,
@@ -27705,8 +27701,7 @@
             }
           ],
           "name": "remMasterEvent",
-          "type": "event",
-          "signature": "0x31cf2b8264326b61eebefe150df927acfc3396b2c609d77aa05ef4bc570ac23c"
+          "type": "event"
         },
         "0x26272d25bc1196c872b2db8c23f99b1b000a717184976793acfe5e0ad4e33dc0": {
           "anonymous": false,
@@ -27743,8 +27738,7 @@
             }
           ],
           "name": "addAdminEvent",
-          "type": "event",
-          "signature": "0x26272d25bc1196c872b2db8c23f99b1b000a717184976793acfe5e0ad4e33dc0"
+          "type": "event"
         },
         "0xd67845a459bcfe6c29d4fdbe8f965d4a62ae50e68971c894edfd625d9f8bfebe": {
           "anonymous": false,
@@ -27761,8 +27755,7 @@
             }
           ],
           "name": "remAdminEvent",
-          "type": "event",
-          "signature": "0xd67845a459bcfe6c29d4fdbe8f965d4a62ae50e68971c894edfd625d9f8bfebe"
+          "type": "event"
         },
         "0xd0c4b59ed6fb4a093e4bfcba88175d0d6443b50bf9717b95f697eca388314b36": {
           "anonymous": false,
@@ -27794,8 +27787,7 @@
             }
           ],
           "name": "addNormEvent",
-          "type": "event",
-          "signature": "0xd0c4b59ed6fb4a093e4bfcba88175d0d6443b50bf9717b95f697eca388314b36"
+          "type": "event"
         },
         "0x64568118a19ad215abe2d686897fccabd012923c71c2685472af34b4e0676e3a": {
           "anonymous": false,
@@ -27827,13 +27819,12 @@
             }
           ],
           "name": "remNormEvent",
-          "type": "event",
-          "signature": "0x64568118a19ad215abe2d686897fccabd012923c71c2685472af34b4e0676e3a"
+          "type": "event"
         }
       },
       "links": {},
-      "address": "0x80DF29Ba1Ef8aEF8aC5FF4D8FdE69C823132D685",
-      "transactionHash": "0x18f8d76439da112b0229d8489fe4a7d6c1bf1bace9ec251859bca664c12b15bb"
+      "address": "0x7A34779e9a8E3621ef035EA4678A18c8A9De3621",
+      "transactionHash": "0xcaa8dba45da78ab0cbb33f8461a2b935bc8caffaee2fca3cc123f21e8879ed1c"
     },
     "5777": {
       "events": {
@@ -27852,8 +27843,7 @@
             }
           ],
           "name": "changeOrganName",
-          "type": "event",
-          "signature": "0x133895c1c832b44ee3aab9909d2fd715c60ace0f02485202e5abe1d7fb1634f7"
+          "type": "event"
         },
         "0x69ef4b1cb1e3f170e636a678eb5bdcc1a5220158859f5a6218483d81ed19c6ba": {
           "anonymous": false,
@@ -27875,8 +27865,7 @@
             }
           ],
           "name": "spendMoney",
-          "type": "event",
-          "signature": "0x69ef4b1cb1e3f170e636a678eb5bdcc1a5220158859f5a6218483d81ed19c6ba"
+          "type": "event"
         },
         "0xe8e8caa49c00808ca0e50595f43e7fc4e3a4286edfd5ad4de7ab640742e1fb22": {
           "anonymous": false,
@@ -27893,8 +27882,7 @@
             }
           ],
           "name": "receiveMoney",
-          "type": "event",
-          "signature": "0xe8e8caa49c00808ca0e50595f43e7fc4e3a4286edfd5ad4de7ab640742e1fb22"
+          "type": "event"
         },
         "0xc6bf01a203024da6c2267ec8f9524f39ae64470f6ceec9cb9b05e3bc78ce898d": {
           "anonymous": false,
@@ -27921,8 +27909,7 @@
             }
           ],
           "name": "addMasterEvent",
-          "type": "event",
-          "signature": "0xc6bf01a203024da6c2267ec8f9524f39ae64470f6ceec9cb9b05e3bc78ce898d"
+          "type": "event"
         },
         "0x31cf2b8264326b61eebefe150df927acfc3396b2c609d77aa05ef4bc570ac23c": {
           "anonymous": false,
@@ -27939,8 +27926,7 @@
             }
           ],
           "name": "remMasterEvent",
-          "type": "event",
-          "signature": "0x31cf2b8264326b61eebefe150df927acfc3396b2c609d77aa05ef4bc570ac23c"
+          "type": "event"
         },
         "0x26272d25bc1196c872b2db8c23f99b1b000a717184976793acfe5e0ad4e33dc0": {
           "anonymous": false,
@@ -27977,8 +27963,7 @@
             }
           ],
           "name": "addAdminEvent",
-          "type": "event",
-          "signature": "0x26272d25bc1196c872b2db8c23f99b1b000a717184976793acfe5e0ad4e33dc0"
+          "type": "event"
         },
         "0xd67845a459bcfe6c29d4fdbe8f965d4a62ae50e68971c894edfd625d9f8bfebe": {
           "anonymous": false,
@@ -27995,8 +27980,7 @@
             }
           ],
           "name": "remAdminEvent",
-          "type": "event",
-          "signature": "0xd67845a459bcfe6c29d4fdbe8f965d4a62ae50e68971c894edfd625d9f8bfebe"
+          "type": "event"
         },
         "0xd0c4b59ed6fb4a093e4bfcba88175d0d6443b50bf9717b95f697eca388314b36": {
           "anonymous": false,
@@ -28028,8 +28012,7 @@
             }
           ],
           "name": "addNormEvent",
-          "type": "event",
-          "signature": "0xd0c4b59ed6fb4a093e4bfcba88175d0d6443b50bf9717b95f697eca388314b36"
+          "type": "event"
         },
         "0x64568118a19ad215abe2d686897fccabd012923c71c2685472af34b4e0676e3a": {
           "anonymous": false,
@@ -28061,17 +28044,17 @@
             }
           ],
           "name": "remNormEvent",
-          "type": "event",
-          "signature": "0x64568118a19ad215abe2d686897fccabd012923c71c2685472af34b4e0676e3a"
+          "type": "event"
         }
       },
       "links": {},
-      "address": "0xddDb548860c2fe5299F6bE1fE1352230399B1948",
-      "transactionHash": "0x7f453416d31534c40e4d6d8aa95283dc8f5bd606f717de1c384996a23d39fdf2"
+      "address": "0x70Ec7724c36e4Aa3fBe73dc02364D231dd7806FF",
+      "transactionHash": "0x8e28ed6ad39537b342c8a33bc9f9f8ec1368803848894729c6faea49c41f219e"
     }
   },
-  "schemaVersion": "3.0.16",
-  "updatedAt": "2019-10-06T19:34:16.049Z",
+  "schemaVersion": "3.3.2",
+  "updatedAt": "2021-03-04T20:32:45.120Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },
