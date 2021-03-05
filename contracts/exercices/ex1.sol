@@ -23,6 +23,17 @@ contract ex1 is exerciceTemplate {
   public
   {}
 
+  function batchStudents(address payable[] memory _studentAddresses)
+  public
+  onlyTeacher
+  {
+    for (uint i = 0; i < _studentAddresses.length; i++)
+    {
+      newStudentInClass(_studentAddresses[i]);
+    }
+
+  }
+
   function newStudentInClass(address payable _studentAddress) 
   public 
   onlyTeacher 
