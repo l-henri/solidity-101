@@ -19,21 +19,53 @@ var Ex12 = artifacts.require('exercices/ex12.sol')
 
 module.exports = (deployer, network, accounts) => {
     deployer.then(async () => {
-        await organDeploy(deployer, network, accounts);
-        await pointsManagerAndExercices(deployer, network, accounts);
-        await addingAdminsAndNorms(deployer, network, accounts);
-        await setRandomValueStores(deployer, network, accounts);
-        await deployRecap(deployer, network, accounts); 
-        // await deployLibs(deployer, network, accounts);
-        // await declareOrgans(deployer, network, accounts);
-        // await declareProcedures(deployer, network, accounts);
-        // await setOrganAdminsAndMasters(deployer, network, accounts);
-        // await deployTokenAndInsurancePlan(deployer, network, accounts);
-        // await setOrganNorms(deployer, network, accounts);
-        // await cleanInstallation(deployer, network, accounts);
-        // await installationRecap(deployer, network, accounts);
+        // await organDeploy(deployer, network, accounts);
+        // await pointsManagerAndExercices(deployer, network, accounts);
+        // await addingAdminsAndNorms(deployer, network, accounts);
+        // await setRandomValueStores(deployer, network, accounts);
+        // await deployRecap(deployer, network, accounts); 
+        // await reDeployEx1(deployer, network, accounts); 
+        await declareStudents(deployer, network, accounts); 
     });
 };
+
+async function reDeployEx1(deployer, network, accounts) {
+	    console.log("Declaring organs")
+	studentsOrgan = await Organ.at("0x62B7E303098169CA2FE5bdDA2BAFcc42dDD58a70");
+	teachersOrgan = await Organ.at("0xB34423173F36223C397ffAa5Bd13c2FaD5b5F82f");
+	exercicesOrgan = await Organ.at("0x036246770DDC3619a5477E826097B5BeFF8429A1");
+	pointsManagerContract = await PointsManager.at("0x173cfbcc3fdbfCCa2A90511FE7B9ca425564C983");
+	console.log("Deploying ex1")
+	Ex1Contract = await Ex1.new(studentsOrgan.address, teachersOrgan.address, pointsManagerContract.address, {from: accounts[0]});
+	await exercicesOrgan.addNorm(Ex1Contract.address, web3.utils.fromAscii('0'), 0, 0)
+}
+
+async function declareStudents(deployer, network, accounts) {
+	console.log("Declaring ex1")
+	Ex1Contract = await Ex1.at("0xbe7e5b95Bad8F304efbD9510EEe3382702AA411c");
+	console.log("Declaring students")
+	var studentsList = [
+	"0xCe32fFEf8BA0FBCaeCEa2578ca103884139F9156"
+		];
+		for (i = 0; i < studentsList.length; i++)
+		{
+		console.log("Declaring " + studentsList[i])
+		await Ex1Contract.newStudentInClass(studentsList[i])
+		}
+	// await Ex1Contract.newStudentInClass("0xD9f95cd694B6d80971209b152Ec1d5C3B0Be565f")
+	// await Ex1Contract.newStudentInClass("")
+	// await Ex1Contract.newStudentInClass("")
+	// await Ex1Contract.newStudentInClass("")
+	// await Ex1Contract.newStudentInClass("")
+	// await Ex1Contract.newStudentInClass("")
+	// await Ex1Contract.newStudentInClass("")
+	// await Ex1Contract.newStudentInClass("")
+	// await Ex1Contract.newStudentInClass("")
+	// await Ex1Contract.newStudentInClass("")
+	// await Ex1Contract.newStudentInClass("")
+	// await Ex1Contract.newStudentInClass("")
+	console.log( "Done");
+}
 
 async function organDeploy(deployer, network, accounts) {
 	    console.log("Deploying libraries")
@@ -96,10 +128,12 @@ async function addingAdminsAndNorms(deployer, network, accounts) {
 
 async function setRandomValueStores(deployer, network, accounts) {
 	console.log("Setting random value store")
-	// await studentsOrgan.send(5000000000000000000, {from: accounts[0]});
-	// Ex1Contract.newStudentInClass("0xeab83a73c1fd855beaf1d0b7a798e31526c291da", {from: accounts[0]});
-	// test = await studentsOrgan.norms(await studentsOrgan.getAddressPositionInNorm('0xeab83a73c1fd855beaf1d0b7a798e31526c291da'))
-	// console.log(test)
+
+	var Ex6Contract = await Ex6.at('0xA9F5f2E49F93A6eD59a24Aa5FB81097E65e20D73')
+	var Ex7Contract = await Ex7.at('0x51330284182faEd4fBC8273711f7096fCcD60e5e')
+	var Ex10Contract = await Ex10.at('0x291dD0D61C9F876c5e5E81115f38967410c7f7CA')
+	var Ex11Contract = await Ex11.at('0xf1fC623176d712740c0038B59e054a9e9Fb286fA')
+	var Ex11bContract = await Ex11b.at('0xf1fc623176d712740c0038b59e054a9e9fb286fa')
 	randomValueStore1 = []
 	randomValueStore2 = []
 	randomValueStore3 = []
@@ -109,12 +143,13 @@ async function setRandomValueStores(deployer, network, accounts) {
 		randomValueStore2.push(Math.floor(Math.random()*10000))
 		randomValueStore3.push(Math.floor(Math.random()*10000))
 		}
-	await Ex6Contract.setRandomValueStore(randomValueStore1)
-	await Ex7Contract.setRandomValueStore(randomValueStore2)
-	await Ex10Contract.setRandomValueStore(randomValueStore3)
-	await Ex11Contract.setex11bAddress(Ex11bContract.address)
+	await Ex6Contract.setRandomValueStore(randomValueStore1);
+	await Ex7Contract.setRandomValueStore(randomValueStore2);
+	await Ex10Contract.setRandomValueStore(randomValueStore3);
+	await Ex11Contract.setex11bAddress(Ex11bContract.address);
 	randomSecretEx11 = Math.floor(Math.random()*10000)
-	await Ex11bContract.setSecretValue(randomSecretEx11)
+	await Ex11bContract.setSecretValue(randomSecretEx11);
+
 }
 
 async function deployRecap(deployer, network, accounts) {

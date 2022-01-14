@@ -1,0 +1,438 @@
+{
+  "contractName": "ex09",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract ERC20TD",
+          "name": "_TDERC20",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "erc20Address",
+          "type": "address"
+        }
+      ],
+      "name": "constructedCorrectly",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "hasCompletedExercice",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.2+commit.bacdbe57\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract ERC20TD\",\"name\":\"_TDERC20\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"erc20Address\",\"type\":\"address\"}],\"name\":\"constructedCorrectly\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"hasCompletedExercice\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/henrilieutaud/Documents/Mes documents/ESILV/Workshop/solidity-101/contracts/exercices/ex09.sol\":\"ex09\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/henrilieutaud/Documents/Mes documents/ESILV/Workshop/solidity-101/contracts/ERC20TD.sol\":{\"keccak256\":\"0xc1d9de084a46ce0ea6c435c6762425788941c54472d3441ee9c96e8ab711e100\",\"urls\":[\"bzz-raw://2871a3611b986f92f82f266bf2223fd9fddefd4760007341a3beed6f0570d24c\",\"dweb:/ipfs/QmTGYDrq7KznDF3SkNvMX7KyaxeKrRhKwH4Jc6wdkREyNq\"]},\"/Users/henrilieutaud/Documents/Mes documents/ESILV/Workshop/solidity-101/contracts/exerciceTemplate.sol\":{\"keccak256\":\"0x01189e833ffcf2a9d4ad9723a5133c483c8f1694ef0f6491adcca16470001d3b\",\"urls\":[\"bzz-raw://089b3ba3847c61702bd474cffaed4bccc38ff447251b69e66e463c0d8e2c9317\",\"dweb:/ipfs/QmUbBLgGuvLnohwLF6zi9TsZmeaL1RLkYC5NRMKKLJUaz5\"]},\"/Users/henrilieutaud/Documents/Mes documents/ESILV/Workshop/solidity-101/contracts/exercices/ex09.sol\":{\"keccak256\":\"0xf59cafa625cde0e5962069d43dbbeca5449cc30706b1c74ba433d43d16d044e6\",\"urls\":[\"bzz-raw://b93cb7ee50125f57bee1cb7055f42436b4e13c5dd1c1e3e95ca044be1d85e33d\",\"dweb:/ipfs/QmNzKCxq9fXnNeRu7qBRDnrSGRkk25fskzxSpD1z3pm2Kx\"]},\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xcc78a17dd88fa5a2edc60c8489e2f405c0913b377216a5b26b35656b2d0dab52\",\"urls\":[\"bzz-raw://526dc85e1f9b9b45830e202568d267d93dde7a4fcccf4ad7798dadcd92304d3c\",\"dweb:/ipfs/QmaoXMB972J3cSDLtBq3xBo4jLwqD2uzXTwujtSPqkYVhR\"]},\"@openzeppelin/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0xca0c2396dbeb3503b51abf4248ebf77a1461edad513c01529df51850a012bee3\",\"urls\":[\"bzz-raw://991b44ff44e0496e8554a90f4c0512c28faed45104d40430019f3c67ea67740e\",\"dweb:/ipfs/Qmc3nRapVbcctELoZS5qe17zLkFB3bETBfwzCTMF1CSuGE\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x5f02220344881ce43204ae4a6281145a67bc52c2bb1290a791857df3d19d78f5\",\"urls\":[\"bzz-raw://24427744bd3e6cb73c17010119af12a318289c0253a4d9acb8576c9fb3797b08\",\"dweb:/ipfs/QmTLDqpKRBuxGxRAmjgXt9AkXyACW3MtKzi7PYjm5iMfGC\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0x8d3cb350f04ff49cfb10aef08d87f19dcbaecc8027b0bed12f3275cd12f38cf0\",\"urls\":[\"bzz-raw://ded47ec7c96750f9bd04bbbc84f659992d4ba901cb7b532a52cd468272cf378f\",\"dweb:/ipfs/QmfBrGtQP7rZEqEg6Wz6jh2N2Kukpj1z5v3CGWmAqrzm96\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516101f53803806101f58339818101604052602081101561003357600080fd5b810190808051906020019092919050505080806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055507f2915b3b4e0613c6b63dca39a375dd8c9f1de68d9e208a0713b7624260e2d08126000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390a1505060dc806101196000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063c42365c614602d575b600080fd5b606c60048036036020811015604157600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506086565b604051808215151515815260200191505060405180910390f35b60016020528060005260406000206000915054906101000a900460ff168156fea26469706673582212207cc43ce53d7fe47f64b5ec5f0686ed717cf0ca9be8f2fd8014e65ae401d05b6464736f6c63430006020033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063c42365c614602d575b600080fd5b606c60048036036020811015604157600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506086565b604051808215151515815260200191505060405180910390f35b60016020528060005260406000206000915054906101000a900460ff168156fea26469706673582212207cc43ce53d7fe47f64b5ec5f0686ed717cf0ca9be8f2fd8014e65ae401d05b6464736f6c63430006020033",
+  "sourceMap": "634:145:10:-:0;;;672:77;8:9:-1;5:2;;;30:1;27;20:12;5:2;672:77:10;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;672:77:10;;;;;;;;;;;;;;;;732:8;437::1;427:7;;:18;;;;;;;;;;;;;;;;;;456:38;485:7;;;;;;;;;;;456:38;;;;;;;;;;;;;;;;;;;;;;378:121;672:77:10;634:145;;;;;;",
+  "deployedSourceMap": "634:145:10:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;634:145:10;;;;;;;;;;;;;;;;;;;269:52:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;269:52:1;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.6.0;\n\n\nimport \"../exerciceTemplate.sol\";\n\n/*\nExercice 9: Visualizing code through Github history of commits\nIn this exercice, you need to:\n- Use Github to explore this contract's code history of revision\n- Find the last visible version of the contract code\n- Use a function \n- Your points are credited by the contract\n*/ \n\n/*\nWhat you need to know to complete this exercice\nA) What was included in the previous exercices\nB) The history of contract modification is visible on https://github.com/l-henri/solidity-101\nC) Only using the ABI of this contract puts you at risk of not getting the points you deserve\n\n*/\n\n\ncontract ex09 is exerciceTemplate {\t\n\tconstructor(ERC20TD _TDERC20) \n  public \n  exerciceTemplate(_TDERC20)\n  {\n  }\n\n// Find the code elsewhere\n}",
+  "sourcePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/Workshop/solidity-101/contracts/exercices/ex09.sol",
+  "ast": {
+    "absolutePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/Workshop/solidity-101/contracts/exercices/ex09.sol",
+    "exportedSymbols": {
+      "ex09": [
+        974
+      ]
+    },
+    "id": 975,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 961,
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:10"
+      },
+      {
+        "absolutePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/Workshop/solidity-101/contracts/exerciceTemplate.sol",
+        "file": "../exerciceTemplate.sol",
+        "id": 962,
+        "nodeType": "ImportDirective",
+        "scope": 975,
+        "sourceUnit": 222,
+        "src": "26:33:10",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 963,
+              "name": "exerciceTemplate",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 221,
+              "src": "651:16:10",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_exerciceTemplate_$221",
+                "typeString": "contract exerciceTemplate"
+              }
+            },
+            "id": 964,
+            "nodeType": "InheritanceSpecifier",
+            "src": "651:16:10"
+          }
+        ],
+        "contractDependencies": [
+          221
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 974,
+        "linearizedBaseContracts": [
+          974,
+          221
+        ],
+        "name": "ex09",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 972,
+              "nodeType": "Block",
+              "src": "744:5:10",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 973,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "id": 969,
+                    "name": "_TDERC20",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 966,
+                    "src": "732:8:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ERC20TD_$144",
+                      "typeString": "contract ERC20TD"
+                    }
+                  }
+                ],
+                "id": 970,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 968,
+                  "name": "exerciceTemplate",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 221,
+                  "src": "715:16:10",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_exerciceTemplate_$221_$",
+                    "typeString": "type(contract exerciceTemplate)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "715:26:10"
+              }
+            ],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 967,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 966,
+                  "name": "_TDERC20",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 973,
+                  "src": "684:16:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ERC20TD_$144",
+                    "typeString": "contract ERC20TD"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 965,
+                    "name": "ERC20TD",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 144,
+                    "src": "684:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ERC20TD_$144",
+                      "typeString": "contract ERC20TD"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "683:18:10"
+            },
+            "returnParameters": {
+              "id": 971,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "744:0:10"
+            },
+            "scope": 974,
+            "src": "672:77:10",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 975,
+        "src": "634:145:10"
+      }
+    ],
+    "src": "0:779:10"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/Workshop/solidity-101/contracts/exercices/ex09.sol",
+      "exportedSymbols": {
+        "ex09": [
+          974
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.6",
+            ".0"
+          ]
+        },
+        "id": 961,
+        "name": "PragmaDirective",
+        "src": "0:23:10"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 222,
+          "absolutePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/Workshop/solidity-101/contracts/exerciceTemplate.sol",
+          "file": "../exerciceTemplate.sol",
+          "scope": 975,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 962,
+        "name": "ImportDirective",
+        "src": "26:33:10"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "contractDependencies": [
+            221
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            974,
+            221
+          ],
+          "name": "ex09",
+          "scope": 975
+        },
+        "children": [
+          {
+            "attributes": {
+              "arguments": null
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "exerciceTemplate",
+                  "referencedDeclaration": 221,
+                  "type": "contract exerciceTemplate"
+                },
+                "id": 963,
+                "name": "UserDefinedTypeName",
+                "src": "651:16:10"
+              }
+            ],
+            "id": 964,
+            "name": "InheritanceSpecifier",
+            "src": "651:16:10"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "name": "",
+              "overrides": null,
+              "scope": 974,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_TDERC20",
+                      "overrides": null,
+                      "scope": 973,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract ERC20TD",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "ERC20TD",
+                          "referencedDeclaration": 144,
+                          "type": "contract ERC20TD"
+                        },
+                        "id": 965,
+                        "name": "UserDefinedTypeName",
+                        "src": "684:7:10"
+                      }
+                    ],
+                    "id": 966,
+                    "name": "VariableDeclaration",
+                    "src": "684:16:10"
+                  }
+                ],
+                "id": 967,
+                "name": "ParameterList",
+                "src": "683:18:10"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 971,
+                "name": "ParameterList",
+                "src": "744:0:10"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 221,
+                      "type": "type(contract exerciceTemplate)",
+                      "value": "exerciceTemplate"
+                    },
+                    "id": 968,
+                    "name": "Identifier",
+                    "src": "715:16:10"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 966,
+                      "type": "contract ERC20TD",
+                      "value": "_TDERC20"
+                    },
+                    "id": 969,
+                    "name": "Identifier",
+                    "src": "732:8:10"
+                  }
+                ],
+                "id": 970,
+                "name": "ModifierInvocation",
+                "src": "715:26:10"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 972,
+                "name": "Block",
+                "src": "744:5:10"
+              }
+            ],
+            "id": 973,
+            "name": "FunctionDefinition",
+            "src": "672:77:10"
+          }
+        ],
+        "id": 974,
+        "name": "ContractDefinition",
+        "src": "634:145:10"
+      }
+    ],
+    "id": 975,
+    "name": "SourceUnit",
+    "src": "0:779:10"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.2+commit.bacdbe57.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2022-01-14T18:25:32.376Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

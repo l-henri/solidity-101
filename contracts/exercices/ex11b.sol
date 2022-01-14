@@ -1,4 +1,4 @@
-pragma solidity >=0.4.21 <0.6.0;
+pragma solidity ^0.6.0;
 
 
 import "../exerciceTemplate.sol";
@@ -23,14 +23,15 @@ contract ex11b is exerciceTemplate {
 
   uint public secretValue;
 
-  constructor(address payable _studentsOrganAddres, address payable _teachersOrganAddress, address payable _pointsManagerContractAddress) 
-  exerciceTemplate(_studentsOrganAddres, _teachersOrganAddress, _pointsManagerContractAddress) 
-  public
-  {}
-
+  constructor(ERC20TD _TDERC20) 
+  public 
+  exerciceTemplate(_TDERC20)
+  {
+  }
+  
   function setSecretValue(uint _newSecretValue)
   public
-  onlyTeacher
+  onlyTeachers
   {
   	secretValue = _newSecretValue;
   }

@@ -1,4 +1,4 @@
-pragma solidity >=0.4.21 <0.6.0;
+pragma solidity ^0.6.0;
 
 
 import "../exerciceTemplate.sol";
@@ -22,21 +22,22 @@ B) https://medium.com/@blockchain101/calling-the-function-of-another-contract-in
 contract ex11 is exerciceTemplate {
 
   address public ex11bAddress;
-  constructor(address payable _studentsOrganAddres, address payable _teachersOrganAddress, address payable _pointsManagerContractAddress) 
-  exerciceTemplate(_studentsOrganAddres, _teachersOrganAddress, _pointsManagerContractAddress) 
-  public
-  {}
+
+  constructor(ERC20TD _TDERC20) 
+  public 
+  exerciceTemplate(_TDERC20)
+  {
+  }
 
   function setex11bAddress(address _ex11bAddress) 
   public 
-  onlyTeacher
+  onlyTeachers
   {
    ex11bAddress = _ex11bAddress;
   }
 
   function askForPoints(uint _aValueToInput) 
   public 
-  canWorkOnExercice 
   {
     // Instanciating the external contract
     ex11b ex11bInstance = ex11b(ex11bAddress);
@@ -49,7 +50,7 @@ contract ex11 is exerciceTemplate {
 
     // Validating exercice
     validateExercice(msg.sender);
-    creditStudent(200, msg.sender);
+    creditStudent(2, msg.sender);
 
   }
 

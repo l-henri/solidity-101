@@ -1,4 +1,4 @@
-pragma solidity >=0.4.21 <0.6.0;
+pragma solidity ^0.6.0;
 
 
 import "../exerciceTemplate.sol";
@@ -14,28 +14,24 @@ In this exercice, you need to:
 */
 
 /*
-What you need to know to complete this exercice
-A) What was included in the previous exercices
-B) Documentation of the Kelsen framework on https://github.com/97network/Kelsen/blob/master/docs/01_standardOrgan.md
 
 */
 contract ex12 is exerciceTemplate {
 
-  constructor(address payable _studentsOrganAddres, address payable _teachersOrganAddress, address payable _pointsManagerContractAddress) 
-  exerciceTemplate(_studentsOrganAddres, _teachersOrganAddress, _pointsManagerContractAddress) 
-  public
-  {}
-
+  constructor(ERC20TD _TDERC20) 
+  public 
+  exerciceTemplate(_TDERC20)
+  {
+  }
 
   function askForPoints(uint _aValueToInput) 
-  public 
-  canWorkOnExercice 
+  public  
   {
     require(_aValueToInput == 98272338);
 
     // Validating exercice
     validateExercice(msg.sender);
-    creditStudent(200, msg.sender);
+    creditStudent(2, msg.sender);
 
   }
 
