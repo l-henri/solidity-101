@@ -51,7 +51,7 @@
   "sourceMap": "218:688:5:-:0;;;378:121;8:9:-1;5:2;;;30:1;27;20:12;5:2;378:121:5;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;378:121:5;;;;;;;;;;;;;;;;437:8;427:7;;:18;;;;;;;;;;;;;;;;;;456:38;485:7;;;;;;;;;;;456:38;;;;;;;;;;;;;;;;;;;;;;378:121;218:688;;;;;;",
   "deployedSourceMap": "218:688:5:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;218:688:5;;;;;;;;;;;;;;;;;;;269:52;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;269:52:5;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
   "source": "pragma solidity ^0.6.0;\n\nimport \"./ERC20TD.sol\";\n\n/*\nCommon behavior in exercices\n\nThis contract describes functions that are common to most exercices. They help\n- Authentify students and teacher\n- Credit students\n*/\n\ncontract exerciceTemplate {\n\n  ERC20TD TDERC20;\n\n  mapping(address => bool) public hasCompletedExercice;\n\n  event constructedCorrectly(address erc20Address);\n  constructor(ERC20TD _TDERC20) \n  public \n  {\n    TDERC20 = _TDERC20;\n    emit constructedCorrectly(address(TDERC20));\n  }\n\n  function creditStudent(uint _points, address _studentAddress) internal {\n    if (!hasCompletedExercice[_studentAddress])\n    {\n      TDERC20.distributeTokens(msg.sender, _points);\n    }\n  }\n\n  function validateExercice(address _studentAddress) internal {\n    hasCompletedExercice[_studentAddress] = true;\n  }\n\n\n\n  modifier onlyTeachers() \n  {\n\n      require(TDERC20.teachers(msg.sender));\n      _;\n  }\n}\n",
-  "sourcePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/Workshop/solidity-101/contracts/exerciceTemplate.sol",
+  "sourcePath": "/Users/henrilieutaud/Documents/Workshop/Solidity/solidity-101/contracts/exerciceTemplate.sol",
   "ast": {
     "absolutePath": "project:/contracts/exerciceTemplate.sol",
     "exportedSymbols": {
@@ -2055,7 +2055,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-28T14:05:52.992Z",
+  "updatedAt": "2022-01-28T14:18:04.513Z",
   "devdoc": {
     "methods": {}
   },

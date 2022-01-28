@@ -42,7 +42,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -61,7 +62,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -74,7 +76,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -93,7 +96,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -142,7 +146,7 @@
   "sourceMap": "859:1226:11:-:0;;;1123:77;8:9:-1;5:2;;;30:1;27;20:12;5:2;1123:77:11;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1123:77:11;;;;;;;;;;;;;;;;1183:8;437::5;427:7;;:18;;;;;;;;;;;;;;;;;;456:38;485:7;;;;;;;;;;;456:38;;;;;;;;;;;;;;;;;;;;;;378:121;1123:77:11;859:1226;;;;;;",
   "deployedSourceMap": "859:1226:11:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;859:1226:11;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1088:30;;;:::i;:::-;;;;;;;;;;;;;;;;;;;947:44;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;947:44:11;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;995:50;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;995:50:11;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1669:123;;;:::i;:::-;;269:52:5;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;269:52:5;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1378:285:11;;;:::i;:::-;;1206:168;;;;;;13:3:-1;8;5:12;2:2;;;30:1;27;20:12;2:2;1206:168:11;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;1206:168:11;;;;;;;;;;;;;;:::i;:::-;;1796:286;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1796:286:11;;;;;;;;;;;;;;;;;:::i;:::-;;1088:30;;;;:::o;947:44::-;;;;;;;;;;;;;;;;;:::o;995:50::-;;;;;;;;;;;;;;;;;;;;;;:::o;1669:123::-;1785:2;1757:13;:25;1771:10;1757:25;;;;;;;;;;;;;;;;:30;1730:12;:24;1743:10;1730:24;;;;;;;;;;;;;;;:57;;;;1669:123::o;269:52:5:-;;;;;;;;;;;;;;;;;;;;;;:::o;1378:285:11:-;1451:17;1469:18;;1451:37;;;;;;;;;1423:13;:25;1437:10;1423:25;;;;;;;;;;;;;;;:65;;;;1516:1;1494:18;;:23;;;;;;;;;;;1549:24;1527:18;;:46;1523:93;;1607:1;1586:18;:22;;;;1523:93;1654:4;1621:18;:30;1640:10;1621:30;;;;;;;;;;;;;;;;:37;;;;;;;;;;;;;;;;;;1378:285::o;1206:168::-;861:7:5;;;;;;;;;;;:16;;;878:10;861:28;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;861:28:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;861:28:5;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;861:28:5;;;;;;;;;;;;;;;;853:37;;;;;;1324:18:11::1;1304:17;:38;;;;;;;:::i;:::-;;1368:1;1347:18;:22;;;;1206:168:::0;:::o;1796:286::-;1909:13;1880;:25;1894:10;1880:25;;;;;;;;;;;;;;;;:42;1872:51;;;;;;1971:4;1937:38;;:18;:30;1956:10;1937:30;;;;;;;;;;;;;;;;;;;;;;;;;:38;;;1929:47;;;;;;2014:28;2031:10;2014:16;:28::i;:::-;2048;2062:1;2065:10;2048:13;:28::i;:::-;1796:286;:::o;696:115:5:-;802:4;762:20;:37;783:15;762:37;;;;;;;;;;;;;;;;:44;;;;;;;;;;;;;;;;;;696:115;:::o;503:189::-;585:20;:37;606:15;585:37;;;;;;;;;;;;;;;;;;;;;;;;;580:108;;636:7;;;;;;;;;;;:24;;;661:10;673:7;636:45;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;636:45:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;636:45:5;;;;580:108;503:189;;:::o;859:1226:11:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
   "source": "pragma solidity ^0.6.0;\n\n\nimport \"../exerciceTemplate.sol\";\n\n/*\nExercice 6: public/private variables\nIn this exercice, you need to:\n- Use a function to get assigned a private variable\n- Use a function to duplicate this variable in a public variables\n- Use a function to show you know the correct value of the private variable\n- Your points are credited by the contract\n*/\n\n/*\nWhat you need to know to complete this exercice\nA) What was included in the previous exercices\nB) The differences between public and private variables https://solidity.readthedocs.io/en/develop/contracts.html#index-3\nC) What a contract constructor is https://solidity.readthedocs.io/en/develop/contracts.html#index-17\nD) When the contract is created, the teacher creates an array called randomValuesStore. \nWhen students start the exercice, they get assigned one of these values.\n*/\ncontract ex06 is exerciceTemplate {\n\n\tmapping(address => uint) private privateValues;\n  mapping(address => uint) public publicValues;\n  mapping(address => bool) public exerciceWasStarted;\n\n  uint[20] private randomValuesStore;\n  uint public nextValueStoreRank;\n\n  constructor(ERC20TD _TDERC20) \n  public \n  exerciceTemplate(_TDERC20)\n  {\n  }\n  \n  function setRandomValueStore(uint[20] memory _randomValuesStore) \n  public \n  onlyTeachers\n  {\n   randomValuesStore = _randomValuesStore;\n   nextValueStoreRank = 0;\n  }\n\n  function startExercice() \n  public  \n  {\n    privateValues[msg.sender] = randomValuesStore[nextValueStoreRank];\n    nextValueStoreRank += 1;\n    if (nextValueStoreRank >= randomValuesStore.length)\n    {\n     nextValueStoreRank = 0; \n    }\n    exerciceWasStarted[msg.sender] = true;\n  }\n  \n  function duplicatePrivateValueInPublic() \n  public  \n  {\n    publicValues[msg.sender] = privateValues[msg.sender] + 85;\n  }\n\n  function showYouKnowPrivateValue(uint _privateValue) \n  public \n   \n  {\n    require(privateValues[msg.sender] == _privateValue);\n    require(exerciceWasStarted[msg.sender] == true);\n    \n    // Validating exercice\n    validateExercice(msg.sender);\n    creditStudent(2, msg.sender);\n\n  }\n\n}\n",
-  "sourcePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/Workshop/solidity-101/contracts/exercices/ex06.sol",
+  "sourcePath": "/Users/henrilieutaud/Documents/Workshop/Solidity/solidity-101/contracts/exercices/ex06.sol",
   "ast": {
     "absolutePath": "project:/contracts/exercices/ex06.sol",
     "exportedSymbols": {
@@ -3760,7 +3764,8 @@
   },
   "networks": {},
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-28T14:05:52.997Z",
+  "updatedAt": "2022-01-28T15:17:45.265Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },

@@ -42,7 +42,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -61,7 +62,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -96,7 +98,7 @@
   "sourceMap": "717:642:10:-:0;;;810:77;8:9:-1;5:2;;;30:1;27;20:12;5:2;810:77:10;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;810:77:10;;;;;;;;;;;;;;;;870:8;437::5;427:7;;:18;;;;;;;;;;;;;;;;;;456:38;485:7;;;;;;;;;;;456:38;;;;;;;;;;;;;;;;;;;;;;378:121;810:77:10;717:642;;;;;;",
   "deployedSourceMap": "717:642:10:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;717:642:10;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;893:158;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;893:158:10;;;;;;;;;;;;;;;;;;;:::i;:::-;;755:50;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;755:50:10;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;269:52:5;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;269:52:5;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1057:299:10;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1057:299:10;;;;;;;;;;;;;;;;;;;:::i;:::-;;893:158;986:10;968:28;;:14;:28;;;;960:37;;;;;;1032:14;1002:15;:27;1018:10;1002:27;;;;;;;;;;;;;;;;:44;;;;;;;;;;;;;;;;;;893:158;:::o;755:50::-;;;;;;;;;;;;;;;;;;;;;;:::o;269:52:5:-;;;;;;;;;;;;;;;;;;;;;;:::o;1057:299:10:-;1176:4;1134:46;;:20;:38;1155:16;1134:38;;;;;;;;;;;;;;;;;;;;;;;;;:46;;;;1126:55;;;;;;1232:10;1195:47;;:15;:33;1211:16;1195:33;;;;;;;;;;;;;;;;;;;;;;;;;:47;;;1187:56;;;;;;1276:34;1293:16;1276;:34::i;:::-;1316;1330:1;1333:16;1316:13;:34::i;:::-;1057:299;:::o;696:115:5:-;802:4;762:20;:37;783:15;762:37;;;;;;;;;;;;;;;;:44;;;;;;;;;;;;;;;;;;696:115;:::o;503:189::-;585:20;:37;606:15;585:37;;;;;;;;;;;;;;;;;;;;;;;;;580:108;;636:7;;;;;;;;;;;:24;;;661:10;673:7;636:45;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;636:45:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;636:45:5;;;;580:108;503:189;;:::o",
   "source": "pragma solidity ^0.6.0;\n\nimport \"../exerciceTemplate.sol\";\n\n/*\nExercice 5: Asking another student for help \nIn this exercice, you need to:\n- Use this contract's functions in order to declare one of your colleague address as your helper\n- Ask this colleague to send a transaction to the contract\n- Your points are credited by the contract\n*/\n\n/*\nWhat you need to know to complete this exercice\nA) What was included in the previous exercices\nB) \"Solidity mappings are a type that has some similarities to hash tables. Solidity mappings are used to structure value types for smart contracts.\" https://www.bitdegree.org/learn/solidity-mappings/\nhttps://solidity.readthedocs.io/en/develop/types.html?highlight=mapping\n\n*/\ncontract ex05 is exerciceTemplate {\n\n\tmapping(address => address) public helpersRegister;\n\n  constructor(ERC20TD _TDERC20) \n  public \n  exerciceTemplate(_TDERC20)\n  {\n  }\n  \n  function declareHelper(address _helperAddress) \n  public  \n  {\n    require(_helperAddress != msg.sender);\n  \thelpersRegister[msg.sender] = _helperAddress;\n  }\n  \n  function helpColleague(address _helpedColleague) \n  public  \n  {\n    require(hasCompletedExercice[_helpedColleague] != true);\n    require(helpersRegister[_helpedColleague] == msg.sender);\n\n  \t// Validating exercice\n    validateExercice(_helpedColleague);\n    creditStudent(2, _helpedColleague);\n\n  }\n\n}\n",
-  "sourcePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/Workshop/solidity-101/contracts/exercices/ex05.sol",
+  "sourcePath": "/Users/henrilieutaud/Documents/Workshop/Solidity/solidity-101/contracts/exercices/ex05.sol",
   "ast": {
     "absolutePath": "project:/contracts/exercices/ex05.sol",
     "exportedSymbols": {
@@ -2054,7 +2056,8 @@
   },
   "networks": {},
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-28T14:05:52.996Z",
+  "updatedAt": "2022-01-28T15:17:45.263Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },

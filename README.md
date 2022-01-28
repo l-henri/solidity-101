@@ -22,17 +22,21 @@ Your objective is to gather as many TD-SOL-101 points as possible. Please note :
 - A low level description of what is expected can be inferred by reading the code in each exercice.
 
 ## Exercises addresses
-* "0x173cfbcc3fdbfCCa2A90511FE7B9ca425564C983",  // [Points manager](contracts/ERC20TD.sol)
-* "0xbe7e5b95Bad8F304efbD9510EEe3382702AA411c",  // [Ex1Contract](contracts/exercices/ex01.sol)
-* "0x78Cab5B8765c2E713e6364f0052b570fa01b2e7D",  // [Ex2Contract](contracts/exercices/ex02.sol)
-* "0x2E6C56DF81F1192e8D69e3C38581A780C872583b",  // [Ex3Contract](contracts/exercices/ex03.sol)
-* "0x55406074F608773847a68fF9AdAa8eF475708A99",  // [Ex4Contract](contracts/exercices/ex04.sol)
-* "0x3C60C427C0696cFc83a6de4D3E41694650264046",  // [Ex5Contract](contracts/exercices/ex05.sol)
-* "0xA9F5f2E49F93A6eD59a24Aa5FB81097E65e20D73",  // [Ex6Contract](contracts/exercices/ex06.sol)
-* "0x51330284182faEd4fBC8273711f7096fCcD60e5e",  // [Ex7Contract](contracts/exercices/ex07.sol)
-* "0xeda23675c8040dcFF4A33aA74701f1388deEcc8B",  // [Ex8Contract](contracts/exercices/ex08.sol)
-* "0xEDC96502Db9594c0435eBa370f0A6F64Ae5581d5",  // [Ex9Contract](contracts/exercices/ex09.sol)
-* "0x291dD0D61C9F876c5e5E81115f38967410c7f7CA",  // [Ex10Contract](contracts/exercices/ex10.sol)
-* "0xf1fC623176d712740c0038B59e054a9e9Fb286fA",  // [Ex11Contract](contracts/exercices/ex11.sol)
-* Undisclosed // [Ex12Contract](contracts/exercices/ex12.sol)
+|Topic|Contract code|Contract on Etherscan|
+|---|---|---|
+|Points counter ERC20|[Points counter ERC20](contracts/TDERC20.sol)|[Link](https://rinkeby.etherscan.io/contract/0xEc2Ab930eAd292f524832290d449FE292058d138)|
+|Calling a function|[Ex01](contracts/exercices/ex01.sol)|[Link](https://rinkeby.etherscan.io/contract/0xD77c27E49df066D7AbEEbC59D86EFae52f12a1c7)|
+|Payable function|[Ex02](contracts/exercices/ex02.sol)|[Link](https://rinkeby.etherscan.io/contract/0x5D0470568C33D5543F8c5877CF4F4bfd28AC7e17)|
+|Requires|[Ex03](contracts/exercices/ex03.sol)|[Link](https://rinkeby.etherscan.io/contract/0x001BFb7717E4206a6EB1C64816e095bCe3832639)|
+|Storage variables|[Ex04](contracts/exercices/ex04.sol)|[Link](https://rinkeby.etherscan.io/contract/0xE8D91d3Bc8b448621780F67d97bAd9f92E646414)|
+|Mappings|[Ex05](contracts/exercices/ex05.sol)|[Link](https://rinkeby.etherscan.io/contract/0xeccEF63874431D4410e4AEd9F846ef75044F530E)|
+|Variable visibility|[Ex06](contracts/exercices/ex06.sol)|[Link](https://rinkeby.etherscan.io/contract/0x09FC33E9287031ee8F5a3E0543b4CdD74cA0bF34)|
+|Events|[Ex07](contracts/exercices/ex07.sol)|[Link](https://rinkeby.etherscan.io/contract/0xF087B5a17bbf86208d394f93855BA136049a9e54)|
+|Structures|[Ex08](contracts/exercices/ex08.sol)|[Link](https://rinkeby.etherscan.io/contract/0xc8f409790C512F32a32d446ff40bDA2bCf8846e2)|
+|Code history|[Ex09](contracts/exercices/ex09.sol)|[Link](https://rinkeby.etherscan.io/contract/0xF823A770590f78eCaa2cD42aDcD5AE6B6BA69C33)|
+|Past transactions|[Ex10](contracts/exercices/ex10.sol)|[Link](https://rinkeby.etherscan.io/contract/0x743Aa9c79D1dbe031e7CE03ba37eFE9CbD204295)|
+|Composability|[Ex11](contracts/exercices/ex11.sol)|[Link](https://rinkeby.etherscan.io/contract/0xfac0a3D22E42492C2BF155E20af5d77C4D7E2C7F)|
+|Blockchain forensics|[Ex12](contracts/exercices/ex12.sol)|Undisclosed|
+
+
 

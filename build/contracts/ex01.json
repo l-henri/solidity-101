@@ -42,7 +42,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -58,7 +59,7 @@
   "sourceMap": "342:254:6:-:0;;;380:77;8:9:-1;5:2;;;30:1;27;20:12;5:2;380:77:6;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;380:77:6;;;;;;;;;;;;;;;;440:8;437::5;427:7;;:18;;;;;;;;;;;;;;;;;;456:38;485:7;;;;;;;;;;;456:38;;;;;;;;;;;;;;;;;;;;;;378:121;380:77:6;342:254;;;;;;",
   "deployedSourceMap": "342:254:6:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;342:254:6;;;;;;;;;;;;;;;;;;;;;;;;463:130;;;:::i;:::-;;269:52:5;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;269:52:5;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;463:130:6;526:28;543:10;526:16;:28::i;:::-;560;574:1;577:10;560:13;:28::i;:::-;463:130::o;269:52:5:-;;;;;;;;;;;;;;;;;;;;;;:::o;696:115::-;802:4;762:20;:37;783:15;762:37;;;;;;;;;;;;;;;;:44;;;;;;;;;;;;;;;;;;696:115;:::o;503:189::-;585:20;:37;606:15;585:37;;;;;;;;;;;;;;;;;;;;;;;;;580:108;;636:7;;;;;;;;;;;:24;;;661:10;673:7;636:45;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;636:45:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;636:45:5;;;;580:108;503:189;;:::o",
   "source": "pragma solidity ^0.6.0;\n\nimport \"../exerciceTemplate.sol\";\n\n/*\nExercice 1: Creating an Ethereum Public address\nIn this exercice, you need to:\n- Create an Ethereum public address\n- Call function ping()\n- Your points are credited\n*/\n/*\nWhat you need to know to complete this exercice\n\nA) Create a wallet using Metamask (http://metamask.io)\n\n*/\ncontract ex01 is exerciceTemplate {\n\n\tconstructor(ERC20TD _TDERC20) \n  public \n  exerciceTemplate(_TDERC20)\n  {\n  }\n  \n  function ping() \n  public  \n  {\n    // Validating exercice\n    validateExercice(msg.sender);\n    creditStudent(2, msg.sender);\n  }\n\n}\n",
-  "sourcePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/Workshop/solidity-101/contracts/exercices/ex01.sol",
+  "sourcePath": "/Users/henrilieutaud/Documents/Workshop/Solidity/solidity-101/contracts/exercices/ex01.sol",
   "ast": {
     "absolutePath": "project:/contracts/exercices/ex01.sol",
     "exportedSymbols": {
@@ -863,7 +864,8 @@
   },
   "networks": {},
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-28T14:05:52.993Z",
+  "updatedAt": "2022-01-28T15:17:45.257Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },

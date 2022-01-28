@@ -55,7 +55,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -74,7 +75,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -87,7 +89,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -136,7 +139,7 @@
   "sourceMap": "790:1209:12:-:0;;;1061:77;8:9:-1;5:2;;;30:1;27;20:12;5:2;1061:77:12;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1061:77:12;;;;;;;;;;;;;;;;1121:8;437::5;427:7;;:18;;;;;;;;;;;;;;;;;;456:38;485:7;;;;;;;;;;;456:38;;;;;;;;;;;;;;;;;;;;;;378:121;1061:77:12;790:1209;;;;;;",
   "deployedSourceMap": "790:1209:12:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;790:1209:12;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;970:30;;;:::i;:::-;;;;;;;;;;;;;;;;;;;1602:107;;;:::i;:::-;;878:50;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;878:50:12;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1314:282;;;:::i;:::-;;269:52:5;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;269:52:5;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1142:168:12;;;;;;13:3:-1;8;5:12;2:2;;;30:1;27;20:12;2:2;1142:168:12;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;1142:168:12;;;;;;;;;;;;;;:::i;:::-;;1713:283;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1713:283:12;;;;;;;;;;;;;;;;;:::i;:::-;;970:30;;;;:::o;1602:107::-;1648:56;1701:2;1675:13;:25;1689:10;1675:25;;;;;;;;;;;;;;;;:28;1648:56;;;;;;;;;;;;;;;;;;1602:107::o;878:50::-;;;;;;;;;;;;;;;;;;;;;;:::o;1314:282::-;1384:17;1402:18;;1384:37;;;;;;;;;1356:13;:25;1370:10;1356:25;;;;;;;;;;;;;;;:65;;;;1449:1;1427:18;;:23;;;;;;;;;;;1482:24;1460:18;;:46;1456:93;;1540:1;1519:18;:22;;;;1456:93;1587:4;1554:18;:30;1573:10;1554:30;;;;;;;;;;;;;;;;:37;;;;;;;;;;;;;;;;;;1314:282::o;269:52:5:-;;;;;;;;;;;;;;;;;;;;;;:::o;1142:168:12:-;861:7:5;;;;;;;;;;;:16;;;878:10;861:28;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;861:28:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;861:28:5;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;861:28:5;;;;;;;;;;;;;;;;853:37;;;;;;1260:18:12::1;1240:17;:38;;;;;;;:::i;:::-;;1304:1;1283:18;:22;;;;1142:168:::0;:::o;1713:283::-;1823:13;1794;:25;1808:10;1794:25;;;;;;;;;;;;;;;;:42;1786:51;;;;;;1885:4;1851:38;;:18;:30;1870:10;1851:30;;;;;;;;;;;;;;;;;;;;;;;;;:38;;;1843:47;;;;;;1928:28;1945:10;1928:16;:28::i;:::-;1962;1976:1;1979:10;1962:13;:28::i;:::-;1713:283;:::o;696:115:5:-;802:4;762:20;:37;783:15;762:37;;;;;;;;;;;;;;;;:44;;;;;;;;;;;;;;;;;;696:115;:::o;503:189::-;585:20;:37;606:15;585:37;;;;;;;;;;;;;;;;;;;;;;;;;580:108;;636:7;;;;;;;;;;;:24;;;661:10;673:7;636:45;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;636:45:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;636:45:5;;;;580:108;503:189;;:::o;790:1209:12:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
   "source": "pragma solidity ^0.6.0;\n\n\nimport \"../exerciceTemplate.sol\";\n\n/*\nExercice 7: Events\nIn this exercice, you need to:\n- Use function assignRank() to receive a rank in the random value store\n- Use a function to trigger an event\n- Use Etherscan to analyse this event\n- Use a function to show you know the correct value of a private variable\n- Your points are credited by the contract\n*/\n\n/*\nWhat you need to know to complete this exercice\nA) What was included in the previous exercices\nB) Events are used to log data that is accessible from a full node, but not stored in the contracts variables.\nhttps://solidity.readthedocs.io/en/develop/introduction-to-smart-contracts.html#index-2\nC) Etherscan.io https://etherscan.io/ lets you visualize events that were fired during a given transaction\n\n*/\ncontract ex07 is exerciceTemplate {\n\n\tmapping(address => uint) private privateValues;\n  mapping(address => bool) public exerciceWasStarted;\n  uint[20] private randomValuesStore;\n  uint public nextValueStoreRank;\n\n  event showPrivateVariableInEvent(uint myVariable);\n  \n  constructor(ERC20TD _TDERC20) \n  public \n  exerciceTemplate(_TDERC20)\n  {\n  }\n\n  function setRandomValueStore(uint[20] memory _randomValuesStore) \n  public \n  onlyTeachers\n  {\n   randomValuesStore = _randomValuesStore;\n   nextValueStoreRank = 0;\n  }\n\n  function assignRank() \n  public  \n  {\n    privateValues[msg.sender] = randomValuesStore[nextValueStoreRank];\n    nextValueStoreRank += 1;\n    if (nextValueStoreRank >= randomValuesStore.length)\n    {\n     nextValueStoreRank = 0; \n    }\n    exerciceWasStarted[msg.sender] = true;\n  }\n  \n  function fireEvent() \n  public  \n  {\n    emit showPrivateVariableInEvent(privateValues[msg.sender]+32);\n  }\n\n  function showYouKnowPrivateValue(uint _privateValue) \n  public  \n  {\n    require(privateValues[msg.sender] == _privateValue);\n    require(exerciceWasStarted[msg.sender] == true);\n    \n    // Validating exercice\n    validateExercice(msg.sender);\n    creditStudent(2, msg.sender);\n\n  }\n\n}\n",
-  "sourcePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/Workshop/solidity-101/contracts/exercices/ex07.sol",
+  "sourcePath": "/Users/henrilieutaud/Documents/Workshop/Solidity/solidity-101/contracts/exercices/ex07.sol",
   "ast": {
     "absolutePath": "project:/contracts/exercices/ex07.sol",
     "exportedSymbols": {
@@ -3680,7 +3683,8 @@
   },
   "networks": {},
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-28T14:05:52.998Z",
+  "updatedAt": "2022-01-28T15:17:45.267Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },
