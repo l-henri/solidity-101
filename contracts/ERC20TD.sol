@@ -6,7 +6,6 @@ contract ERC20TD is ERC20 {
 mapping(address => bool) public teachers;
 event DenyTransfer(address recipient, uint256 amount);
 event DenyTransferFrom(address sender, address recipient, uint256 amount);
-
 constructor(string memory name, string memory symbol,uint256 initialSupply) public ERC20(name, symbol) {
         _mint(msg.sender, initialSupply);
         teachers[msg.sender] = true;
@@ -26,6 +25,17 @@ public
 onlyTeachers
 {
   teachers[teacherAddress] = isTeacher;
+}
+
+function setTeachers(address[] memory teacherAddresses) 
+public
+onlyTeachers
+{
+  for (uint i = 0; i < teacherAddresses.length; i++)
+  {
+      teachers[teacherAddresses[i]] = true;
+  }
+  
 }
 
 modifier onlyTeachers() {

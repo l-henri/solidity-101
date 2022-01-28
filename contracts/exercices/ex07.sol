@@ -6,6 +6,7 @@ import "../exerciceTemplate.sol";
 /*
 Exercice 7: Events
 In this exercice, you need to:
+- Use function assignRank() to receive a rank in the random value store
 - Use a function to trigger an event
 - Use Etherscan to analyse this event
 - Use a function to show you know the correct value of a private variable
@@ -43,7 +44,7 @@ contract ex07 is exerciceTemplate {
    nextValueStoreRank = 0;
   }
 
-  function startExercice() 
+  function assignRank() 
   public  
   {
     privateValues[msg.sender] = randomValuesStore[nextValueStoreRank];

@@ -6,8 +6,7 @@ import "../exerciceTemplate.sol";
 Exercice 1: Creating an Ethereum Public address
 In this exercice, you need to:
 - Create an Ethereum public address
-- Send it to the teacher via email
-- The teacher calls function newStudentInClass()
+- Call function ping()
 - Your points are credited
 */
 /*
@@ -24,12 +23,12 @@ contract ex01 is exerciceTemplate {
   {
   }
   
-  function ping(address payable _studentAddress) 
+  function ping() 
   public  
   {
     // Validating exercice
-    validateExercice(_studentAddress);
-    creditStudent(2, _studentAddress);
+    validateExercice(msg.sender);
+    creditStudent(2, msg.sender);
   }
 
 }

@@ -74,9 +74,11 @@ contract ex08 is exerciceTemplate {
   function claimPoints(uint _objectNumber) 
   public  
   {
+    // Check that you are validating with an object you created
     require(studentObjects[_objectNumber].creator == msg.sender);
+    // Check that the object has been modified at some pooint
     require(studentObjects[_objectNumber].hasBeenModified == true);
-
+    // Check that the current owner of the object is a teacher/exercise
     require(TDERC20.teachers(studentObjects[_objectNumber].owner));
 
     // Validating exercice

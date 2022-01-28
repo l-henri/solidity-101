@@ -27,6 +27,7 @@ contract ex11b is exerciceTemplate {
   public 
   exerciceTemplate(_TDERC20)
   {
+    secretValue = 31020;
   }
   
   function setSecretValue(uint _newSecretValue)

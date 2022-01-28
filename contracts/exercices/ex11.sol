@@ -23,20 +23,16 @@ contract ex11 is exerciceTemplate {
 
   address public ex11bAddress;
 
-  constructor(ERC20TD _TDERC20) 
+  constructor(ERC20TD _TDERC20, address _ex11bAddress) 
   public 
   exerciceTemplate(_TDERC20)
   {
+    ex11bAddress = _ex11bAddress;
   }
 
-  function setex11bAddress(address _ex11bAddress) 
-  public 
-  onlyTeachers
-  {
-   ex11bAddress = _ex11bAddress;
-  }
 
-  function askForPoints(uint _aValueToInput) 
+
+  function askForPoints(uint _aValueToInput, uint _nextValueForSecret) 
   public 
   {
     // Instanciating the external contract
@@ -47,6 +43,9 @@ contract ex11 is exerciceTemplate {
 
     // Checking that our input value is the one stored in contract ex11b
     require(_aValueToInput == retrievedSecretValue);
+
+    // Updating secret value with the new value you chose
+    ex11bInstance.setSecretValue(_nextValueForSecret);
 
     // Validating exercice
     validateExercice(msg.sender);

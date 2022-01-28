@@ -6,11 +6,10 @@ import "../exerciceTemplate.sol";
 /*
 Exercice 11: Finding a hidden exercice
 In this exercice, you need to:
-- Read the documentation of another contract to understand its structure
-- Extract contract ABI
-- Use the ABI to extract the contract content and find the missing contract
-- Call the contract function
-- Your points are credited by the contract
+- Read the code of TDERC20
+- Explore the ERC20 transactions history of the token's TD to figure out which exercises are able to credit points
+- Find ex12 address
+- Claim points
 */
 
 /*
@@ -18,16 +17,20 @@ In this exercice, you need to:
 */
 contract ex12 is exerciceTemplate {
 
+  uint public aValueToInput;
+
   constructor(ERC20TD _TDERC20) 
   public 
   exerciceTemplate(_TDERC20)
   {
+    aValueToInput == 0;
   }
 
-  function askForPoints(uint _aValueToInput) 
+  function askForPoints(uint _valueToInput, uint _newValue) 
   public  
   {
-    require(_aValueToInput == 98272338);
+    require(_valueToInput == aValueToInput);
+    aValueToInput = _newValue;
 
     // Validating exercice
     validateExercice(msg.sender);

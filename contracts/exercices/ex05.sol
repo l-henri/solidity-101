@@ -13,11 +13,9 @@ In this exercice, you need to:
 /*
 What you need to know to complete this exercice
 A) What was included in the previous exercices
-B) For a contract to work with another contract, a simple path is:
-- In the .sol file, mporting the target contract's library 
-- In your contract function, declare an instance of the target contract, at the address of the target contract
-- Here, the students list is hosted in a contract whose address is stored in studentsOrgan
-- You can then use the declared instance of the target contract with any allowed functions included into it
+B) "Solidity mappings are a type that has some similarities to hash tables. Solidity mappings are used to structure value types for smart contracts." https://www.bitdegree.org/learn/solidity-mappings/
+https://solidity.readthedocs.io/en/develop/types.html?highlight=mapping
+
 */
 contract ex05 is exerciceTemplate {
 

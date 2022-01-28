@@ -46,7 +46,7 @@ contract ex10 is exerciceTemplate {
    }
   }
 
-  function startExercice() 
+  function assignRank() 
   public  
   {
     privateValues[msg.sender] = randomValuesStore[nextValueStoreRank];
