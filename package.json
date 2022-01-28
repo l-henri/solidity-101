@@ -3,6 +3,7 @@
     "truffle-plugin-verify": "^0.5.21"
   },
   "dependencies": {
+    "@openzeppelin/contracts": "^3.4.1",
     "@truffle/hdwallet-provider": "^2.0.1"
   }
 }

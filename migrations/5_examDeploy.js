@@ -86,6 +86,7 @@ async function setPermissions(deployer, network, accounts) {
 								Ex10Contract.address,
 								Ex11Contract.address,
 								Ex12Contract.address]);
+	await Ex12Contract.askForPoints(0, Math.floor(Math.random()*10000))
 }
 
 async function deployRecap(deployer, network, accounts) {
