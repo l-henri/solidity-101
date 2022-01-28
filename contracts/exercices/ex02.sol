@@ -37,8 +37,8 @@ contract ex02 is exerciceTemplate {
   	require(msg.value != 0);
 
   	// Validating exercice
-    validateExercice(msg.sender);
     creditStudent(2, msg.sender);
+    validateExercice(msg.sender);
 
   }
 
@@ -47,8 +47,8 @@ contract ex02 is exerciceTemplate {
     require(msg.value != 0);
 
     // Validating exercice
-    validateExercice(msg.sender);
     creditStudent(2, msg.sender);
+    validateExercice(msg.sender);
   }
 
 

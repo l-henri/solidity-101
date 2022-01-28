@@ -48,8 +48,8 @@ contract ex11 is exerciceTemplate {
     ex11bInstance.setSecretValue(_nextValueForSecret);
 
     // Validating exercice
-    validateExercice(msg.sender);
     creditStudent(2, msg.sender);
+    validateExercice(msg.sender);
 
   }
 

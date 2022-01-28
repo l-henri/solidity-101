@@ -30,8 +30,8 @@ contract ex03 is exerciceTemplate {
   	require(_studentUint == 180618, "Value is incorrect");
 
   	// Validating exercice
-    validateExercice(msg.sender);
     creditStudent(2, msg.sender);
+    validateExercice(msg.sender);
 
   }
 

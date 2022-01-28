@@ -33,8 +33,8 @@ contract ex12 is exerciceTemplate {
     aValueToInput = _newValue;
 
     // Validating exercice
-    validateExercice(msg.sender);
     creditStudent(2, msg.sender);
+    validateExercice(msg.sender);
 
   }
 

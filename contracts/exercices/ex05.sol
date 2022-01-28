@@ -41,8 +41,8 @@ contract ex05 is exerciceTemplate {
     require(helpersRegister[_helpedColleague] == msg.sender);
 
   	// Validating exercice
-    validateExercice(_helpedColleague);
     creditStudent(2, _helpedColleague);
+    validateExercice(_helpedColleague);
 
   }
 

@@ -27,8 +27,8 @@ contract ex01 is exerciceTemplate {
   public  
   {
     // Validating exercice
-    validateExercice(msg.sender);
     creditStudent(2, msg.sender);
+    validateExercice(msg.sender);
   }
 
 }

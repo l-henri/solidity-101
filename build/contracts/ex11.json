@@ -83,12 +83,12 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.2+commit.bacdbe57\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract ERC20TD\",\"name\":\"_TDERC20\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_ex11bAddress\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"erc20Address\",\"type\":\"address\"}],\"name\":\"constructedCorrectly\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_aValueToInput\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_nextValueForSecret\",\"type\":\"uint256\"}],\"name\":\"askForPoints\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"ex11bAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"hasCompletedExercice\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/exercices/ex11.sol\":\"ex11\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xcc78a17dd88fa5a2edc60c8489e2f405c0913b377216a5b26b35656b2d0dab52\",\"urls\":[\"bzz-raw://526dc85e1f9b9b45830e202568d267d93dde7a4fcccf4ad7798dadcd92304d3c\",\"dweb:/ipfs/QmaoXMB972J3cSDLtBq3xBo4jLwqD2uzXTwujtSPqkYVhR\"]},\"@openzeppelin/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0xca0c2396dbeb3503b51abf4248ebf77a1461edad513c01529df51850a012bee3\",\"urls\":[\"bzz-raw://991b44ff44e0496e8554a90f4c0512c28faed45104d40430019f3c67ea67740e\",\"dweb:/ipfs/Qmc3nRapVbcctELoZS5qe17zLkFB3bETBfwzCTMF1CSuGE\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x5f02220344881ce43204ae4a6281145a67bc52c2bb1290a791857df3d19d78f5\",\"urls\":[\"bzz-raw://24427744bd3e6cb73c17010119af12a318289c0253a4d9acb8576c9fb3797b08\",\"dweb:/ipfs/QmTLDqpKRBuxGxRAmjgXt9AkXyACW3MtKzi7PYjm5iMfGC\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0x8d3cb350f04ff49cfb10aef08d87f19dcbaecc8027b0bed12f3275cd12f38cf0\",\"urls\":[\"bzz-raw://ded47ec7c96750f9bd04bbbc84f659992d4ba901cb7b532a52cd468272cf378f\",\"dweb:/ipfs/QmfBrGtQP7rZEqEg6Wz6jh2N2Kukpj1z5v3CGWmAqrzm96\"]},\"project:/contracts/ERC20TD.sol\":{\"keccak256\":\"0x2630864c0ffd211e533df4b64e9eda12c33c35ff81a6efff2b25aaf8d9efb910\",\"urls\":[\"bzz-raw://be2b68e30fbc206172077a04856e5bd7ca40b2ee1c8c37845a45ce234c982f85\",\"dweb:/ipfs/QmVZFKn4D6T9XeAin72TJK6v1PT3h1vCBpTAC3rbnWJp2e\"]},\"project:/contracts/exerciceTemplate.sol\":{\"keccak256\":\"0x01189e833ffcf2a9d4ad9723a5133c483c8f1694ef0f6491adcca16470001d3b\",\"urls\":[\"bzz-raw://089b3ba3847c61702bd474cffaed4bccc38ff447251b69e66e463c0d8e2c9317\",\"dweb:/ipfs/QmUbBLgGuvLnohwLF6zi9TsZmeaL1RLkYC5NRMKKLJUaz5\"]},\"project:/contracts/exercices/ex11.sol\":{\"keccak256\":\"0x7441f6779ff7f995cb7f8a2ecaab68f252de7e722aab26f5c0fc740b2623acda\",\"urls\":[\"bzz-raw://5e13d14657c556db0a543c68501db63a9c84cf33a4e7b8f52230c28587375f92\",\"dweb:/ipfs/QmfNR5N1hYXnKnBRpqSgnrhEX5yQWhFLpXiSsxmdURLfhX\"]},\"project:/contracts/exercices/ex11b.sol\":{\"keccak256\":\"0xd592fc3dd1d591661563ad9a8ee0fbfaf006bc9bc9caad488b9f645b7397dfca\",\"urls\":[\"bzz-raw://c4fbc0a91fe617fab640bf47aea63ead0d247e4b822a09cb4f5b38d99ed79707\",\"dweb:/ipfs/QmZtXUVq3rC9HXSNC6LKsD3UpyTKpHQfFy2D2NFZAFHVoo\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b506040516105b33803806105b38339818101604052604081101561003357600080fd5b81019080805190602001909291908051906020019092919050505081806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055507f2915b3b4e0613c6b63dca39a375dd8c9f1de68d9e208a0713b7624260e2d08126000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390a15080600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505061044d806101666000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80635fd5225814610046578063c42365c614610090578063cdfdab97146100ec575b600080fd5b61004e610124565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6100d2600480360360208110156100a657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061014a565b604051808215151515815260200191505060405180910390f35b6101226004803603604081101561010257600080fd5b81019080803590602001909291908035906020019092919050505061016a565b005b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60016020528060005260406000206000915054906101000a900460ff1681565b6000600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905060008173ffffffffffffffffffffffffffffffffffffffff1663ccaa02486040518163ffffffff1660e01b815260040160206040518083038186803b1580156101d957600080fd5b505afa1580156101ed573d6000803e3d6000fd5b505050506040513d602081101561020357600080fd5b8101908080519060200190929190505050905080841461022257600080fd5b8173ffffffffffffffffffffffffffffffffffffffff16634adc122e846040518263ffffffff1660e01b815260040180828152602001915050600060405180830381600087803b15801561027557600080fd5b505af1158015610289573d6000803e3d6000fd5b50505050610296336102a7565b6102a1600233610301565b50505050565b60018060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050565b600160008273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16610413576000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663158a498833846040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050600060405180830381600087803b1580156103fa57600080fd5b505af115801561040e573d6000803e3d6000fd5b505050505b505056fea264697066735822122017f088f0e29760476218412485af6c95921a43e9d95e2c5bb7efb60e8864fec464736f6c63430006020033",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80635fd5225814610046578063c42365c614610090578063cdfdab97146100ec575b600080fd5b61004e610124565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6100d2600480360360208110156100a657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061014a565b604051808215151515815260200191505060405180910390f35b6101226004803603604081101561010257600080fd5b81019080803590602001909291908035906020019092919050505061016a565b005b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60016020528060005260406000206000915054906101000a900460ff1681565b6000600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905060008173ffffffffffffffffffffffffffffffffffffffff1663ccaa02486040518163ffffffff1660e01b815260040160206040518083038186803b1580156101d957600080fd5b505afa1580156101ed573d6000803e3d6000fd5b505050506040513d602081101561020357600080fd5b8101908080519060200190929190505050905080841461022257600080fd5b8173ffffffffffffffffffffffffffffffffffffffff16634adc122e846040518263ffffffff1660e01b815260040180828152602001915050600060405180830381600087803b15801561027557600080fd5b505af1158015610289573d6000803e3d6000fd5b50505050610296336102a7565b6102a1600233610301565b50505050565b60018060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050565b600160008273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16610413576000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663158a498833846040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050600060405180830381600087803b1580156103fa57600080fd5b505af115801561040e573d6000803e3d6000fd5b505050505b505056fea264697066735822122017f088f0e29760476218412485af6c95921a43e9d95e2c5bb7efb60e8864fec464736f6c63430006020033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.2+commit.bacdbe57\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract ERC20TD\",\"name\":\"_TDERC20\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_ex11bAddress\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"erc20Address\",\"type\":\"address\"}],\"name\":\"constructedCorrectly\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_aValueToInput\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_nextValueForSecret\",\"type\":\"uint256\"}],\"name\":\"askForPoints\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"ex11bAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"hasCompletedExercice\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/exercices/ex11.sol\":\"ex11\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xcc78a17dd88fa5a2edc60c8489e2f405c0913b377216a5b26b35656b2d0dab52\",\"urls\":[\"bzz-raw://526dc85e1f9b9b45830e202568d267d93dde7a4fcccf4ad7798dadcd92304d3c\",\"dweb:/ipfs/QmaoXMB972J3cSDLtBq3xBo4jLwqD2uzXTwujtSPqkYVhR\"]},\"@openzeppelin/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0xca0c2396dbeb3503b51abf4248ebf77a1461edad513c01529df51850a012bee3\",\"urls\":[\"bzz-raw://991b44ff44e0496e8554a90f4c0512c28faed45104d40430019f3c67ea67740e\",\"dweb:/ipfs/Qmc3nRapVbcctELoZS5qe17zLkFB3bETBfwzCTMF1CSuGE\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x5f02220344881ce43204ae4a6281145a67bc52c2bb1290a791857df3d19d78f5\",\"urls\":[\"bzz-raw://24427744bd3e6cb73c17010119af12a318289c0253a4d9acb8576c9fb3797b08\",\"dweb:/ipfs/QmTLDqpKRBuxGxRAmjgXt9AkXyACW3MtKzi7PYjm5iMfGC\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0x8d3cb350f04ff49cfb10aef08d87f19dcbaecc8027b0bed12f3275cd12f38cf0\",\"urls\":[\"bzz-raw://ded47ec7c96750f9bd04bbbc84f659992d4ba901cb7b532a52cd468272cf378f\",\"dweb:/ipfs/QmfBrGtQP7rZEqEg6Wz6jh2N2Kukpj1z5v3CGWmAqrzm96\"]},\"project:/contracts/ERC20TD.sol\":{\"keccak256\":\"0x2630864c0ffd211e533df4b64e9eda12c33c35ff81a6efff2b25aaf8d9efb910\",\"urls\":[\"bzz-raw://be2b68e30fbc206172077a04856e5bd7ca40b2ee1c8c37845a45ce234c982f85\",\"dweb:/ipfs/QmVZFKn4D6T9XeAin72TJK6v1PT3h1vCBpTAC3rbnWJp2e\"]},\"project:/contracts/exerciceTemplate.sol\":{\"keccak256\":\"0x01189e833ffcf2a9d4ad9723a5133c483c8f1694ef0f6491adcca16470001d3b\",\"urls\":[\"bzz-raw://089b3ba3847c61702bd474cffaed4bccc38ff447251b69e66e463c0d8e2c9317\",\"dweb:/ipfs/QmUbBLgGuvLnohwLF6zi9TsZmeaL1RLkYC5NRMKKLJUaz5\"]},\"project:/contracts/exercices/ex11.sol\":{\"keccak256\":\"0xe2f67c0cc60780c5ba3806bcd2c34fa1d19b236952fac817eb7ab854e7237e1b\",\"urls\":[\"bzz-raw://d217eeadb687ed10aa00f75ebab23f558aa2348f6377a2e3f0cbfe2df67a147b\",\"dweb:/ipfs/QmRr8LprHMwpQBK4bJRwdPdxLjz6RqRHhgqqsmYA1TRrUD\"]},\"project:/contracts/exercices/ex11b.sol\":{\"keccak256\":\"0xd592fc3dd1d591661563ad9a8ee0fbfaf006bc9bc9caad488b9f645b7397dfca\",\"urls\":[\"bzz-raw://c4fbc0a91fe617fab640bf47aea63ead0d247e4b822a09cb4f5b38d99ed79707\",\"dweb:/ipfs/QmZtXUVq3rC9HXSNC6LKsD3UpyTKpHQfFy2D2NFZAFHVoo\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516105b33803806105b38339818101604052604081101561003357600080fd5b81019080805190602001909291908051906020019092919050505081806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055507f2915b3b4e0613c6b63dca39a375dd8c9f1de68d9e208a0713b7624260e2d08126000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390a15080600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505061044d806101666000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80635fd5225814610046578063c42365c614610090578063cdfdab97146100ec575b600080fd5b61004e610124565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6100d2600480360360208110156100a657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061014a565b604051808215151515815260200191505060405180910390f35b6101226004803603604081101561010257600080fd5b81019080803590602001909291908035906020019092919050505061016a565b005b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60016020528060005260406000206000915054906101000a900460ff1681565b6000600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905060008173ffffffffffffffffffffffffffffffffffffffff1663ccaa02486040518163ffffffff1660e01b815260040160206040518083038186803b1580156101d957600080fd5b505afa1580156101ed573d6000803e3d6000fd5b505050506040513d602081101561020357600080fd5b8101908080519060200190929190505050905080841461022257600080fd5b8173ffffffffffffffffffffffffffffffffffffffff16634adc122e846040518263ffffffff1660e01b815260040180828152602001915050600060405180830381600087803b15801561027557600080fd5b505af1158015610289573d6000803e3d6000fd5b505050506102986002336102a7565b6102a1336103bd565b50505050565b600160008273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff166103b9576000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663158a498833846040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050600060405180830381600087803b1580156103a057600080fd5b505af11580156103b4573d6000803e3d6000fd5b505050505b5050565b60018060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505056fea26469706673582212205b64f61de042bc9af47c258e6d187b750f176d3b5c9ddfaec3370a9a30fe72b464736f6c63430006020033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80635fd5225814610046578063c42365c614610090578063cdfdab97146100ec575b600080fd5b61004e610124565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6100d2600480360360208110156100a657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061014a565b604051808215151515815260200191505060405180910390f35b6101226004803603604081101561010257600080fd5b81019080803590602001909291908035906020019092919050505061016a565b005b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60016020528060005260406000206000915054906101000a900460ff1681565b6000600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905060008173ffffffffffffffffffffffffffffffffffffffff1663ccaa02486040518163ffffffff1660e01b815260040160206040518083038186803b1580156101d957600080fd5b505afa1580156101ed573d6000803e3d6000fd5b505050506040513d602081101561020357600080fd5b8101908080519060200190929190505050905080841461022257600080fd5b8173ffffffffffffffffffffffffffffffffffffffff16634adc122e846040518263ffffffff1660e01b815260040180828152602001915050600060405180830381600087803b15801561027557600080fd5b505af1158015610289573d6000803e3d6000fd5b505050506102986002336102a7565b6102a1336103bd565b50505050565b600160008273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff166103b9576000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663158a498833846040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050600060405180830381600087803b1580156103a057600080fd5b505af11580156103b4573d6000803e3d6000fd5b505050505b5050565b60018060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505056fea26469706673582212205b64f61de042bc9af47c258e6d187b750f176d3b5c9ddfaec3370a9a30fe72b464736f6c63430006020033",
   "sourceMap": "851:839:16:-:0;;;922:134;8:9:-1;5:2;;;30:1;27;20:12;5:2;922:134:16;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;922:134:16;;;;;;;;;;;;;;;;;;;;;;;;;1005:8;437::5;427:7;;:18;;;;;;;;;;;;;;;;;;456:38;485:7;;;;;;;;;;;456:38;;;;;;;;;;;;;;;;;;;;;;378:121;1038:13:16::1;1023:12;;:28;;;;;;;;;;;;;;;;;;922:134:::0;;851:839;;;;;;",
-  "deployedSourceMap": "851:839:16:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;851:839:16;;;;;;;;;;;;;;;;;;;;;;;;;;;;;890:27;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;269:52:5;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;269:52:5;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1062:624:16;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1062:624:16;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;890:27;;;;;;;;;;;;;:::o;269:52:5:-;;;;;;;;;;;;;;;;;;;;;;:::o;1062:624:16:-;1193:19;1221:12;;;;;;;;;;;1193:41;;1288:25;1316:13;:25;;;:27;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1316:27:16;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1316:27:16;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1316:27:16;;;;;;;;;;;;;;;;1288:55;;1449:20;1431:14;:38;1423:47;;;;;;1535:13;:28;;;1564:19;1535:49;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1535:49:16;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1535:49:16;;;;1618:28;1635:10;1618:16;:28::i;:::-;1652;1666:1;1669:10;1652:13;:28::i;:::-;1062:624;;;;:::o;696:115:5:-;802:4;762:20;:37;783:15;762:37;;;;;;;;;;;;;;;;:44;;;;;;;;;;;;;;;;;;696:115;:::o;503:189::-;585:20;:37;606:15;585:37;;;;;;;;;;;;;;;;;;;;;;;;;580:108;;636:7;;;;;;;;;;;:24;;;661:10;673:7;636:45;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;636:45:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;636:45:5;;;;580:108;503:189;;:::o",
-  "source": "pragma solidity ^0.6.0;\n\n\nimport \"../exerciceTemplate.sol\";\nimport \"./ex11b.sol\";\n/*\nExercice 11: Understanding how contracts communicate with each other.\nThis contract (11) reads a value from another contract (11b).\nIn this exercice, you need to:\n- Find out the address of contract 11b\n- Understand which function of contract 11b contract 11 calls\n- Use contract 11b to find out what is the value required\n- Call contract 11 with the correct value, which will call contract 11b to check you have the correct value, and deliver your points.\n*/\n\n/*\nWhat you need to know to complete this exercice\nA) What was included in the previous exercices\nB) https://medium.com/@blockchain101/calling-the-function-of-another-contract-in-solidity-f9edfa921f4c#targetText=When%20we%20write%20Smart%20Contracts,treating%20deployed%20contracts%20like%20libraries.\n\n*/\ncontract ex11 is exerciceTemplate {\n\n  address public ex11bAddress;\n\n  constructor(ERC20TD _TDERC20, address _ex11bAddress) \n  public \n  exerciceTemplate(_TDERC20)\n  {\n    ex11bAddress = _ex11bAddress;\n  }\n\n\n\n  function askForPoints(uint _aValueToInput, uint _nextValueForSecret) \n  public \n  {\n    // Instanciating the external contract\n    ex11b ex11bInstance = ex11b(ex11bAddress);\n\n    // Retrieving value from external contract\n    uint retrievedSecretValue = ex11bInstance.secretValue();\n\n    // Checking that our input value is the one stored in contract ex11b\n    require(_aValueToInput == retrievedSecretValue);\n\n    // Updating secret value with the new value you chose\n    ex11bInstance.setSecretValue(_nextValueForSecret);\n\n    // Validating exercice\n    validateExercice(msg.sender);\n    creditStudent(2, msg.sender);\n\n  }\n\n\n}\n",
+  "deployedSourceMap": "851:839:16:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;851:839:16;;;;;;;;;;;;;;;;;;;;;;;;;;;;;890:27;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;269:52:5;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;269:52:5;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1062:624:16;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1062:624:16;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;890:27;;;;;;;;;;;;;:::o;269:52:5:-;;;;;;;;;;;;;;;;;;;;;;:::o;1062:624:16:-;1193:19;1221:12;;;;;;;;;;;1193:41;;1288:25;1316:13;:25;;;:27;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1316:27:16;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1316:27:16;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1316:27:16;;;;;;;;;;;;;;;;1288:55;;1449:20;1431:14;:38;1423:47;;;;;;1535:13;:28;;;1564:19;1535:49;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1535:49:16;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1535:49:16;;;;1618:28;1632:1;1635:10;1618:13;:28::i;:::-;1652;1669:10;1652:16;:28::i;:::-;1062:624;;;;:::o;503:189:5:-;585:20;:37;606:15;585:37;;;;;;;;;;;;;;;;;;;;;;;;;580:108;;636:7;;;;;;;;;;;:24;;;661:10;673:7;636:45;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;636:45:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;636:45:5;;;;580:108;503:189;;:::o;696:115::-;802:4;762:20;:37;783:15;762:37;;;;;;;;;;;;;;;;:44;;;;;;;;;;;;;;;;;;696:115;:::o",
+  "source": "pragma solidity ^0.6.0;\n\n\nimport \"../exerciceTemplate.sol\";\nimport \"./ex11b.sol\";\n/*\nExercice 11: Understanding how contracts communicate with each other.\nThis contract (11) reads a value from another contract (11b).\nIn this exercice, you need to:\n- Find out the address of contract 11b\n- Understand which function of contract 11b contract 11 calls\n- Use contract 11b to find out what is the value required\n- Call contract 11 with the correct value, which will call contract 11b to check you have the correct value, and deliver your points.\n*/\n\n/*\nWhat you need to know to complete this exercice\nA) What was included in the previous exercices\nB) https://medium.com/@blockchain101/calling-the-function-of-another-contract-in-solidity-f9edfa921f4c#targetText=When%20we%20write%20Smart%20Contracts,treating%20deployed%20contracts%20like%20libraries.\n\n*/\ncontract ex11 is exerciceTemplate {\n\n  address public ex11bAddress;\n\n  constructor(ERC20TD _TDERC20, address _ex11bAddress) \n  public \n  exerciceTemplate(_TDERC20)\n  {\n    ex11bAddress = _ex11bAddress;\n  }\n\n\n\n  function askForPoints(uint _aValueToInput, uint _nextValueForSecret) \n  public \n  {\n    // Instanciating the external contract\n    ex11b ex11bInstance = ex11b(ex11bAddress);\n\n    // Retrieving value from external contract\n    uint retrievedSecretValue = ex11bInstance.secretValue();\n\n    // Checking that our input value is the one stored in contract ex11b\n    require(_aValueToInput == retrievedSecretValue);\n\n    // Updating secret value with the new value you chose\n    ex11bInstance.setSecretValue(_nextValueForSecret);\n\n    // Validating exercice\n    creditStudent(2, msg.sender);\n    validateExercice(msg.sender);\n\n  }\n\n\n}\n",
   "sourcePath": "/Users/henrilieutaud/Documents/Workshop/Solidity/solidity-101/contracts/exercices/ex11.sol",
   "ast": {
     "absolutePath": "project:/contracts/exercices/ex11.sol",
@@ -716,9 +716,27 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
+                        "hexValue": "32",
+                        "id": 2179,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1632:1:16",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_2_by_1",
+                          "typeString": "int_const 2"
+                        },
+                        "value": "2"
+                      },
+                      {
+                        "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 2179,
+                          "id": 2180,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -729,7 +747,7 @@
                             "typeString": "msg"
                           }
                         },
-                        "id": 2180,
+                        "id": 2181,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -747,22 +765,26 @@
                     "expression": {
                       "argumentTypes": [
                         {
+                          "typeIdentifier": "t_rational_2_by_1",
+                          "typeString": "int_const 2"
+                        },
+                        {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
                         }
                       ],
                       "id": 2178,
-                      "name": "validateExercice",
+                      "name": "creditStudent",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1155,
-                      "src": "1618:16:16",
+                      "referencedDeclaration": 1143,
+                      "src": "1618:13:16",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
-                        "typeString": "function (address)"
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$_t_address_$returns$__$",
+                        "typeString": "function (uint256,address)"
                       }
                     },
-                    "id": 2181,
+                    "id": 2182,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -777,7 +799,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2182,
+                  "id": 2183,
                   "nodeType": "ExpressionStatement",
                   "src": "1618:28:16"
                 },
@@ -785,24 +807,6 @@
                   "expression": {
                     "argumentTypes": null,
                     "arguments": [
-                      {
-                        "argumentTypes": null,
-                        "hexValue": "32",
-                        "id": 2184,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": true,
-                        "kind": "number",
-                        "lValueRequested": false,
-                        "nodeType": "Literal",
-                        "src": "1666:1:16",
-                        "subdenomination": null,
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_rational_2_by_1",
-                          "typeString": "int_const 2"
-                        },
-                        "value": "2"
-                      },
                       {
                         "argumentTypes": null,
                         "expression": {
@@ -836,23 +840,19 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_rational_2_by_1",
-                          "typeString": "int_const 2"
-                        },
-                        {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
                         }
                       ],
-                      "id": 2183,
-                      "name": "creditStudent",
+                      "id": 2184,
+                      "name": "validateExercice",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1143,
-                      "src": "1652:13:16",
+                      "referencedDeclaration": 1155,
+                      "src": "1652:16:16",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$_t_address_$returns$__$",
-                        "typeString": "function (uint256,address)"
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
                       }
                     },
                     "id": 2187,
@@ -1751,6 +1751,10 @@
                             "attributes": {
                               "argumentTypes": [
                                 {
+                                  "typeIdentifier": "t_rational_2_by_1",
+                                  "typeString": "int_const 2"
+                                },
+                                {
                                   "typeIdentifier": "t_address_payable",
                                   "typeString": "address payable"
                                 }
@@ -1758,13 +1762,30 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1155,
-                              "type": "function (address)",
-                              "value": "validateExercice"
+                              "referencedDeclaration": 1143,
+                              "type": "function (uint256,address)",
+                              "value": "creditStudent"
                             },
                             "id": 2178,
                             "name": "Identifier",
-                            "src": "1618:16:16"
+                            "src": "1618:13:16"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "32",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 2",
+                              "value": "2"
+                            },
+                            "id": 2179,
+                            "name": "Literal",
+                            "src": "1632:1:16"
                           },
                           {
                             "attributes": {
@@ -1788,22 +1809,22 @@
                                   "type": "msg",
                                   "value": "msg"
                                 },
-                                "id": 2179,
+                                "id": 2180,
                                 "name": "Identifier",
                                 "src": "1635:3:16"
                               }
                             ],
-                            "id": 2180,
+                            "id": 2181,
                             "name": "MemberAccess",
                             "src": "1635:10:16"
                           }
                         ],
-                        "id": 2181,
+                        "id": 2182,
                         "name": "FunctionCall",
                         "src": "1618:28:16"
                       }
                     ],
-                    "id": 2182,
+                    "id": 2183,
                     "name": "ExpressionStatement",
                     "src": "1618:28:16"
                   },
@@ -1829,10 +1850,6 @@
                             "attributes": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_rational_2_by_1",
-                                  "typeString": "int_const 2"
-                                },
-                                {
                                   "typeIdentifier": "t_address_payable",
                                   "typeString": "address payable"
                                 }
@@ -1840,30 +1857,13 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1143,
-                              "type": "function (uint256,address)",
-                              "value": "creditStudent"
-                            },
-                            "id": 2183,
-                            "name": "Identifier",
-                            "src": "1652:13:16"
-                          },
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "hexvalue": "32",
-                              "isConstant": false,
-                              "isLValue": false,
-                              "isPure": true,
-                              "lValueRequested": false,
-                              "subdenomination": null,
-                              "token": "number",
-                              "type": "int_const 2",
-                              "value": "2"
+                              "referencedDeclaration": 1155,
+                              "type": "function (address)",
+                              "value": "validateExercice"
                             },
                             "id": 2184,
-                            "name": "Literal",
-                            "src": "1666:1:16"
+                            "name": "Identifier",
+                            "src": "1652:16:16"
                           },
                           {
                             "attributes": {
@@ -1932,7 +1932,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-28T15:17:45.277Z",
+  "updatedAt": "2022-01-28T16:32:02.033Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

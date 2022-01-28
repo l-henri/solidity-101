@@ -59,12 +59,12 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.2+commit.bacdbe57\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract ERC20TD\",\"name\":\"_TDERC20\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"erc20Address\",\"type\":\"address\"}],\"name\":\"constructedCorrectly\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_studentUint\",\"type\":\"uint256\"}],\"name\":\"claimPoints\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"hasCompletedExercice\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/exercices/ex03.sol\":\"ex03\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xcc78a17dd88fa5a2edc60c8489e2f405c0913b377216a5b26b35656b2d0dab52\",\"urls\":[\"bzz-raw://526dc85e1f9b9b45830e202568d267d93dde7a4fcccf4ad7798dadcd92304d3c\",\"dweb:/ipfs/QmaoXMB972J3cSDLtBq3xBo4jLwqD2uzXTwujtSPqkYVhR\"]},\"@openzeppelin/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0xca0c2396dbeb3503b51abf4248ebf77a1461edad513c01529df51850a012bee3\",\"urls\":[\"bzz-raw://991b44ff44e0496e8554a90f4c0512c28faed45104d40430019f3c67ea67740e\",\"dweb:/ipfs/Qmc3nRapVbcctELoZS5qe17zLkFB3bETBfwzCTMF1CSuGE\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x5f02220344881ce43204ae4a6281145a67bc52c2bb1290a791857df3d19d78f5\",\"urls\":[\"bzz-raw://24427744bd3e6cb73c17010119af12a318289c0253a4d9acb8576c9fb3797b08\",\"dweb:/ipfs/QmTLDqpKRBuxGxRAmjgXt9AkXyACW3MtKzi7PYjm5iMfGC\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0x8d3cb350f04ff49cfb10aef08d87f19dcbaecc8027b0bed12f3275cd12f38cf0\",\"urls\":[\"bzz-raw://ded47ec7c96750f9bd04bbbc84f659992d4ba901cb7b532a52cd468272cf378f\",\"dweb:/ipfs/QmfBrGtQP7rZEqEg6Wz6jh2N2Kukpj1z5v3CGWmAqrzm96\"]},\"project:/contracts/ERC20TD.sol\":{\"keccak256\":\"0x2630864c0ffd211e533df4b64e9eda12c33c35ff81a6efff2b25aaf8d9efb910\",\"urls\":[\"bzz-raw://be2b68e30fbc206172077a04856e5bd7ca40b2ee1c8c37845a45ce234c982f85\",\"dweb:/ipfs/QmVZFKn4D6T9XeAin72TJK6v1PT3h1vCBpTAC3rbnWJp2e\"]},\"project:/contracts/exerciceTemplate.sol\":{\"keccak256\":\"0x01189e833ffcf2a9d4ad9723a5133c483c8f1694ef0f6491adcca16470001d3b\",\"urls\":[\"bzz-raw://089b3ba3847c61702bd474cffaed4bccc38ff447251b69e66e463c0d8e2c9317\",\"dweb:/ipfs/QmUbBLgGuvLnohwLF6zi9TsZmeaL1RLkYC5NRMKKLJUaz5\"]},\"project:/contracts/exercices/ex03.sol\":{\"keccak256\":\"0x62b5362aea049f9d6773272d67b84513f70ba5ab016d72e50faa0bef320e8495\",\"urls\":[\"bzz-raw://41938a192622054dadd3e90166913ce1e9b569478b22aefee0be57f459b319e8\",\"dweb:/ipfs/QmejZwAAfvwQSKqPz3nnMx1HTmtaJSJEK5Ah9vWf4MhJ3G\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b506040516104343803806104348339818101604052602081101561003357600080fd5b810190808051906020019092919050505080806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055507f2915b3b4e0613c6b63dca39a375dd8c9f1de68d9e208a0713b7624260e2d08126000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390a1505061031a8061011a6000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c80633ac795de1461003b578063c42365c614610069575b600080fd5b6100676004803603602081101561005157600080fd5b81019080803590602001909291905050506100c5565b005b6100ab6004803603602081101561007f57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610154565b604051808215151515815260200191505060405180910390f35b6202c18a811461013d576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260128152602001807f56616c756520697320696e636f7272656374000000000000000000000000000081525060200191505060405180910390fd5b61014633610174565b6101516002336101ce565b50565b60016020528060005260406000206000915054906101000a900460ff1681565b60018060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050565b600160008273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff166102e0576000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663158a498833846040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050600060405180830381600087803b1580156102c757600080fd5b505af11580156102db573d6000803e3d6000fd5b505050505b505056fea264697066735822122085f6b4a505930f4b4d7b1df88cbea8fc3353b9c7d68adfa7ef5b9bd3e684784e64736f6c63430006020033",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c80633ac795de1461003b578063c42365c614610069575b600080fd5b6100676004803603602081101561005157600080fd5b81019080803590602001909291905050506100c5565b005b6100ab6004803603602081101561007f57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610154565b604051808215151515815260200191505060405180910390f35b6202c18a811461013d576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260128152602001807f56616c756520697320696e636f7272656374000000000000000000000000000081525060200191505060405180910390fd5b61014633610174565b6101516002336101ce565b50565b60016020528060005260406000206000915054906101000a900460ff1681565b60018060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050565b600160008273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff166102e0576000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663158a498833846040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050600060405180830381600087803b1580156102c757600080fd5b505af11580156102db573d6000803e3d6000fd5b505050505b505056fea264697066735822122085f6b4a505930f4b4d7b1df88cbea8fc3353b9c7d68adfa7ef5b9bd3e684784e64736f6c63430006020033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.2+commit.bacdbe57\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract ERC20TD\",\"name\":\"_TDERC20\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"erc20Address\",\"type\":\"address\"}],\"name\":\"constructedCorrectly\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_studentUint\",\"type\":\"uint256\"}],\"name\":\"claimPoints\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"hasCompletedExercice\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/exercices/ex03.sol\":\"ex03\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xcc78a17dd88fa5a2edc60c8489e2f405c0913b377216a5b26b35656b2d0dab52\",\"urls\":[\"bzz-raw://526dc85e1f9b9b45830e202568d267d93dde7a4fcccf4ad7798dadcd92304d3c\",\"dweb:/ipfs/QmaoXMB972J3cSDLtBq3xBo4jLwqD2uzXTwujtSPqkYVhR\"]},\"@openzeppelin/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0xca0c2396dbeb3503b51abf4248ebf77a1461edad513c01529df51850a012bee3\",\"urls\":[\"bzz-raw://991b44ff44e0496e8554a90f4c0512c28faed45104d40430019f3c67ea67740e\",\"dweb:/ipfs/Qmc3nRapVbcctELoZS5qe17zLkFB3bETBfwzCTMF1CSuGE\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x5f02220344881ce43204ae4a6281145a67bc52c2bb1290a791857df3d19d78f5\",\"urls\":[\"bzz-raw://24427744bd3e6cb73c17010119af12a318289c0253a4d9acb8576c9fb3797b08\",\"dweb:/ipfs/QmTLDqpKRBuxGxRAmjgXt9AkXyACW3MtKzi7PYjm5iMfGC\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0x8d3cb350f04ff49cfb10aef08d87f19dcbaecc8027b0bed12f3275cd12f38cf0\",\"urls\":[\"bzz-raw://ded47ec7c96750f9bd04bbbc84f659992d4ba901cb7b532a52cd468272cf378f\",\"dweb:/ipfs/QmfBrGtQP7rZEqEg6Wz6jh2N2Kukpj1z5v3CGWmAqrzm96\"]},\"project:/contracts/ERC20TD.sol\":{\"keccak256\":\"0x2630864c0ffd211e533df4b64e9eda12c33c35ff81a6efff2b25aaf8d9efb910\",\"urls\":[\"bzz-raw://be2b68e30fbc206172077a04856e5bd7ca40b2ee1c8c37845a45ce234c982f85\",\"dweb:/ipfs/QmVZFKn4D6T9XeAin72TJK6v1PT3h1vCBpTAC3rbnWJp2e\"]},\"project:/contracts/exerciceTemplate.sol\":{\"keccak256\":\"0x01189e833ffcf2a9d4ad9723a5133c483c8f1694ef0f6491adcca16470001d3b\",\"urls\":[\"bzz-raw://089b3ba3847c61702bd474cffaed4bccc38ff447251b69e66e463c0d8e2c9317\",\"dweb:/ipfs/QmUbBLgGuvLnohwLF6zi9TsZmeaL1RLkYC5NRMKKLJUaz5\"]},\"project:/contracts/exercices/ex03.sol\":{\"keccak256\":\"0x605ac1f98a7bf1610d67ab6d6c80cebb689e562e1c6f74e30a5a46f30ce441bb\",\"urls\":[\"bzz-raw://5ea7c1949082be117a7d63b291b506d9e097709041a513c2f556e83ffad289e3\",\"dweb:/ipfs/QmZvJKSTcQT7ojPhXKviZi5pFCCHrUVjVKJmFLUipydoY6\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516104343803806104348339818101604052602081101561003357600080fd5b810190808051906020019092919050505080806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055507f2915b3b4e0613c6b63dca39a375dd8c9f1de68d9e208a0713b7624260e2d08126000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390a1505061031a8061011a6000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c80633ac795de1461003b578063c42365c614610069575b600080fd5b6100676004803603602081101561005157600080fd5b81019080803590602001909291905050506100c5565b005b6100ab6004803603602081101561007f57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610154565b604051808215151515815260200191505060405180910390f35b6202c18a811461013d576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260128152602001807f56616c756520697320696e636f7272656374000000000000000000000000000081525060200191505060405180910390fd5b610148600233610174565b6101513361028a565b50565b60016020528060005260406000206000915054906101000a900460ff1681565b600160008273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16610286576000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663158a498833846040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050600060405180830381600087803b15801561026d57600080fd5b505af1158015610281573d6000803e3d6000fd5b505050505b5050565b60018060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505056fea264697066735822122039eef35374cd677fee2a06cd6aebb041388151040545300456a223beee5dfe7564736f6c63430006020033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c80633ac795de1461003b578063c42365c614610069575b600080fd5b6100676004803603602081101561005157600080fd5b81019080803590602001909291905050506100c5565b005b6100ab6004803603602081101561007f57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610154565b604051808215151515815260200191505060405180910390f35b6202c18a811461013d576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260128152602001807f56616c756520697320696e636f7272656374000000000000000000000000000081525060200191505060405180910390fd5b610148600233610174565b6101513361028a565b50565b60016020528060005260406000206000915054906101000a900460ff1681565b600160008273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16610286576000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663158a498833846040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050600060405180830381600087803b15801561026d57600080fd5b505af1158015610281573d6000803e3d6000fd5b505050505b5050565b60018060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505056fea264697066735822122039eef35374cd677fee2a06cd6aebb041388151040545300456a223beee5dfe7564736f6c63430006020033",
   "sourceMap": "520:338:8:-:0;;;559:77;8:9:-1;5:2;;;30:1;27;20:12;5:2;559:77:8;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;559:77:8;;;;;;;;;;;;;;;;619:8;437::5;427:7;;:18;;;;;;;;;;;;;;;;;;456:38;485:7;;;;;;;;;;;456:38;;;;;;;;;;;;;;;;;;;;;;378:121;559:77:8;520:338;;;;;;",
-  "deployedSourceMap": "520:338:8:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;520:338:8;;;;;;;;;;;;;;;;;;;;;;;;642:213;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;642:213:8;;;;;;;;;;;;;;;;;:::i;:::-;;269:52:5;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;269:52:5;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;642:213:8;725:6;709:12;:22;701:53;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;787:28;804:10;787:16;:28::i;:::-;821;835:1;838:10;821:13;:28::i;:::-;642:213;:::o;269:52:5:-;;;;;;;;;;;;;;;;;;;;;;:::o;696:115::-;802:4;762:20;:37;783:15;762:37;;;;;;;;;;;;;;;;:44;;;;;;;;;;;;;;;;;;696:115;:::o;503:189::-;585:20;:37;606:15;585:37;;;;;;;;;;;;;;;;;;;;;;;;;580:108;;636:7;;;;;;;;;;;:24;;;661:10;673:7;636:45;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;636:45:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;636:45:5;;;;580:108;503:189;;:::o",
-  "source": "pragma solidity ^0.6.0;\n\nimport \"../exerciceTemplate.sol\";\n\n/*\nExercice 3: Using a simple public contract function\nIn this exercice, you need to:\n- Use this contract's claimPoints() function\n- Understand the require() keyword and send the correct value to pass the requirement\n- Your points are credited by the contract\n*/\n \n/*\nWhat you need to know to complete this exercice\nA) What was included in the previous exercices\nB) Understanding requires https://docs.soliditylang.org/en/v0.6.0/control-structures.html#id4\n*/\ncontract ex03 is exerciceTemplate {\n\n  constructor(ERC20TD _TDERC20) \n  public \n  exerciceTemplate(_TDERC20)\n  {\n  }\n  \n  function claimPoints(uint _studentUint) \n  public \n  {\n\n  \trequire(_studentUint == 180618, \"Value is incorrect\");\n\n  \t// Validating exercice\n    validateExercice(msg.sender);\n    creditStudent(2, msg.sender);\n\n  }\n\n}\n",
+  "deployedSourceMap": "520:338:8:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;520:338:8;;;;;;;;;;;;;;;;;;;;;;;;642:213;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;642:213:8;;;;;;;;;;;;;;;;;:::i;:::-;;269:52:5;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;269:52:5;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;642:213:8;725:6;709:12;:22;701:53;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;787:28;801:1;804:10;787:13;:28::i;:::-;821;838:10;821:16;:28::i;:::-;642:213;:::o;269:52:5:-;;;;;;;;;;;;;;;;;;;;;;:::o;503:189::-;585:20;:37;606:15;585:37;;;;;;;;;;;;;;;;;;;;;;;;;580:108;;636:7;;;;;;;;;;;:24;;;661:10;673:7;636:45;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;636:45:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;636:45:5;;;;580:108;503:189;;:::o;696:115::-;802:4;762:20;:37;783:15;762:37;;;;;;;;;;;;;;;;:44;;;;;;;;;;;;;;;;;;696:115;:::o",
+  "source": "pragma solidity ^0.6.0;\n\nimport \"../exerciceTemplate.sol\";\n\n/*\nExercice 3: Using a simple public contract function\nIn this exercice, you need to:\n- Use this contract's claimPoints() function\n- Understand the require() keyword and send the correct value to pass the requirement\n- Your points are credited by the contract\n*/\n \n/*\nWhat you need to know to complete this exercice\nA) What was included in the previous exercices\nB) Understanding requires https://docs.soliditylang.org/en/v0.6.0/control-structures.html#id4\n*/\ncontract ex03 is exerciceTemplate {\n\n  constructor(ERC20TD _TDERC20) \n  public \n  exerciceTemplate(_TDERC20)\n  {\n  }\n  \n  function claimPoints(uint _studentUint) \n  public \n  {\n\n  \trequire(_studentUint == 180618, \"Value is incorrect\");\n\n  \t// Validating exercice\n    creditStudent(2, msg.sender);\n    validateExercice(msg.sender);\n\n  }\n\n}\n",
   "sourcePath": "/Users/henrilieutaud/Documents/Workshop/Solidity/solidity-101/contracts/exercices/ex03.sol",
   "ast": {
     "absolutePath": "project:/contracts/exercices/ex03.sol",
@@ -360,9 +360,27 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
+                        "hexValue": "32",
+                        "id": 1284,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "801:1:8",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_2_by_1",
+                          "typeString": "int_const 2"
+                        },
+                        "value": "2"
+                      },
+                      {
+                        "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 1284,
+                          "id": 1285,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -373,7 +391,7 @@
                             "typeString": "msg"
                           }
                         },
-                        "id": 1285,
+                        "id": 1286,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -391,22 +409,26 @@
                     "expression": {
                       "argumentTypes": [
                         {
+                          "typeIdentifier": "t_rational_2_by_1",
+                          "typeString": "int_const 2"
+                        },
+                        {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
                         }
                       ],
                       "id": 1283,
-                      "name": "validateExercice",
+                      "name": "creditStudent",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1155,
-                      "src": "787:16:8",
+                      "referencedDeclaration": 1143,
+                      "src": "787:13:8",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
-                        "typeString": "function (address)"
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$_t_address_$returns$__$",
+                        "typeString": "function (uint256,address)"
                       }
                     },
-                    "id": 1286,
+                    "id": 1287,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -421,7 +443,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1287,
+                  "id": 1288,
                   "nodeType": "ExpressionStatement",
                   "src": "787:28:8"
                 },
@@ -429,24 +451,6 @@
                   "expression": {
                     "argumentTypes": null,
                     "arguments": [
-                      {
-                        "argumentTypes": null,
-                        "hexValue": "32",
-                        "id": 1289,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": true,
-                        "kind": "number",
-                        "lValueRequested": false,
-                        "nodeType": "Literal",
-                        "src": "835:1:8",
-                        "subdenomination": null,
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_rational_2_by_1",
-                          "typeString": "int_const 2"
-                        },
-                        "value": "2"
-                      },
                       {
                         "argumentTypes": null,
                         "expression": {
@@ -480,23 +484,19 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_rational_2_by_1",
-                          "typeString": "int_const 2"
-                        },
-                        {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
                         }
                       ],
-                      "id": 1288,
-                      "name": "creditStudent",
+                      "id": 1289,
+                      "name": "validateExercice",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1143,
-                      "src": "821:13:8",
+                      "referencedDeclaration": 1155,
+                      "src": "821:16:8",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$_t_address_$returns$__$",
-                        "typeString": "function (uint256,address)"
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
                       }
                     },
                     "id": 1292,
@@ -977,6 +977,10 @@
                             "attributes": {
                               "argumentTypes": [
                                 {
+                                  "typeIdentifier": "t_rational_2_by_1",
+                                  "typeString": "int_const 2"
+                                },
+                                {
                                   "typeIdentifier": "t_address_payable",
                                   "typeString": "address payable"
                                 }
@@ -984,13 +988,30 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1155,
-                              "type": "function (address)",
-                              "value": "validateExercice"
+                              "referencedDeclaration": 1143,
+                              "type": "function (uint256,address)",
+                              "value": "creditStudent"
                             },
                             "id": 1283,
                             "name": "Identifier",
-                            "src": "787:16:8"
+                            "src": "787:13:8"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "32",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 2",
+                              "value": "2"
+                            },
+                            "id": 1284,
+                            "name": "Literal",
+                            "src": "801:1:8"
                           },
                           {
                             "attributes": {
@@ -1014,22 +1035,22 @@
                                   "type": "msg",
                                   "value": "msg"
                                 },
-                                "id": 1284,
+                                "id": 1285,
                                 "name": "Identifier",
                                 "src": "804:3:8"
                               }
                             ],
-                            "id": 1285,
+                            "id": 1286,
                             "name": "MemberAccess",
                             "src": "804:10:8"
                           }
                         ],
-                        "id": 1286,
+                        "id": 1287,
                         "name": "FunctionCall",
                         "src": "787:28:8"
                       }
                     ],
-                    "id": 1287,
+                    "id": 1288,
                     "name": "ExpressionStatement",
                     "src": "787:28:8"
                   },
@@ -1055,10 +1076,6 @@
                             "attributes": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_rational_2_by_1",
-                                  "typeString": "int_const 2"
-                                },
-                                {
                                   "typeIdentifier": "t_address_payable",
                                   "typeString": "address payable"
                                 }
@@ -1066,30 +1083,13 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1143,
-                              "type": "function (uint256,address)",
-                              "value": "creditStudent"
-                            },
-                            "id": 1288,
-                            "name": "Identifier",
-                            "src": "821:13:8"
-                          },
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "hexvalue": "32",
-                              "isConstant": false,
-                              "isLValue": false,
-                              "isPure": true,
-                              "lValueRequested": false,
-                              "subdenomination": null,
-                              "token": "number",
-                              "type": "int_const 2",
-                              "value": "2"
+                              "referencedDeclaration": 1155,
+                              "type": "function (address)",
+                              "value": "validateExercice"
                             },
                             "id": 1289,
-                            "name": "Literal",
-                            "src": "835:1:8"
+                            "name": "Identifier",
+                            "src": "821:16:8"
                           },
                           {
                             "attributes": {
@@ -1158,7 +1158,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-28T15:17:45.260Z",
+  "updatedAt": "2022-01-28T16:32:02.016Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

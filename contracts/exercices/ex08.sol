@@ -82,8 +82,9 @@ contract ex08 is exerciceTemplate {
     require(TDERC20.teachers(studentObjects[_objectNumber].owner));
 
     // Validating exercice
-    validateExercice(msg.sender);
     creditStudent(2, msg.sender);
+    validateExercice(msg.sender);
+
 
   }
 

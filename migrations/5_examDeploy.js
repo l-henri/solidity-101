@@ -68,7 +68,6 @@ async function setRandomValueStores(deployer, network, accounts) {
 	await Ex6Contract.setRandomValueStore(randomValueStore1);
 	await Ex7Contract.setRandomValueStore(randomValueStore2);
 	await Ex10Contract.setRandomValueStore(randomValueStore3);
-	await Ex12Contract.askForPoints(0, Math.floor(Math.random()*10000))
 }
 
 async function setPermissions(deployer, network, accounts) {

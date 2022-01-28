@@ -69,8 +69,8 @@ contract ex07 is exerciceTemplate {
     require(exerciceWasStarted[msg.sender] == true);
     
     // Validating exercice
-    validateExercice(msg.sender);
     creditStudent(2, msg.sender);
+    validateExercice(msg.sender);
 
   }
 
