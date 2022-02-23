@@ -1,6 +1,6 @@
 # Solidity-101
 ## Introduction
-Welcome! This is an automated workshop that will on using Solidity Smart contracts. It is aimed at developers who are not familiar with Solidity, or smart contracts.
+Welcome! This is an automated workshop that will work on using Solidity Smart contracts. It is aimed at developers who are not familiar with Solidity, or smart contracts.
 
 
 ## How to work on this TD
@@ -10,15 +10,15 @@ The workshop has two components:
 - A set of 12 exercises that are able to mint and distribute TD-SOL-101 points
 
 Your objective is to gather as many TD-SOL-101 points as possible. Please note :
-- You will need testnet Ether to do this workshop. Lookup "rinkeby testnet faucet" on google.
-- The 'transfer' function of TD-SOL-101 has been disabled to encourage you to finish the TD with only one address
+- You will need testnet Ether to do this workshop. Lookup "rinkeby testnet faucet" on Google.
+- The `transfer` function of TD-SOL-101 has been disabled to encourage you to finish the TD with only one address
 
 
 ### Getting to work
 - The instructions for each exercice are included in the contracts of each exercice, in [contracts/exercices](contracts/exercices). 
 - Each exercice contract inherits from the [exerciceTemplate](contracts/exerciceTemplate.sol), which holds common functions to validate students and credit points
 - Each exercice is deployed on the Rinkeby testnet. You can interact with them through [MyCrypto](https://mycrypto.com/contracts/interact), using the contract ABIs in [this folder](build/contracts), or through etherscan.
-- In order to receive points, you will have to call function that execute code in each smart contract,  such that the function `creditStudent(n, msg.sender);` is triggered, and distributes n points.
+- In order to receive points, you will have to call functions that execute code in each smart contract, such that the function `creditStudent(n, msg.sender);` is triggered, and distributes n points.
 - A low level description of what is expected can be inferred by reading the code in each exercice.
 
 ## Exercises addresses
@@ -37,6 +37,3 @@ Your objective is to gather as many TD-SOL-101 points as possible. Please note :
 |Past transactions|[Ex10](contracts/exercices/ex10.sol)|[Link](https://rinkeby.etherscan.io/address/0x892ba594CFB0c2176c14d8DBb8A76a68A17fBF5D)|
 |Composability|[Ex11](contracts/exercices/ex11.sol)|[Link](https://rinkeby.etherscan.io/address/0xB1737787022cE2Cb0C415F660a527a4480acC4ea)|
 |Blockchain forensics|[Ex12](contracts/exercices/ex12.sol)|Undisclosed|
-
-
-
