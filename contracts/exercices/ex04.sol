@@ -51,7 +51,7 @@ contract ex04 is exerciceTemplate {
   public  
   {
 
-  	require(studentsCounter[msg.sender] == 7, "Counter is not at 7");
+  	require(studentsCounter[msg.sender] == 5, "Counter is not at 5");
 
   	// Validating exercice
     creditStudent(2, msg.sender);

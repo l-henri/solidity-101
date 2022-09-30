@@ -104,9 +104,18 @@ async function deployRecap(deployer, network, accounts) {
 	console.log("    \""+Ex8Contract.address+"\",  // (Ex8Contract)")
 	console.log("    \""+Ex9Contract.address+"\",  // (Ex9Contract)")
 	console.log("    \""+Ex10Contract.address+"\",  // (Ex10Contract)")
-	console.log("    \""+Ex11Contract.address+"\",  // (Ex10Contract)")
+	console.log("    \""+Ex11Contract.address+"\",  // (Ex11Contract)")
 }
 
-
-
+// truffle run verify ex02@0x6dDdd446701759fa8BA3597bE9A9E01FF5691b8b --network goerli
+// truffle run verify ex03@0xDD99B361ff42adffA8399CCf9EbCa6b03EF374A1 --network goerli
+// truffle run verify ex04@0xB70B0add66f7D889E8d2235FFba3934039A4A4b6 --network goerli
+// truffle run verify ex05@0x4a363FC39c594C97D19D70A8511eD1C0334AE77e --network goerli
+// truffle run verify ex06@0xB4e89746B7Ba2A781b7160f435D361140c230185 --network goerli
+// truffle run verify ex07@0x37531680e552ba80604750C2A0cCe7C57f94C6f2 --network goerli
+// truffle run verify ex08@0xeD89a2F4771E3A9d6D0C49A9Eb595e4a9A169D40 --network goerli
+// truffle run verify ex10@0x1499C24FbfB3BE0f8f84E1FAa0539849362cB2bF --network goerli
+// truffle run verify ex11@0xB34423173F36223C397ffAa5Bd13c2FaD5b5F82f --network goerli
+// truffle run verify ex11b@ --network goerli
+// truffle run verify ex12@ --network goerli
 

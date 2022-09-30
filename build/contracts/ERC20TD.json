@@ -4973,8 +4973,8 @@
     "version": "0.6.2+commit.bacdbe57.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-28T16:32:02.008Z",
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-09-30T13:10:11.329Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {
