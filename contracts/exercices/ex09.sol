@@ -24,5 +24,10 @@ C) Only using the ABI of this contract puts you at risk of not getting the point
 contract ex09 is exerciceTemplate { 
 
 // Find the code elsewhere
+  constructor(ERC20TD _TDERC20) 
+  public 
+  exerciceTemplate(_TDERC20)
+  {
+  }
 
 }
