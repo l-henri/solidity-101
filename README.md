@@ -24,7 +24,7 @@ Your objective is to gather as many TD-SOL-101 points as possible. Please note :
 ## Exercises addresses
 |Topic|Contract code|Contract on Etherscan|
 |---|---|---|
-|Points counter ERC20|[Points counter ERC20](contracts/TDERC20.sol)|[Link](https://goerli.etherscan.io/address/0x685620EFBeCE50A84F48e6bf8b87312F07bB9c23)|
+|Points counter ERC20|[Points counter ERC20](contracts/TDERC20.sol)|[Link](https://goerli.etherscan.io/address/0x61eCfB24Ce76B0B61D900E85719334902B95737D)|
 |Calling a function|[Ex01](contracts/exercices/ex01.sol)|[Link](https://goerli.etherscan.io/address/0x101769BcE8978CD31F4e602eda7F7Fce27dB771e)|
 |Payable function|[Ex02](contracts/exercices/ex02.sol)|[Link](https://goerli.etherscan.io/address/0x6dDdd446701759fa8BA3597bE9A9E01FF5691b8b)|
 |Requires|[Ex03](contracts/exercices/ex03.sol)|[Link](https://goerli.etherscan.io/address/0xDD99B361ff42adffA8399CCf9EbCa6b03EF374A1)|
