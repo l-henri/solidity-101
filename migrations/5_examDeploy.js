@@ -15,13 +15,14 @@ var Ex11 = artifacts.require('exercices/ex11.sol')
 var Ex11b = artifacts.require('exercices/ex11b.sol')
 var Ex12 = artifacts.require('exercices/ex12.sol')
 var Ex14 = artifacts.require('exercices/ex14.sol')
+var Ex15 = artifacts.require('exercices/ex15.sol')
 
 module.exports = (deployer, network, accounts) => {
     deployer.then(async () => {
         // await deployTDToken(deployer, network, accounts);
-        // await deployExercices(deployer, network, accounts);
+        await deployExercices(deployer, network, accounts);
         // await setRandomValueStores(deployer, network, accounts);
-        await setPermissions(deployer, network, accounts);
+        // await setPermissions(deployer, network, accounts);
         // await deployRecap(deployer, network, accounts); 
     });
 };
@@ -48,6 +49,7 @@ async function deployExercices(deployer, network, accounts) {
 	Ex11Contract = await Ex11.new(TDToken.address, Ex11bContract.address)
 	Ex12Contract = await Ex12.new(TDToken.address)
 	Ex14Contract = await Ex14.new(TDToken.address)
+	Ex15Contract = await Ex15.new(TDToken.address)
 }
 
 async function setRandomValueStores(deployer, network, accounts) {
@@ -87,7 +89,8 @@ async function setPermissions(deployer, network, accounts) {
 								Ex10Contract.address,
 								Ex11Contract.address,
 								Ex12Contract.address,
-								Ex14Contract.address]);
+								Ex14Contract.address,
+								Ex15Contract.address]);
 	await Ex12Contract.askForPoints(0, Math.floor(Math.random()*10000))
 }
 
@@ -109,6 +112,7 @@ async function deployRecap(deployer, network, accounts) {
 	console.log("    \""+Ex10Contract.address+"\",  // (Ex10Contract)")
 	console.log("    \""+Ex11Contract.address+"\",  // (Ex11Contract)")
 	console.log("    \""+Ex14Contract.address+"\",  // (Ex14Contract)")
+	console.log("    \""+Ex15Contract.address+"\",  // (Ex15Contract)")
 }
 
 // truffle run verify ex02@0x6dDdd446701759fa8BA3597bE9A9E01FF5691b8b --network goerli
@@ -122,6 +126,8 @@ async function deployRecap(deployer, network, accounts) {
 // truffle run verify ex11@0xB34423173F36223C397ffAa5Bd13c2FaD5b5F82f --network goerli
 // truffle run verify ex11b@ --network goerli
 // truffle run verify ex12@ --network goerli
+// truffle run verify ex14@0xeda23675c8040dcff4a33aa74701f1388deecc8b --network goerli
+// truffle run verify ex15@0x51330284182faed4fbc8273711f7096fccd60e5e --network goerli
 // truffle run verify ERC20TD@0x61eCfB24Ce76B0B61D900E85719334902B95737D --network goerli
 
 
