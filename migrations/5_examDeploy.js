@@ -19,11 +19,11 @@ var Ex15 = artifacts.require('exercices/ex15.sol')
 
 module.exports = (deployer, network, accounts) => {
     deployer.then(async () => {
-        // await deployTDToken(deployer, network, accounts);
+        await deployTDToken(deployer, network, accounts);
         await deployExercices(deployer, network, accounts);
-        // await setRandomValueStores(deployer, network, accounts);
-        // await setPermissions(deployer, network, accounts);
-        // await deployRecap(deployer, network, accounts); 
+        await setRandomValueStores(deployer, network, accounts);
+        await setPermissions(deployer, network, accounts);
+        await deployRecap(deployer, network, accounts); 
     });
 };
 
@@ -35,21 +35,21 @@ async function deployTDToken(deployer, network, accounts) {
 async function deployExercices(deployer, network, accounts) {
 	
 	console.log("Deploying Exercices")
-	// Ex1Contract = await Ex1.new(TDToken.address) 
-	// Ex2Contract = await Ex2.new(TDToken.address)
-	// Ex3Contract = await Ex3.new(TDToken.address)
-	// Ex4Contract = await Ex4.new(TDToken.address)
+	Ex1Contract = await Ex1.new(TDToken.address) 
+	Ex2Contract = await Ex2.new(TDToken.address)
+	Ex3Contract = await Ex3.new(TDToken.address)
+	Ex4Contract = await Ex4.new(TDToken.address)
 	Ex5Contract = await Ex5.new("0x61eCfB24Ce76B0B61D900E85719334902B95737D")
-	// Ex6Contract = await Ex6.new(TDToken.address)
-	// Ex7Contract = await Ex7.new(TDToken.address)
-	// Ex8Contract = await Ex8.new(TDToken.address)
-	// Ex9Contract = await Ex9.new(TDToken.address)
-	// Ex10Contract = await Ex10.new(TDToken.address)
-	// Ex11bContract = await Ex11b.new(TDToken.address)
-	// Ex11Contract = await Ex11.new(TDToken.address, Ex11bContract.address)
-	// Ex12Contract = await Ex12.new(TDToken.address)
-	// Ex14Contract = await Ex14.new(TDToken.address)
-	// Ex15Contract = await Ex15.new(TDToken.address)
+	Ex6Contract = await Ex6.new(TDToken.address)
+	Ex7Contract = await Ex7.new(TDToken.address)
+	Ex8Contract = await Ex8.new(TDToken.address)
+	Ex9Contract = await Ex9.new(TDToken.address)
+	Ex10Contract = await Ex10.new(TDToken.address)
+	Ex11bContract = await Ex11b.new(TDToken.address)
+	Ex11Contract = await Ex11.new(TDToken.address, Ex11bContract.address)
+	Ex12Contract = await Ex12.new(TDToken.address)
+	Ex14Contract = await Ex14.new(TDToken.address)
+	Ex15Contract = await Ex15.new(TDToken.address)
 }
 
 async function setRandomValueStores(deployer, network, accounts) {
@@ -118,7 +118,7 @@ async function deployRecap(deployer, network, accounts) {
 // truffle run verify ex02@0x6dDdd446701759fa8BA3597bE9A9E01FF5691b8b --network goerli
 // truffle run verify ex03@0xDD99B361ff42adffA8399CCf9EbCa6b03EF374A1 --network goerli
 // truffle run verify ex04@0xB70B0add66f7D889E8d2235FFba3934039A4A4b6 --network goerli
-// truffle run verify ex05@0x4a363FC39c594C97D19D70A8511eD1C0334AE77e --network goerli
+// truffle run verify ex05@0x1c0989ba7ce3bcf39f8987b3dabc8ba03545bb57 --network goerli
 // truffle run verify ex06@0xB4e89746B7Ba2A781b7160f435D361140c230185 --network goerli
 // truffle run verify ex07@0x37531680e552ba80604750C2A0cCe7C57f94C6f2 --network goerli
 // truffle run verify ex08@0xeD89a2F4771E3A9d6D0C49A9Eb595e4a9A169D40 --network goerli
