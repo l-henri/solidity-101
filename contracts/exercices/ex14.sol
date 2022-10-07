@@ -35,7 +35,7 @@ contract ex14 is exerciceTemplate {
     // Checking that at least 10 exercices where validated
     uint256 finalBalance = TDERC20.balanceOf(mySolution);
     uint256 decimals = TDERC20.decimals();
-    require(finalBalance >= 10**decimals *2, "Solution should end with at least than 24 points");
+    require(finalBalance >= 10**decimals *2, "Solution should end with at least than 2 points");
 
     // Validating exercice
     creditStudent(2, msg.sender);

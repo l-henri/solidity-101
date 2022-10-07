@@ -4,32 +4,26 @@
     {
       "inputs": [],
       "name": "completeWorkshop",
-      "outputs": [
-        {
-          "internalType": "uint256",
-          "name": "",
-          "type": "uint256"
-        }
-      ],
+      "outputs": [],
       "stateMutability": "view",
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.2+commit.bacdbe57\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"completeWorkshop\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/exercices/Iex14Solution.sol\":\"Iex14Solution\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xcc78a17dd88fa5a2edc60c8489e2f405c0913b377216a5b26b35656b2d0dab52\",\"urls\":[\"bzz-raw://526dc85e1f9b9b45830e202568d267d93dde7a4fcccf4ad7798dadcd92304d3c\",\"dweb:/ipfs/QmaoXMB972J3cSDLtBq3xBo4jLwqD2uzXTwujtSPqkYVhR\"]},\"@openzeppelin/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0xca0c2396dbeb3503b51abf4248ebf77a1461edad513c01529df51850a012bee3\",\"urls\":[\"bzz-raw://991b44ff44e0496e8554a90f4c0512c28faed45104d40430019f3c67ea67740e\",\"dweb:/ipfs/Qmc3nRapVbcctELoZS5qe17zLkFB3bETBfwzCTMF1CSuGE\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x5f02220344881ce43204ae4a6281145a67bc52c2bb1290a791857df3d19d78f5\",\"urls\":[\"bzz-raw://24427744bd3e6cb73c17010119af12a318289c0253a4d9acb8576c9fb3797b08\",\"dweb:/ipfs/QmTLDqpKRBuxGxRAmjgXt9AkXyACW3MtKzi7PYjm5iMfGC\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0x8d3cb350f04ff49cfb10aef08d87f19dcbaecc8027b0bed12f3275cd12f38cf0\",\"urls\":[\"bzz-raw://ded47ec7c96750f9bd04bbbc84f659992d4ba901cb7b532a52cd468272cf378f\",\"dweb:/ipfs/QmfBrGtQP7rZEqEg6Wz6jh2N2Kukpj1z5v3CGWmAqrzm96\"]},\"project:/contracts/ERC20TD.sol\":{\"keccak256\":\"0x2630864c0ffd211e533df4b64e9eda12c33c35ff81a6efff2b25aaf8d9efb910\",\"urls\":[\"bzz-raw://be2b68e30fbc206172077a04856e5bd7ca40b2ee1c8c37845a45ce234c982f85\",\"dweb:/ipfs/QmVZFKn4D6T9XeAin72TJK6v1PT3h1vCBpTAC3rbnWJp2e\"]},\"project:/contracts/exerciceTemplate.sol\":{\"keccak256\":\"0x851219bdd8fb408d2f67ff1ef2c8259c7e1e147f37bb398eb3553027edb89efb\",\"urls\":[\"bzz-raw://f5dde54ac0b95fcaad5634f8c00e83a41b754e3a39ef7c38a12c54bfa8d61d40\",\"dweb:/ipfs/QmPC5xKS8sKjbTgX2ZNXptMunfW1WWX1Qiv1GLxukM5gUA\"]},\"project:/contracts/exercices/Iex14Solution.sol\":{\"keccak256\":\"0x5b467b2105a60c05f6d24fbc0431a34e642fdfc1842f4a8df9c350f2b7aa5cd5\",\"urls\":[\"bzz-raw://4c78c93292093ab6c1f5830f19b7058bd6f3f75ebd3a817c882d45e7f7271505\",\"dweb:/ipfs/QmTaUvvDfXuUbRSRj8WP6qTiJvQjZGaSRjn1K9rLETC7dX\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.2+commit.bacdbe57\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"completeWorkshop\",\"outputs\":[],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/exercices/Iex14Solution.sol\":\"Iex14Solution\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xcc78a17dd88fa5a2edc60c8489e2f405c0913b377216a5b26b35656b2d0dab52\",\"urls\":[\"bzz-raw://526dc85e1f9b9b45830e202568d267d93dde7a4fcccf4ad7798dadcd92304d3c\",\"dweb:/ipfs/QmaoXMB972J3cSDLtBq3xBo4jLwqD2uzXTwujtSPqkYVhR\"]},\"@openzeppelin/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0xca0c2396dbeb3503b51abf4248ebf77a1461edad513c01529df51850a012bee3\",\"urls\":[\"bzz-raw://991b44ff44e0496e8554a90f4c0512c28faed45104d40430019f3c67ea67740e\",\"dweb:/ipfs/Qmc3nRapVbcctELoZS5qe17zLkFB3bETBfwzCTMF1CSuGE\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x5f02220344881ce43204ae4a6281145a67bc52c2bb1290a791857df3d19d78f5\",\"urls\":[\"bzz-raw://24427744bd3e6cb73c17010119af12a318289c0253a4d9acb8576c9fb3797b08\",\"dweb:/ipfs/QmTLDqpKRBuxGxRAmjgXt9AkXyACW3MtKzi7PYjm5iMfGC\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0x8d3cb350f04ff49cfb10aef08d87f19dcbaecc8027b0bed12f3275cd12f38cf0\",\"urls\":[\"bzz-raw://ded47ec7c96750f9bd04bbbc84f659992d4ba901cb7b532a52cd468272cf378f\",\"dweb:/ipfs/QmfBrGtQP7rZEqEg6Wz6jh2N2Kukpj1z5v3CGWmAqrzm96\"]},\"project:/contracts/ERC20TD.sol\":{\"keccak256\":\"0x2630864c0ffd211e533df4b64e9eda12c33c35ff81a6efff2b25aaf8d9efb910\",\"urls\":[\"bzz-raw://be2b68e30fbc206172077a04856e5bd7ca40b2ee1c8c37845a45ce234c982f85\",\"dweb:/ipfs/QmVZFKn4D6T9XeAin72TJK6v1PT3h1vCBpTAC3rbnWJp2e\"]},\"project:/contracts/exerciceTemplate.sol\":{\"keccak256\":\"0x851219bdd8fb408d2f67ff1ef2c8259c7e1e147f37bb398eb3553027edb89efb\",\"urls\":[\"bzz-raw://f5dde54ac0b95fcaad5634f8c00e83a41b754e3a39ef7c38a12c54bfa8d61d40\",\"dweb:/ipfs/QmPC5xKS8sKjbTgX2ZNXptMunfW1WWX1Qiv1GLxukM5gUA\"]},\"project:/contracts/exercices/Iex14Solution.sol\":{\"keccak256\":\"0x1969699feb72f95300307d3ac176c182a8e91ee3dc3ed192cbc18f8b55aa2f3b\",\"urls\":[\"bzz-raw://4b67ad33b78c047ae2e4664acc17739ad9b56616dbc081d3df5a6647e52837bc\",\"dweb:/ipfs/QmZNg2VNSCZDnTcNUBeLVfXHE7X6j2ZWkDC9pcC9wtysDv\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "pragma solidity ^0.6.0;\n\n\nimport \"../exerciceTemplate.sol\";\n\n/*\nExercice 14: Completing all the workshop in a single transaction!\nIn this exercice you should:\n- Implement a contract that complies with this interface\n- Call the appropriate function on ex14 to show you did\n*/\n\n\ninterface Iex14Solution {\n\n function completeWorkshop() external view returns(uint256);\n\n}\n",
+  "source": "pragma solidity ^0.6.0;\n\n\nimport \"../exerciceTemplate.sol\";\n\n/*\nExercice 14: Completing all the workshop in a single transaction!\nIn this exercice you should:\n- Implement a contract that complies with this interface\n- Call the appropriate function on ex14 to show you did\n*/\n\n\ninterface Iex14Solution {\n\n function completeWorkshop() external view;\n\n}\n",
   "sourcePath": "/Users/henrilieutaud/Documents/Workshop/Solidity/solidity-101/contracts/exercices/Iex14Solution.sol",
   "ast": {
     "absolutePath": "project:/contracts/exercices/Iex14Solution.sol",
     "exportedSymbols": {
       "Iex14Solution": [
-        1176
+        1174
       ]
     },
-    "id": 1177,
+    "id": 1175,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -48,7 +42,7 @@
         "file": "../exerciceTemplate.sol",
         "id": 1170,
         "nodeType": "ImportDirective",
-        "scope": 1177,
+        "scope": 1175,
         "sourceUnit": 1168,
         "src": "26:33:6",
         "symbolAliases": [],
@@ -61,9 +55,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 1176,
+        "id": 1174,
         "linearizedBaseContracts": [
-          1176
+          1174
         ],
         "name": "Iex14Solution",
         "nodeType": "ContractDefinition",
@@ -72,7 +66,7 @@
             "body": null,
             "documentation": null,
             "functionSelector": "59b4726c",
-            "id": 1175,
+            "id": 1173,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -86,58 +80,30 @@
               "src": "330:2:6"
             },
             "returnParameters": {
-              "id": 1174,
+              "id": 1172,
               "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 1173,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "overrides": null,
-                  "scope": 1175,
-                  "src": "355:7:6",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 1172,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "355:7:6",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "354:9:6"
+              "parameters": [],
+              "src": "346:0:6"
             },
-            "scope": 1176,
-            "src": "305:59:6",
+            "scope": 1174,
+            "src": "305:42:6",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 1177,
-        "src": "277:90:6"
+        "scope": 1175,
+        "src": "277:73:6"
       }
     ],
-    "src": "0:368:6"
+    "src": "0:351:6"
   },
   "legacyAST": {
     "attributes": {
       "absolutePath": "project:/contracts/exercices/Iex14Solution.sol",
       "exportedSymbols": {
         "Iex14Solution": [
-          1176
+          1174
         ]
       }
     },
@@ -160,7 +126,7 @@
           "SourceUnit": 1168,
           "absolutePath": "project:/contracts/exerciceTemplate.sol",
           "file": "../exerciceTemplate.sol",
-          "scope": 1177,
+          "scope": 1175,
           "symbolAliases": [
             null
           ],
@@ -183,10 +149,10 @@
           "documentation": null,
           "fullyImplemented": false,
           "linearizedBaseContracts": [
-            1176
+            1174
           ],
           "name": "Iex14Solution",
-          "scope": 1177
+          "scope": 1175
         },
         "children": [
           {
@@ -202,7 +168,7 @@
               ],
               "name": "completeWorkshop",
               "overrides": null,
-              "scope": 1176,
+              "scope": 1174,
               "stateMutability": "view",
               "virtual": false,
               "visibility": "external"
@@ -220,53 +186,30 @@
                 "src": "330:2:6"
               },
               {
-                "children": [
-                  {
-                    "attributes": {
-                      "constant": false,
-                      "name": "",
-                      "overrides": null,
-                      "scope": 1175,
-                      "stateVariable": false,
-                      "storageLocation": "default",
-                      "type": "uint256",
-                      "value": null,
-                      "visibility": "internal"
-                    },
-                    "children": [
-                      {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
-                        "id": 1172,
-                        "name": "ElementaryTypeName",
-                        "src": "355:7:6"
-                      }
-                    ],
-                    "id": 1173,
-                    "name": "VariableDeclaration",
-                    "src": "355:7:6"
-                  }
-                ],
-                "id": 1174,
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1172,
                 "name": "ParameterList",
-                "src": "354:9:6"
+                "src": "346:0:6"
               }
             ],
-            "id": 1175,
+            "id": 1173,
             "name": "FunctionDefinition",
-            "src": "305:59:6"
+            "src": "305:42:6"
           }
         ],
-        "id": 1176,
+        "id": 1174,
         "name": "ContractDefinition",
-        "src": "277:90:6"
+        "src": "277:73:6"
       }
     ],
-    "id": 1177,
+    "id": 1175,
     "name": "SourceUnit",
-    "src": "0:368:6"
+    "src": "0:351:6"
   },
   "compiler": {
     "name": "solc",
@@ -274,7 +217,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-10-07T13:33:08.229Z",
+  "updatedAt": "2022-10-07T21:22:42.038Z",
   "devdoc": {
     "methods": {}
   },
