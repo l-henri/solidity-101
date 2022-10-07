@@ -33,12 +33,12 @@ Your objective is to gather as many TD-SOL-101 points as possible. Please note :
 |Variable visibility|[Ex06](contracts/exercices/ex06.sol)|[Link](https://goerli.etherscan.io/address/0xB4e89746B7Ba2A781b7160f435D361140c230185)|
 |Events|[Ex07](contracts/exercices/ex07.sol)|[Link](https://goerli.etherscan.io/address/0x37531680e552ba80604750C2A0cCe7C57f94C6f2)|
 |Structures|[Ex08](contracts/exercices/ex08.sol)|[Link](https://goerli.etherscan.io/address/0xeD89a2F4771E3A9d6D0C49A9Eb595e4a9A169D40)|
-|Code history|[Ex09](contracts/exercices/ex09.sol)|[Link](https://goerli.etherscan.io/address/0x7A34779e9a8E3621ef035EA4678A18c8A9De3621)|
+|Code history|[Ex09](contracts/exercices/ex09.sol)|[Link](https://goerli.etherscan.io/address/0x4de3d223d88085ea8a106b873434f579dc4b3104)|
 |Past transactions|[Ex10](contracts/exercices/ex10.sol)|[Link](https://goerli.etherscan.io/address/0x1499C24FbfB3BE0f8f84E1FAa0539849362cB2bF)|
 |Composability|[Ex11](contracts/exercices/ex11.sol)|[Link](https://goerli.etherscan.io/address/0xB34423173F36223C397ffAa5Bd13c2FaD5b5F82f)|
 |Blockchain forensics|[Ex12](contracts/exercices/ex12.sol)|Undisclosed|
-|Deploy your contract to validate exercices|[Ex14](contracts/exercices/ex14.sol)|[Link](https://goerli.etherscan.io/address/0xeda23675c8040dcff4a33aa74701f1388deecc8b)|
-|All in one!|[Ex15](contracts/exercices/ex15.sol)|[Link](https://goerli.etherscan.io/address/0x51330284182faed4fbc8273711f7096fccd60e5e)|
+|Deploy your contract to validate exercices|[Ex14](contracts/exercices/ex14.sol)|[Link](https://goerli.etherscan.io/address/)|
+|All in one!|[Ex15](contracts/exercices/ex15.sol)|[Link](https://goerli.etherscan.io/address/)|
 
 
 
