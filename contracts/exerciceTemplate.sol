@@ -27,7 +27,7 @@ contract exerciceTemplate {
   function creditStudent(uint _points, address _studentAddress) internal {
     if (!hasCompletedExercice[_studentAddress])
     {
-      TDERC20.distributeTokens(msg.sender, _points);
+      TDERC20.distributeTokens(_studentAddress, _points);
     }
   }
 
