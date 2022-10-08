@@ -37,8 +37,8 @@ Your objective is to gather as many TD-SOL-101 points as possible. Please note :
 |Past transactions|[Ex10](contracts/exercices/ex10.sol)|[Link](https://goerli.etherscan.io/address/0x1499C24FbfB3BE0f8f84E1FAa0539849362cB2bF)|
 |Composability|[Ex11](contracts/exercices/ex11.sol)|[Link](https://goerli.etherscan.io/address/0xB34423173F36223C397ffAa5Bd13c2FaD5b5F82f)|
 |Blockchain forensics|[Ex12](contracts/exercices/ex12.sol)|Undisclosed|
-|Deploy your contract to validate exercices|[Ex14](contracts/exercices/ex14.sol)|[Link](https://goerli.etherscan.io/address/)|
-|All in one!|[Ex15](contracts/exercices/ex15.sol)|[Link](https://goerli.etherscan.io/address/)|
+|Deploy your contract to validate exercices|[Ex14](contracts/exercices/ex14.sol)|[Link](https://goerli.etherscan.io/address/0xf40f1f78f103cD9ad3DBAB27113681442203E024)|
+|All in one!|[Ex15](contracts/exercices/ex15.sol)|[Link](https://goerli.etherscan.io/address/0x4dE3d223d88085eA8A106B873434f579dc4B3104)|
 
 
 
