@@ -13,6 +13,6 @@ In this exercice you should:
 
 interface Iex14Solution {
 
- function completeWorkshop() external view;
+ function completeWorkshop() external;
 
 }

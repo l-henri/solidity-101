@@ -110,20 +110,21 @@ async function deployRecap(deployer, network, accounts) {
 	console.log("    \""+Ex15Contract.address+"\",  // (Ex15Contract)")
 }
 
-// truffle run verify ex02@0x6dDdd446701759fa8BA3597bE9A9E01FF5691b8b --network goerli
-// truffle run verify ex03@0xDD99B361ff42adffA8399CCf9EbCa6b03EF374A1 --network goerli
-// truffle run verify ex04@0xB70B0add66f7D889E8d2235FFba3934039A4A4b6 --network goerli
-// truffle run verify ex05@0x1c0989ba7ce3bcf39f8987b3dabc8ba03545bb57 --network goerli
-// truffle run verify ex06@0xB4e89746B7Ba2A781b7160f435D361140c230185 --network goerli
-// truffle run verify ex07@0x37531680e552ba80604750C2A0cCe7C57f94C6f2 --network goerli
-// truffle run verify ex08@0xeD89a2F4771E3A9d6D0C49A9Eb595e4a9A169D40 --network goerli
-// truffle run verify ex09@0x4de3d223d88085ea8a106b873434f579dc4b3104 --network goerli
-// truffle run verify ex10@0x1499C24FbfB3BE0f8f84E1FAa0539849362cB2bF --network goerli
-// truffle run verify ex11@0xB34423173F36223C397ffAa5Bd13c2FaD5b5F82f --network goerli
+// truffle run verify ex01@0x6fA2b36f3751d245E8dEbe77304e46E5D9298660 --network goerli
+// truffle run verify ex02@0xBeEd81F50c16F155825aeE26344b2D92e453Be42 --network goerli
+// truffle run verify ex03@0x502DdDb2DFEc1732A51b657C1Dc3B98CA2630722 --network goerli
+// truffle run verify ex04@0xE541Bc93a3064F71967075558e447c3C44AE9C9B --network goerli
+// truffle run verify ex05@0x2188144ebBF299E30D623378E4AB8ba203fE4244 --network goerli
+// truffle run verify ex06@0x39BAC501B2042dD3Ef0b30C5e342e4251488b131 --network goerli
+// truffle run verify ex07@0xD1c4744992a03aEf15a395Cd0FD9Eed17f6200F2 --network goerli
+// truffle run verify ex08@0x8734a14A33614Bc4A3Bd1327beEbf4559bdD1D85 --network goerli
+// truffle run verify ex09@0x5b45c12627Dbc946eDfd4037ac10A37363Fb1E6E --network goerli
+// truffle run verify ex10@0x4DE3bd213b88E02542EbEa053b5E158B1609655b --network goerli
+// truffle run verify ex11@0xAF59931827E33e6AD912932f7750874B0fF63fe1 --network goerli
 // truffle run verify ex11b@ --network goerli
-// truffle run verify ex12@0x7f36902277559b4acaf5a074b458fb354a39c550 --network goerli
-// truffle run verify ex14@0xf40f1f78f103cD9ad3DBAB27113681442203E024 --network goerli
-// truffle run verify ex15@0x68e04A37dB42eF2F74796D767ab3f86dA66a9b31 --network goerli
-// truffle run verify ERC20TD@0x61eCfB24Ce76B0B61D900E85719334902B95737D --network goerli
+// truffle run verify ex12@0xb082a7288b6582e2d9076cef511629dfbf18f61e --network goerli
+// truffle run verify ex14@0x4B25880211b7bde9D212486feBc55236de86789F --network goerli
+// truffle run verify ex15@0x38EB5DA6D2Ba7B2b86EF047fF11Bc2fB8558432F --network goerli
+// truffle run verify ERC20TD@0xD1d29e244C91bA16CeACBa6C9735DE9b5e54DA57 --network goerli
 
 

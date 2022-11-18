@@ -21,21 +21,21 @@ contract ex15 is exerciceTemplate {
   {
   }
 
-  function askForPoints(address mySolution) 
+  function askForPoints() 
   public  
   {
     // Checking that solution has no token yet
-    uint256 initialBalance = TDERC20.balanceOf(mySolution);
+    uint256 initialBalance = TDERC20.balanceOf(msg.sender);
     require(initialBalance == 0, "Solution should start with 0 points");
 
     // Calling the solution so that it solves the workshop
-    Iex14Solution callerSolution = Iex14Solution(mySolution);
+    Iex14Solution callerSolution = Iex14Solution(msg.sender);
     callerSolution.completeWorkshop();
 
     // Checking that at least 10 exercices where validated
-    uint256 finalBalance = TDERC20.balanceOf(mySolution);
+    uint256 finalBalance = TDERC20.balanceOf(msg.sender);
     uint256 decimals = TDERC20.decimals();
-    require(finalBalance >= 10**decimals *26, "Solution should end with at least than 24 points");
+    require(finalBalance >= 10**decimals *26, "Solution should end with at least than 26 points");
 
     // Validating exercice
     creditStudent(2, msg.sender);
