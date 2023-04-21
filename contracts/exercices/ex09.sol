@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
-
 import "../exerciceTemplate.sol";
 
 /*
@@ -24,35 +23,10 @@ C) Only using the ABI of this contract puts you at risk of not getting the point
 
 contract ex09 is exerciceTemplate { 
 
-      event aLazyStudent(address _lazyStudent); 
-
+// Find the code elsewhere
   constructor(ERC20TD _TDERC20) 
   exerciceTemplate(_TDERC20)
   {
   }
 
-// Find the code elsewhere
-
-  function collectYourPoints(uint _aValueToInput)   
-  public         
-  { 
-    require(_aValueToInput == 982738);  
-    emit aLazyStudent(msg.sender);  
-
-    // Validating exercice WITHOUT crediting points. Be careful, calling this function will NOT credit points to you!   
-    validateExercice(msg.sender);   
-
-  } 
-
-  function collectYourPointsAgain(uint _aValueToInput)  
-  public         
-  { 
-    require(_aValueToInput == 972738);  
-
-    // Validating exercice, getting points  
-    creditStudent(2, msg.sender); 
-
-    validateExercice(msg.sender);   
-
-  }
 }
