@@ -1,4 +1,5 @@
-pragma solidity ^0.6.0;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
 
 import "../exerciceTemplate.sol";
 
@@ -18,7 +19,6 @@ A) Create a wallet using Metamask (http://metamask.io)
 contract ex01 is exerciceTemplate {
 
 	constructor(ERC20TD _TDERC20) 
-  public 
   exerciceTemplate(_TDERC20)
   {
   }

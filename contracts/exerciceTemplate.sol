@@ -1,5 +1,5 @@
-pragma solidity ^0.6.0;
-
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
 import "./ERC20TD.sol";
 
 /*
@@ -18,7 +18,6 @@ contract exerciceTemplate {
 
   event constructedCorrectly(address erc20Address);
   constructor(ERC20TD _TDERC20) 
-  public 
   {
     TDERC20 = _TDERC20;
     emit constructedCorrectly(address(TDERC20));

@@ -1,5 +1,5 @@
-pragma solidity ^0.6.0;
-
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
 
 import "../exerciceTemplate.sol";
 
@@ -30,7 +30,6 @@ contract ex06 is exerciceTemplate {
   uint public nextValueStoreRank;
 
   constructor(ERC20TD _TDERC20) 
-  public 
   exerciceTemplate(_TDERC20)
   {
   }

@@ -1,5 +1,5 @@
-#test/01_exercicesTesting.js
-truffle*
 node_modules
-package-*
-*.DS_Store*
+.env
+artifacts/
+*DS_Store* 
+cache/

@@ -1,5 +1,5 @@
-pragma solidity ^0.6.0;
-
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
 
 import "../exerciceTemplate.sol";
 
@@ -28,8 +28,7 @@ contract ex10 is exerciceTemplate {
   event showPrivateVariableInEvent(uint i, uint myVariable);
   event showUserRank(uint i);
 
-  constructor(ERC20TD _TDERC20) 
-  public 
+  constructor(ERC20TD _TDERC20)  
   exerciceTemplate(_TDERC20)
   {
   }

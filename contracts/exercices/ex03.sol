@@ -1,4 +1,5 @@
-pragma solidity ^0.6.0;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
 
 import "../exerciceTemplate.sol";
 
@@ -18,7 +19,6 @@ B) Understanding requires https://docs.soliditylang.org/en/v0.6.0/control-struct
 contract ex03 is exerciceTemplate {
 
   constructor(ERC20TD _TDERC20) 
-  public 
   exerciceTemplate(_TDERC20)
   {
   }
